@@ -1,0 +1,1142 @@
+{
+  "gameSystem": {
+    "name": "Black Death City",
+    "id": "sys-b70a-fb57-3e2c-674f",
+    "battleScribeVersion": "2.03",
+    "revision": 1,
+    "type": "gameSystem",
+    "categoryEntries": [
+      {"name": "Origin", "id": "a0ac-c18a-151b-4dfa", "hidden": false},
+      {"name": "Stronghold", "id": "bba8-3330-6b7c-e324", "hidden": false},
+      {"name": "Leader", "id": "69a7-1a88-d493-5847", "hidden": false},
+      {"name": "Champion", "id": "f44d-d057-3822-ad30", "hidden": false},
+      {"name": "Henchman", "id": "2594-e088-657e-98c8", "hidden": false},
+      {"name": "Brute", "id": "eea3-65a8-e483-ad71", "hidden": false},
+      {"name": "Beast", "id": "054d-3052-d990-09f1", "hidden": false},
+      {
+        "name": "Held Item",
+        "id": "08f8-e0cc-9de3-6c2e",
+        "hidden": true,
+        "rules": [
+          {
+            "name": "Held Item",
+            "id": "a53e-63ee-3533-fba1",
+            "description": "Some items have the *Held Item* keyword (eg. Shields). These items count towards the number of melee weapons a fighter can be equipped with\ninstead of the number of items. In addition, they have the following rules:\n**Two-Handed Melee Weapons**: A fighter can be equipped with a *held item* and a *two-handed* melee weapon (eg. a Spear and Shield), however, subtract 1 from the Attacks value of the fighter's *two-handed* melee weapons.\n**Two-Handed Ranged Weapons**: A fighter cannot be equipped with a *held item* and a *two-handed* ranged weapon.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Two-handed Melee Weapon",
+        "id": "439f-4735-b903-3387",
+        "hidden": true,
+        "constraints": [{"id": "d462-16ac-7353-e255", "field": "selections", "includeChildSelections": true, "scope": "root-entry", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Two-handed Melee Weapons",
+            "id": "3108-2e5e-393f-23b7",
+            "description": "A fighter can be equipped with a *held item* and a *two-handed* melee weapon (eg. a Spear and Shield), however, subtract 1 from the Attacks value of the fighter's *two-handed* melee weapons.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Two-handed Ranged Weapon",
+        "id": "0d9b-60d9-ad23-757a",
+        "hidden": true,
+        "constraints": [{"id": "2699-a79c-ebd3-9eb9", "field": "selections", "includeChildSelections": true, "scope": "root-entry", "shared": true, "type": "max", "value": -1}],
+        "modifiers": [
+          {
+            "field": "2699-a79c-ebd3-9eb9",
+            "type": "set",
+            "value": 0,
+            "conditions": [{"childId": "08f8-e0cc-9de3-6c2e", "childName": "Held Item", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Two-handed Ranged Weapons",
+            "id": "cffc-4281-285d-3883",
+            "description": "A fighter cannot be equipped with a *held item* and a *two-handed* ranged weapon.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Melee Weapon/Held Item",
+        "id": "6747-f5ba-107f-75f6",
+        "hidden": true,
+        "constraints": [{"id": "3a73-a623-70a3-1574", "field": "selections", "includeChildSelections": true, "scope": "root-entry", "shared": true, "type": "max", "value": 2}]
+      },
+      {
+        "name": "Two-handed",
+        "id": "2094-af30-3edb-cda3",
+        "hidden": true,
+        "constraints": [{"id": "c07c-ae76-12e2-3848", "field": "selections", "includeChildSelections": true, "scope": "root-entry", "shared": true, "type": "max", "value": 1}]
+      },
+      {"name": "Attack Spell", "id": "2c8a-6af4-b3f9-2c4f", "hidden": false},
+      {"name": "Enchant Spell", "id": "85b8-21da-3137-c295", "hidden": false},
+      {"name": "Cantrip Spell", "id": "dc87-ec46-e9ec-57d9", "hidden": false},
+      {"name": "Hex Spell", "id": "c357-e647-ba26-1723", "hidden": false},
+      {"name": "Healing Spell", "id": "3fec-3970-09cb-4412", "hidden": false},
+      {"name": "Aura Spell", "id": "7360-70b3-4075-6143", "hidden": false},
+      {"name": "Human", "id": "ff34-5a7f-0dde-1f4b", "hidden": false},
+      {"name": "Aristocrat", "id": "a86d-3138-99c0-5732", "hidden": false},
+      {"name": "Wizard", "id": "7a14-b9e5-8753-9d26", "hidden": false},
+      {"name": "Priest", "id": "d285-085c-9b0e-8cfb", "hidden": false},
+      {"name": "Ogre", "id": "3491-ebed-2a64-f450", "hidden": false},
+      {"name": "Dog", "id": "e55f-24f6-9c36-7e48", "hidden": false},
+      {"name": "Fly", "id": "4d87-219d-0f14-9182", "hidden": false},
+      {"name": "Summon Spell", "id": "200f-0093-e878-2e53", "hidden": false}
+    ],
+    "costTypes": [{"name": "Silver", "id": "3892-0a24-b2ab-55d1", "defaultCostLimit": -1}],
+    "profileTypes": [
+      {
+        "name": "Fighter Scroll",
+        "id": "b012-448f-6072-da0c",
+        "hidden": false,
+        "kind": "model",
+        "characteristicTypes": [
+          {
+            "name": "Move",
+            "id": "62c9-14c7-812c-5e90",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "6194-2a36-3dd3-c91c", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "7480-8023-d21b-3fb2", "comment": "Append \"", "hidden": false, "match": "(\\d+(d\\d)?)", "replace": "$1\"", "type": "regex"}
+            ]
+          },
+          {
+            "name": "Blade",
+            "id": "f3fe-a222-9449-4019",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "4e84-e0fb-94ed-bdc7", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "9213-e60b-f526-d7f5", "comment": "Append +", "hidden": false, "match": "(\\d+)", "replace": "$1+", "type": "regex"}
+            ]
+          },
+          {
+            "name": "Bow",
+            "id": "d889-9da5-1795-03a3",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "5143-a5d0-a4c0-a2a8", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "e5ff-32b2-faf4-4875", "comment": "Append +", "hidden": false, "match": "(\\d+)", "replace": "$1+", "type": "regex"}
+            ]
+          },
+          {
+            "name": "Armour",
+            "id": "f4c3-01af-1566-67e5",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "0bb3-1afc-6dce-20d0", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "a7d9-bed3-f52d-ca2d", "comment": "Append +", "hidden": false, "match": "(\\d+)", "replace": "$1+", "type": "regex"}
+            ]
+          },
+          {
+            "name": "Initiative",
+            "id": "b562-c0a5-7d5d-39eb",
+            "formatRules": [{"name": "New Format Rule", "id": "fd25-944f-5b5d-5e73", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Willpower",
+            "id": "6512-20c9-bd6f-ace9",
+            "formatRules": [{"name": "New Format Rule", "id": "fd3b-4e0a-7028-a9ff", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Life",
+            "id": "c149-c58e-1146-bf30",
+            "formatRules": [{"name": "New Format Rule", "id": "4727-cb66-8912-41c2", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          }
+        ]
+      },
+      {
+        "name": "Melee Weapon",
+        "id": "f98d-f3e1-8544-adfc",
+        "hidden": false,
+        "kind": "weapon",
+        "characteristicTypes": [
+          {
+            "name": "Attacks",
+            "id": "5b07-00a6-1754-048e",
+            "formatRules": [{"name": "New Format Rule", "id": "19dd-0006-3264-4b4a", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Rend",
+            "id": "f48c-351f-2957-da29",
+            "formatRules": [{"name": "New Format Rule", "id": "a886-1471-916b-93c6", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Damage",
+            "id": "f457-d95e-2518-ddad",
+            "formatRules": [{"name": "New Format Rule", "id": "a5cb-ed61-b92e-ef90", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Critical Damage",
+            "id": "0b2a-1a62-9dad-e51f",
+            "formatRules": [{"name": "New Format Rule", "id": "2336-20c8-53e2-a4a6", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {"name": "Weapon Traits", "id": "2397-722e-6b58-da62"}
+        ]
+      },
+      {
+        "name": "Ranged Weapon",
+        "id": "e759-d91c-e4a6-8b61",
+        "hidden": false,
+        "kind": "weapon",
+        "characteristicTypes": [
+          {
+            "name": "Range",
+            "id": "f227-9a6c-ccc3-cd45",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "0fa4-87bc-885f-165e", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "627b-bd4a-2284-8292", "comment": "Append \"", "hidden": false, "match": "(\\d+)", "replace": "$1\"", "type": "regex"}
+            ]
+          },
+          {
+            "name": "Attacks",
+            "id": "c6c8-c109-b266-f754",
+            "formatRules": [{"name": "New Format Rule", "id": "6341-08bd-7a4d-f412", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Rend",
+            "id": "bcf7-cf90-2cae-088f",
+            "formatRules": [{"name": "New Format Rule", "id": "d8f5-fa24-65d2-cd68", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Damage",
+            "id": "8490-6720-799a-d1e9",
+            "formatRules": [{"name": "New Format Rule", "id": "09e6-83e2-3cdc-acad", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Critical Damage",
+            "id": "1cab-b575-f89b-7741",
+            "formatRules": [{"name": "New Format Rule", "id": "ef38-1a40-2306-cd07", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {"name": "Weapon Traits", "id": "a727-f7da-c245-5268"}
+        ]
+      },
+      {
+        "name": "Origin",
+        "id": "d530-27f7-854e-3a88",
+        "hidden": false,
+        "characteristicTypes": [{"name": "Restrictions", "id": "7d47-e888-6003-11c3", "kind": "longText"}, {"name": "Special Rules", "id": "c519-23f5-a727-b90e", "kind": "longText"}]
+      },
+      {
+        "name": "Stronghold",
+        "id": "c917-c2c5-c1ca-25ad",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Income",
+            "id": "9131-8ccf-beb4-cf89",
+            "formatRules": [
+              {
+                "name": "New Format Rule",
+                "id": "fb72-194c-71d9-157c",
+                "comment": "Append silver",
+                "hidden": false,
+                "match": "([\\s\\S]*)",
+                "replace": "$1 silver",
+                "type": "regex"
+              }
+            ]
+          },
+          {"name": "Ability", "id": "d47f-1ea2-d87f-a753", "kind": "longText"}
+        ]
+      },
+      {
+        "name": "Spell",
+        "id": "6e24-2b14-5ff8-de41",
+        "hidden": false,
+        "kind": "spell",
+        "characteristicTypes": [
+          {
+            "name": "Casting Value",
+            "id": "1538-b905-e373-4307",
+            "formatRules": [{"name": "New Format Rule", "id": "4c46-2685-6aae-1360", "comment": "Append +", "hidden": false, "match": "(\\d+)", "replace": "$1+", "type": "regex"}]
+          },
+          {
+            "name": "Critical Cast",
+            "id": "dd5b-a428-2ecb-8342",
+            "formatRules": [{"name": "New Format Rule", "id": "0b5f-5a9d-c952-36b9", "comment": "Append +", "hidden": false, "match": "(\\d+)", "replace": "$1+", "type": "regex"}]
+          },
+          {"name": "Normal Effect", "id": "365b-5938-66e2-d41d", "kind": "longText"},
+          {"name": "Critical Effect", "id": "7fba-d9e0-5873-b1bc", "kind": "longText"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Arcane",
+        "id": "65d2-1de6-0139-3659",
+        "description": "*(Critical hits on 5+)*\nAttack rolls made with this weapon score critical hits on a natural roll of 5 or 6.",
+        "hidden": false
+      },
+      {"name": "Blast", "id": "8ec9-4cf0-5f0c-1ecf", "description": "*(Blast template. Miss scatters d6x2\")*\nThis weapon uses the Blast template.", "hidden": false},
+      {
+        "name": "Bludgeon",
+        "id": "e735-0c28-3ed6-3845",
+        "description": "*(Critical hits deal 1 damage when saved)*\nEach time an armour roll successfully saves a critical hit scored by this weapon, the target suffers 1 damage.",
+        "hidden": false
+      },
+      {
+        "name": "Brace",
+        "id": "68e3-1e11-de30-b7ac",
+        "description": "*(Initiative vs charging fighters)*\nIf the defending fighter uses this weapon while they are the defending fighter, they automatically have the initiative if the attacking fighter charged this activation.",
+        "hidden": false
+      },
+      {"name": "Flame", "id": "706f-83cc-37eb-0360", "description": "*(Flame template. Auto-hits)*\nThis weapon uses the Flame template.", "hidden": false},
+      {
+        "name": "Guard",
+        "id": "2bf7-a7b4-4024-0c96",
+        "description": "*(1 miss can parry a hit)*\nWhen a fighter makes a parry, instead of using a hit they can use a missed attack roll from this weapon. They can do this once each melee attack.",
+        "hidden": false
+      },
+      {
+        "name": "Heavy",
+        "id": "69d1-83cb-5d71-43c6",
+        "description": "*(Move or Attack. Can still reload before or after)*\nThis weapon cannot be used to make an attack if the fighter has made a move during their activation. In addition, if this weapon has been used to make an attack, the fighter cannot make a move during their activation.\n**Reloading**: The weapon can be used to attack if the fighter spent their move to reload it. Likewise, after the weapon has been used to attack, if they have not yet spent their Move, they can do so to reload it, (see Reload Weapon Trait).\n",
+        "hidden": false
+      },
+      {
+        "name": "Misfire",
+        "id": "0718-f4db-2f9d-1afe",
+        "description": "*(On a natural 1)*\nIf any attack rolls for a ranged attack made with this weapon are a natural 1, the weapon misfires. After any other attack rolls have been resolved, make a misfire roll on the table below:\n|d6|Misfire Roll|\n|:---:|:----|\n|1|**Backfire**: The fighter suffers d3 damage. This weapon cannot be used again during this battle.|\n|2|**Clogged**: This weapon cannot be used again during this battle.|\n|3-6|**Flash-in-the-Pan**: The attack misses as normal.|",
+        "hidden": false
+      },
+      {
+        "name": "Natural Weapon",
+        "id": "ef32-930b-5649-ea01",
+        "description": "*(Cannot parry)*\nAttacks made with this weapon cannot be used to parry.",
+        "hidden": false
+      },
+      {
+        "name": "Off-hand",
+        "id": "86e9-90ef-bfd2-d3b2",
+        "description": "*(Can be used off-hand: 1 attack)*\nWhen making a melee attack action, this weapon can be used to make an off-hand attack.",
+        "hidden": false
+      },
+      {"name": "One-use", "id": "ae46-3e6f-2591-affb", "description": "*(1 attack per battle)*\nThis weapon can only be used once each battle.", "hidden": false},
+      {
+        "name": "Poison",
+        "id": "a705-5389-de52-9d30",
+        "description": "*(Critical hits poison. Suffer 1 damage when activated. Until healed or 1 life remains)*\nIf a fighter suffers damage from a critical hit made with this weapon they become *poisoned*. While a fighter is *poisoned*, each time they are activated they suffer 1 damage. If a fighter is healed, or has 1 life remaining, they are no longer poisoned.\n*Demons* and *Undead* fighters cannot become poisoned.",
+        "hidden": false
+      },
+      {
+        "name": "Rare (0-[x])",
+        "id": "ba2d-a850-6dde-772e",
+        "description": "*(Limited by the number listed)*\nThis trait limits the number of fighters in a warband that can be equipped with this type of weapon at the same time. For example, if a weapon has the Rare 0-1 trait, only 1 fighter in a warband can be equipped with a weapon of this type at any one time.",
+        "hidden": false,
+        "alias": ["Rare"]
+      },
+      {
+        "name": "Reload",
+        "id": "abe8-eb2b-8cae-ff9c",
+        "description": "*(Spend a Move or Action to reload)*\nEach time this weapon is used to make an attack, before it can be used again, the fighter must **reload** it. To reload a weapon, the fighter must spend either their Move or their Action during their activation. When a fighter spends either a Move or Action, they forfeit it.",
+        "hidden": false
+      },
+      {
+        "name": "Two-handed",
+        "id": "8c44-e613-612e-a3c5",
+        "description": "*(1 per fighter. No off-hand attack)*\nA fighter can only be equipped with 1 two-handed weapon.\nA fighter cannot make off-hand attacks if they are equipped with a two-handed weapon.",
+        "hidden": false
+      },
+      {"name": "Unwieldy", "id": "f067-7526-0e8a-79d5", "description": "*(-1 to attack rolls)*\nSubtract 1 from attack rolls made with this weapon.", "hidden": false},
+      {
+        "name": "Volley",
+        "id": "f056-bb94-bf4b-2e4b",
+        "description": "*(Multiple targets within 3\")*\nEach time this weapon is used for a ranged attack, it can target a number of enemy fighters equal to its Attacks value. Before resolving any Attack rolls, assign each attack to a target. The first target must be picked as normal, each additional attack can be assigned to that target, or to a different visible enemy fighter within 3\" of the target that is not engaged in melee.\nThen resolve all the attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Wrap",
+        "id": "0e99-256a-cac3-e592",
+        "description": "*(Cannot parry or be parried)*\nAttacks made by this weapon cannot be parried, and they cannot be used to parry another attack.",
+        "hidden": false
+      },
+      {
+        "name": "Scare",
+        "id": "2e54-c855-8f0c-e494",
+        "description": "*(Unengaged fighters pass Willpower test or scatter d6\")*\nAfter an attack by this weapon has been resolved, each fighter hit by the attack that is not engaged in melee takes a Willpower test. If they fail, they scatter d6\".",
+        "hidden": false
+      },
+      {
+        "name": "Item",
+        "id": "7c6b-89e4-02f8-0400",
+        "description": "Fighters can be equipped with up to 2 items. These range from shields, to potions, bombs and all sorts of other esoteric equipment. Every item has one or more special rules and a cost in silver.",
+        "hidden": false
+      },
+      {"name": "Duellist", "id": "573f-5b00-2489-dbcd", "description": "This fighter can parry critical hits with any hit.", "hidden": false},
+      {
+        "name": "Sniff 'em Out",
+        "id": "e3a1-32d0-7696-22f5",
+        "description": "Enemy fighters that are hidden are not hidden while they are within 9\" of this fighter.",
+        "hidden": false
+      },
+      {"name": "Seasoned Warrior", "id": "ec34-bd52-e574-4bcd", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false},
+      {
+        "name": "Incredible Strength",
+        "id": "a082-fb37-4f06-3cb9",
+        "description": "This fighter ignores the *Heavy* and *Unwieldy* weapon traits on weapons they are equipped with.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Cuirass",
+        "id": "64a0-2594-b94e-fa0d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 20}],
+        "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "f4c3-01af-1566-67e5", "scope": "parent", "type": "set", "value": "5"}],
+        "rules": [{"name": "Cuirass", "id": "d3ef-5cc4-f269-23c1", "description": "*Armour value 5+*", "hidden": false}]
+      },
+      {
+        "name": "Warded Robes",
+        "id": "e3fd-323c-4a22-3dfc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
+        "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "f4c3-01af-1566-67e5", "scope": "parent", "type": "set", "value": "6"}],
+        "rules": [
+          {
+            "name": "Warded Robes",
+            "id": "673c-aa92-f71e-d6f7",
+            "description": "*Armour value 6+*\nRoll a dice each time a fighter equipped with this armour is targeted by a spell cast by an enemy fighter. On a 4+, the spell has no effect on this fighter.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Full-plate",
+        "id": "9dd9-261c-b23b-9cbb",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
+        "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "f4c3-01af-1566-67e5", "scope": "parent", "type": "set", "value": "4"}],
+        "rules": [
+          {
+            "name": "Full-plate",
+            "id": "5a44-d7df-a492-1cec",
+            "description": "*Armour value 4+*\nFighters equipped with this armour cannot be equipped with twohanded ranged weapons with the exception of a Brace of Pistols.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Shield",
+        "id": "826b-a740-1462-e197",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Held Item", "id": "ef25-d9c0-5f58-3aac", "hidden": false, "primary": false, "targetId": "08f8-e0cc-9de3-6c2e"},
+          {"name": "Melee Weapon/Held Item", "id": "a7b0-a58b-defa-08c5", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
+        "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "f4c3-01af-1566-67e5", "scope": "parent", "type": "decrement", "value": 1}],
+        "rules": [
+          {
+            "name": "Shield",
+            "id": "8163-cf01-74bb-63e0",
+            "description": "Improve this fighter's Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Grimoire",
+        "id": "9b52-9a77-ac04-3645",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
+        "rules": [
+          {
+            "name": "Grimoire",
+            "id": "561e-da9b-f09d-47de",
+            "description": "Once per battle, after this fighter has made casting roll, you can re-roll the casting roll.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Dual-weapon Wielder",
+        "id": "de3a-baf7-a056-15d8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Dual-weapon Wielder",
+            "id": "b77e-23eb-eef9-3e7b",
+            "description": "Each time this fighter attacks with an off-hand weapon, they can make 2 attacks with that weapon instead of 1.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Duellist",
+        "id": "2cc0-f10c-411d-8bb8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Duellist", "id": "8ae6-d5f8-36cf-c097", "hidden": false, "targetId": "573f-5b00-2489-dbcd", "type": "rule"}]
+      },
+      {
+        "name": "Fast Learner",
+        "id": "8ab0-a591-8793-f726",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Fast Learner",
+            "id": "249b-2be8-955c-afc1",
+            "description": "In the aftermath of each battle, this fighter earns d6 bonus experience.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Great Weapon Master",
+        "id": "a29c-26ef-8300-8993",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Great Weapon Master",
+            "id": "b3b3-43ca-16fa-3893",
+            "description": "This fighter ignores the ‘Unwieldy’ weapon trait on Melee Weapons.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Shooting Drills",
+        "id": "45d9-aa73-1313-4e28",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Shooting Drills",
+            "id": "86d2-b3be-3be3-bfb4",
+            "description": "Each time this fighter reloads a weapon, they can make a Willpower test. If they pass, they do not need to sacrifice a Move or Action as part of the reload.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Steady Aim",
+        "id": "c962-5125-9db6-1cb9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Steady Aim",
+            "id": "f358-bdac-9dff-6949",
+            "description": "Add 1 to attack rolls for ranged attacks made by this fighter, while this fighter has not moved in the same activation.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Tough Bastard",
+        "id": "6c04-b66c-ac09-1530",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Tough Bastard",
+            "id": "1b42-e664-e85e-06e1",
+            "description": "Each time this fighter activates while they are **bloodied**, they can take a Willpower test. If they pass, they heal 1 life point and are no longer bloodied.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Unshakeable",
+        "id": "57b9-80c8-0eab-7605",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Unshakeable",
+            "id": "c9e1-8f40-4705-0ce4",
+            "description": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Axe",
+        "id": "a9e8-d8ce-5473-38bd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "1abe-c75e-f777-7890", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 16}],
+        "infoLinks": [{"name": "Off-hand", "id": "74bd-3380-6097-5bca", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Axe",
+            "id": "8261-5ccd-448f-df33",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Club/Mace/Hammer",
+        "id": "9715-66bd-8690-4ca7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "2b45-13f0-72da-0490", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 14}],
+        "infoLinks": [
+          {"name": "Off-hand", "id": "394d-3647-6cee-2d67", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"},
+          {"name": "Bludgeon", "id": "0447-8506-5a99-faec", "hidden": false, "targetId": "e735-0c28-3ed6-3845", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Club/Mace/Hammer",
+            "id": "b694-1131-202d-2be0",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Bludgeon, Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flail",
+        "id": "401f-d006-7952-03af",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "c69c-cb82-0f65-4c9e", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 14}],
+        "infoLinks": [
+          {"name": "Off-hand", "id": "e8b8-f76e-1def-f30a", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"},
+          {"name": "Wrap", "id": "dc15-4325-8f62-9907", "hidden": false, "targetId": "0e99-256a-cac3-e592", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Flail",
+            "id": "36d1-dc2c-a5af-7afe",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Off-hand, Wrap", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Halberd",
+        "id": "bc5f-c68b-77ff-69c4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Melee Weapon", "id": "09e4-adb4-59be-4f08", "hidden": false, "primary": false, "targetId": "439f-4735-b903-3387"},
+          {"name": "Melee Weapon/Held Item", "id": "bbba-8f05-8a64-29bf", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"},
+          {"name": "Two-handed", "id": "610d-12f8-f146-ec5b", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 34}],
+        "infoLinks": [
+          {"name": "Brace", "id": "3124-ec1a-16ee-ae76", "hidden": false, "targetId": "68e3-1e11-de30-b7ac", "type": "rule"},
+          {"name": "Two-handed", "id": "fa61-b392-c897-b6f9", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "f354-1ff3-a926-e5cf", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Halberd",
+            "id": "e747-7462-dd49-4a04",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Brace, Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spear",
+        "id": "c61f-55b8-59d8-24bd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Melee Weapon", "id": "216e-e82c-f836-1002", "hidden": false, "primary": false, "targetId": "439f-4735-b903-3387"},
+          {"name": "Melee Weapon/Held Item", "id": "abe7-ceee-9b37-7abd", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"},
+          {"name": "Two-handed", "id": "03f2-4415-246e-e12a", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 16}],
+        "infoLinks": [
+          {"name": "Brace", "id": "6ae3-6a8e-0921-148d", "hidden": false, "targetId": "68e3-1e11-de30-b7ac", "type": "rule"},
+          {"name": "Two-handed", "id": "1703-2e3b-a0ba-733f", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Spear",
+            "id": "9bce-0aad-6c85-ccf5",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Brace, Two-handed", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sword",
+        "id": "8f51-1154-e31d-ca39",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "c3c6-e453-8fd8-71fe", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 18}],
+        "infoLinks": [
+          {"name": "Off-hand", "id": "74f7-4869-b91b-31ac", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"},
+          {"name": "Guard", "id": "0558-b796-4769-bca3", "hidden": false, "targetId": "2bf7-a7b4-4024-0c96", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Sword",
+            "id": "e460-1b3c-2f0d-060f",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Guard, Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grappling Hook",
+        "id": "c436-71e0-c1d8-1788",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1160-06e8-0de1-7984", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2},
+          {"id": "d135-e2a6-0e07-f0df", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 5}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "3f3c-c23f-fd42-c78d",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "2"}]
+          }
+        ],
+        "rules": [{"name": "Grappling Hook", "id": "0221-16f1-43ef-aa99", "description": "This fighter can climb high walls in the same manner as ladders.", "hidden": false}]
+      },
+      {
+        "name": "Blackpowder Pistol",
+        "id": "525a-a039-b728-b205",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 18}],
+        "infoLinks": [
+          {"name": "Misfire", "id": "2b89-9422-640b-7e0e", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {"name": "Reload", "id": "3f9d-e2a8-2e4a-ae1d", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Blackpowder Pistol",
+            "id": "1203-0965-81d2-80da",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire, Reload", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Repeater Pistol",
+        "id": "de41-2a99-b048-eac4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
+        "infoLinks": [{"name": "Misfire", "id": "106a-6499-40c9-c25b", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Repeater Pistol",
+            "id": "935a-9e07-f2ff-cc1c",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Long Rifle",
+        "id": "f65b-5ab7-5cda-dc1d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "158b-84d9-afe5-729d", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "9c71-ff7d-b5f8-63ef", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
+        "infoLinks": [
+          {"name": "Heavy", "id": "8b91-e70e-3f36-e939", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
+          {"name": "Misfire", "id": "6ed2-b8aa-f46a-0264", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {"name": "Reload", "id": "5839-966a-ae16-7991", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "4de4-376b-d76a-5905", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "13b7-831f-c8ca-d6da", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Long Rifle",
+            "id": "b342-cbae-a492-4e79",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "30", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Reload, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arcane Staff",
+        "id": "b011-e9e0-70a4-759c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "025a-d47a-4219-8666", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
+        "infoLinks": [
+          {"name": "Arcane", "id": "4720-2683-3c83-3c94", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"},
+          {"name": "Off-hand", "id": "c6b9-75fb-9b8a-d9d0", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Arcane Staff",
+            "id": "42cc-2de9-744c-3ac0",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "2", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Arcane, Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ensorcelled Weapon",
+        "id": "6f39-0474-ee95-8962",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "c3ff-6c5b-6502-aa57", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 26}],
+        "infoLinks": [{"name": "Arcane", "id": "f2d7-fac1-4e6c-4e93", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Ensorcelled Weapon",
+            "id": "e83d-ed4b-d6b5-a72d",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Arcane", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dagger",
+        "id": "8c84-835f-e961-5eb1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "7c77-3194-4f25-48fd", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
+        "infoLinks": [{"name": "Off-hand", "id": "e148-23a5-ae12-4c64", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Dagger",
+            "id": "4d59-bbaf-8b09-0ec3",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Mace",
+        "id": "57cb-8319-cb3e-1b22",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "95fe-0caa-837f-1adc", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 38}],
+        "infoLinks": [
+          {"name": "Off-hand", "id": "c558-6a21-22d6-e9d0", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"},
+          {"name": "Bludgeon", "id": "3077-ca3b-c514-cb35", "hidden": false, "targetId": "e735-0c28-3ed6-3845", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Ogre Mace",
+            "id": "6e8e-b78d-e6eb-b4e3",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Bludgeon, Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Great Weapon",
+        "id": "6872-68be-77ca-3728",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Melee Weapon", "id": "f6eb-a5e3-4323-3998", "hidden": false, "primary": false, "targetId": "439f-4735-b903-3387"},
+          {"name": "Melee Weapon/Held Item", "id": "20a0-ef6d-5218-fe84", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"},
+          {"name": "Two-handed", "id": "a57d-4c51-4606-f95b", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
+        "infoLinks": [
+          {"name": "Two-handed", "id": "c899-dd61-2e5a-6094", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "2a8f-d675-2a2a-857a", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Ogre Great Weapon",
+            "id": "562e-a89f-a8a1-c484",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-2", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "3", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+2", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Blade",
+        "id": "6e56-f92f-6fec-9efc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "7d7e-f1c2-5883-6c14", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 36}],
+        "infoLinks": [{"name": "Off-hand", "id": "0442-fc95-e47f-de46", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Ogre Blade",
+            "id": "6d70-849f-c4d6-fa18",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Off-hand", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Axe",
+        "id": "4902-330b-b2c9-c777",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Melee Weapon", "id": "4e12-5652-2a16-8b7b", "hidden": false, "primary": false, "targetId": "439f-4735-b903-3387"},
+          {"name": "Melee Weapon/Held Item", "id": "96ec-5cd9-8fb1-1a10", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"},
+          {"name": "Two-handed", "id": "1734-70d1-621c-77a5", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
+        "infoLinks": [
+          {"name": "Two-handed", "id": "cb91-1b42-efba-a84e", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "ba52-c217-f3b3-4f0a", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Axe",
+            "id": "318d-43a9-45bb-53ef",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-2", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Two-handed, Unwieldy ", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ensorcelled Bell",
+        "id": "0735-bd4e-fa0e-6795",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "dd1c-ef0b-21d5-5b89", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "7501-b6d0-5efc-32aa",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Ensorcelled Bell",
+            "id": "501f-307a-b3f4-bf75",
+            "description": "Once per battle, you can re-roll a **miscast roll** made for this fighter.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Promote to Leader",
+        "id": "38f4-fe31-f2e1-1642",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "1a35-a789-98de-e124", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {"field": "category", "scope": "root-entry", "type": "unset-primary", "value": "f44d-d057-3822-ad30"},
+          {"field": "category", "scope": "root-entry", "type": "add", "value": "69a7-1a88-d493-5847"},
+          {"field": "category", "scope": "root-entry", "type": "remove", "value": "f44d-d057-3822-ad30"},
+          {"field": "category", "scope": "root-entry", "type": "set-primary", "value": "69a7-1a88-d493-5847"}
+        ]
+      },
+      {"name": "Experience", "id": "0bed-4f34-c3d1-d2dd", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "Black Rot",
+        "id": "0b65-0acc-56dd-c52a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "d8b9-eedb-c4d4-3558", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Veteran Skills",
+        "id": "d23f-4752-4e2a-bfc6",
+        "hidden": false,
+        "entryLinks": [
+          {"name": "Dual-weapon Wielder", "id": "e96f-dd61-8ae0-1de4", "hidden": false, "import": true, "targetId": "de3a-baf7-a056-15d8", "type": "selectionEntry"},
+          {"name": "Duellist", "id": "0173-595e-1d7a-933d", "hidden": false, "import": true, "targetId": "2cc0-f10c-411d-8bb8", "type": "selectionEntry"},
+          {"name": "Shooting Drills", "id": "d72b-732d-24ac-5080", "hidden": false, "import": true, "targetId": "45d9-aa73-1313-4e28", "type": "selectionEntry"},
+          {"name": "Great Weapon Master", "id": "b746-eb54-897e-f371", "hidden": false, "import": true, "targetId": "a29c-26ef-8300-8993", "type": "selectionEntry"},
+          {"name": "Steady Aim", "id": "fbce-955d-92bd-78e7", "hidden": false, "import": true, "targetId": "c962-5125-9db6-1cb9", "type": "selectionEntry"},
+          {"name": "Tough Bastard", "id": "c5ca-df3c-dc27-c347", "hidden": false, "import": true, "targetId": "6c04-b66c-ac09-1530", "type": "selectionEntry"},
+          {"name": "Fast Learner", "id": "eca7-bfe3-2ad8-5e28", "hidden": false, "import": true, "targetId": "8ab0-a591-8793-f726", "type": "selectionEntry"},
+          {"name": "Unshakeable", "id": "36a1-b29d-55b0-da3b", "hidden": false, "import": true, "targetId": "57b9-80c8-0eab-7605", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}

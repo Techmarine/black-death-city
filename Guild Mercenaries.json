@@ -1,0 +1,3272 @@
+{
+  "catalogue": {
+    "name": "Guild Mercenaries",
+    "id": "dc67-e196-dec6-5e42",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-b70a-fb57-3e2c-674f",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "categoryEntries": [
+      {"name": "Munitions List", "id": "8b6c-c7ac-efc0-cbca", "hidden": true},
+      {"name": "Cleric List", "id": "2b03-b506-90a3-bf0c", "hidden": true},
+      {"name": "Witch Hunter List", "id": "04ce-3300-ed38-c04b", "hidden": true},
+      {"name": "Ogre List", "id": "368c-4513-dd81-71c4", "hidden": true},
+      {"name": "Wizard List", "id": "3e88-5bc3-8d88-64ba", "hidden": true},
+      {"name": "Main List", "id": "981a-4b36-e453-513e", "hidden": true},
+      {"name": "Champion List", "id": "362d-9d5f-822e-e655", "hidden": true},
+      {"name": "Mercenary", "id": "2f43-29de-09c4-ec4c", "hidden": false},
+      {"name": "Witch Hunter", "id": "370a-c285-e09a-c5c0", "hidden": false}
+    ],
+    "entryLinks": [{"name": "Noble", "id": "b8fa-4dff-f1f3-b198", "hidden": false, "import": true, "sortIndex": 3, "targetId": "880f-776b-65f5-2023", "type": "selectionEntry"}],
+    "forceEntries": [
+      {
+        "name": "Warband Roster",
+        "id": "85c9-8952-9761-40e1",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Origin",
+            "id": "15f4-07f8-46cf-535e",
+            "hidden": false,
+            "targetId": "a0ac-c18a-151b-4dfa",
+            "constraints": [
+              {"id": "8d40-10b1-8a36-0bd1-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+              {"id": "8d40-10b1-8a36-0bd1-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {"name": "Stronghold", "id": "3176-8a80-67b6-0a1b", "hidden": false, "targetId": "bba8-3330-6b7c-e324"},
+          {
+            "name": "Leader",
+            "id": "411b-68a9-2786-4f49",
+            "hidden": false,
+            "targetId": "69a7-1a88-d493-5847",
+            "constraints": [
+              {
+                "id": "39e8-b4be-b2f1-1f8f-min",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "39e8-b4be-b2f1-1f8f-max",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Champion",
+            "id": "3bb2-dc84-ecd7-b927",
+            "hidden": false,
+            "targetId": "f44d-d057-3822-ad30",
+            "constraints": [
+              {
+                "id": "ce28-c5ed-2df2-66cd",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Henchman",
+            "id": "cfa5-ca20-0ce0-4fb4",
+            "hidden": false,
+            "targetId": "2594-e088-657e-98c8",
+            "constraints": [
+              {
+                "id": "570e-507b-12df-a19c",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "name": "Brute",
+            "id": "6ca9-79ab-f5d8-fb12",
+            "hidden": false,
+            "targetId": "eea3-65a8-e483-ad71",
+            "constraints": [
+              {
+                "id": "2abd-0812-a4db-a7c2",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Beast",
+            "id": "11bd-e843-4477-281c",
+            "hidden": false,
+            "targetId": "054d-3052-d990-09f1",
+            "constraints": [
+              {
+                "id": "b717-7ece-2204-80d0",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Swords for Hire",
+        "id": "0e76-9af5-b1aa-88bc",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "e026-600a-6bd3-8a88", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Swords for Hire",
+            "id": "3e25-c8b9-7cf9-857d",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Origin",
+            "id": "c60b-f23c-5c9f-3fab",
+            "flatten": true,
+            "hidden": false,
+            "constraints": [
+              {"id": "4dec-474b-115c-e92d-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
+              {"id": "4dec-474b-115c-e92d-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Disgraced Noble",
+                "id": "d4ec-8503-22cd-7462",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Disgraced Noble",
+                    "id": "4a95-5569-6684-9720",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {"name": "Restrictions", "$text": "**Leader**: You must hire a Noble to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Swords for Hire",
+                "id": "65fe-91d8-fb39-3fde",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Swords for Hire",
+                    "id": "ab5d-d38a-f4d6-b32a",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Witch Hunters Guild",
+                "id": "ccd8-d240-fe8f-7c5e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Witch Hunters Guild",
+                    "id": "c55f-8ac1-68da-35cf",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter house** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Wizard's Retinue",
+                "id": "5da3-3a6f-c848-7039",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Wizard's Retinue",
+                    "id": "56ed-dbe5-a0b7-e1c4",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Guild Barracks",
+        "id": "48f2-5b1e-0027-5cd1",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "1b8c-b1d9-d6df-d076", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Guild Barracks",
+            "id": "43c8-ba05-1178-f76c",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Combat Drills**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Henchmen* to train. Each of those fighters earns d6 bonus experience.\n**Eager to Prove**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Guild Recruit arrives at the Guild Barracks. You can recruit a Guild Recruit to your warband for 0 silver.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dilapidated Manor",
+        "id": "9399-5618-e7f9-1c7f",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "08bb-8a2d-b629-3b65", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Dilapidated Manor",
+            "id": "1fb1-2c2c-bb79-1ef9",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Vintage Wines**: When this holding is first added to a warband roster, it has 2d6 bottles of **vintage wine**. Make a note on your warband roster.\nEach time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter House",
+        "id": "950d-cbb9-c4f0-6690",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "7790-d63a-8058-1f1b", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Chapter House",
+            "id": "c80b-a586-dc94-5587",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Atonement for Sin**: If your warband lost the battle, in step 3 of the Aftermath sequence, make a Willpower test for each *Witch Hunter* and *Priest* in your warband. If they pass, they earn 5 bonus experience.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hidden Library",
+        "id": "92b0-c746-87c8-10c1",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "92db-7e99-4212-7e32", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Hidden Library",
+            "id": "b136-5a51-c9be-be5f",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Sorcerous Study**: Each battle, before you determine prepared spells, you can pick 1 friendly *Wizard* in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Guild Captain",
+        "id": "2548-11b0-af86-ef28",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "a984-294b-d8cb-15c8", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Main List", "id": "d052-cde0-70d7-3d78", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Champion List", "id": "43de-0169-9f54-31a5", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
+          {"name": "Mercenary", "id": "aa9a-a829-d93b-7e48", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Human", "id": "1cfd-57c6-a756-ca55", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "52bf-fa14-4fd4-67a5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "8bf7-a533-448e-153d", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Guild Captain",
+            "id": "717a-0bae-4b59-4a43",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "4", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"},
+              {"name": "Special Rules", "$text": "Veteran of the City", "typeId": "a3eb-7ef5-25f5-6eec"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Veteran of the City", "id": "1748-f433-0892-94e1", "description": "When this fighter is recruited, pick 2 skills for them.", "hidden": false}]
+      },
+      {
+        "name": "Witch Hunter",
+        "id": "ba19-0889-9656-2140",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "40f4-9318-5737-1eca", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Main List", "id": "2da1-b4db-947a-537b", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Champion List", "id": "378e-5ad0-1437-76fc", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
+          {"name": "Witch Hunter List", "id": "68ae-19ea-fece-c6ae", "hidden": false, "primary": false, "targetId": "04ce-3300-ed38-c04b"},
+          {"name": "Mercenary", "id": "c421-91d1-0681-7dc8", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Human", "id": "2a61-40d2-4bd6-1e52", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Witch Hunter", "id": "c5fb-6a1e-80e8-8193", "hidden": false, "primary": false, "targetId": "370a-c285-e09a-c5c0"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "7351-b4c6-e177-d5ae",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "e35a-a792-8e0a-5252", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Seasoned Warrior", "id": "746a-49e5-2829-a683", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"},
+          {"name": "Recite Holy Litanies [Action]", "id": "2289-2089-aea4-5ec6", "hidden": false, "targetId": "4bef-70e2-16ce-24b8", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Witch Hunter",
+            "id": "250f-84a6-fe23-3145",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "4", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "High Wizard of the Guild",
+        "id": "9703-956d-f328-2298",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "7cab-f108-e189-2b14", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Wizard List", "id": "36ba-4fd4-7811-03eb", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"},
+          {"name": "Mercenary", "id": "41cd-6a23-1848-246e", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 165}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "bd6e-2454-e081-028d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lore of Sanctioned Magic",
+            "id": "3561-49c4-983c-05f5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "ae08-1be4-ef78-9045",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "eb09-fd4f-e5d1-58e7", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "High Wizard of the Guild",
+            "id": "987b-a2f4-ed55-1814",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "5", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Spellcraft",
+            "id": "e1fe-e260-8445-d28d",
+            "description": "This fighter knows the *Lore of Sanctioned Magic*. When they are recruited, pick 2 spells from it to be their signature spells. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Guild Wizard",
+        "id": "aab1-d8d0-de31-8548",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "20bf-aad2-180d-ad74", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Mercenary", "id": "ecca-4941-6f7a-5218", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Wizard List", "id": "7a88-07af-8a28-09bb", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"},
+          {"name": "Human", "id": "0c70-e993-effb-e802", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Wizard", "id": "3104-f21c-0efb-36fd", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+        ],
+        "constraints": [{"id": "5a76-2586-90ca-c4ef", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "c7b2-8654-1392-c115",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "467f-eb5e-8f6b-3839", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"},
+          {
+            "name": "Lore of Sanctioned Magic",
+            "id": "cef1-4c48-7e4b-1b16",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "ae08-1be4-ef78-9045",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Guild Wizard",
+            "id": "aaa8-bf6c-09b4-1736",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Guild Magic",
+            "id": "a8ad-8dd0-d2cd-06da",
+            "description": "This fighter knows the **Lore of Sanctioned Magic**. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Guild Cleric",
+        "id": "3b86-9789-e442-9b5a",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "51cf-0e34-5ef0-8631", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Mercenary", "id": "f999-b5d9-6516-6735", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Cleric List", "id": "154d-7d0f-9fe2-3858", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"},
+          {"name": "Human", "id": "c4ff-129f-984a-4f0c", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Priest", "id": "7d88-bb1c-996f-83f0", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"}
+        ],
+        "constraints": [{"id": "0db9-c6b3-137e-4887", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "b501-33a1-4221-1d6c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lore of the Saints",
+            "id": "358c-ab08-2807-d56d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "2684-c7ea-01bc-7c40",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "0291-94b9-f2e9-16af", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Guild Cleric",
+            "id": "c7b3-6a79-715c-3c85",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Hole Magic",
+            "id": "472f-a925-2267-821f",
+            "description": "This fighter knows the **Lore of the Saints**. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Guild Champion",
+        "id": "5329-73b2-d267-a4c3",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "37a0-6d29-b14b-23d9", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Mercenary", "id": "9d82-0352-8f86-2b8f", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Main List", "id": "fda2-bbcf-a919-1d85", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Champion List", "id": "e590-3e98-a1f9-4ceb", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
+          {"name": "Human", "id": "8bd7-2e1b-4a2f-ee0d", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "0ab5-0027-fbf9-002d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "07f8-6e47-2cfb-be62", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Seasoned Warrior", "id": "6dfe-de7e-9b64-a6b4", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Guild Champion",
+            "id": "596a-5592-5efb-4bdd",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plague Doctor",
+        "id": "883e-83fd-3761-11ff",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "6e57-c281-9073-db83", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Mercenary", "id": "7abf-a620-efe2-0767", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Main List", "id": "dafc-2b21-bf4e-cdfd", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Human", "id": "3bf1-3923-3f9d-cbd0", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 65}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "65a0-7521-8db3-05be",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "8187-16d1-e4c0-289d", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Plague Doctor",
+            "id": "2d46-c786-bc41-05b6",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "5", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Patch You Up [Action]",
+            "id": "bec7-184c-0be5-63ef",
+            "description": "As an action, make a Willpower test for this fighter. If failed, the action\nends. If passed, pick a friendly fighter within 1\" of them. That fighter heals 1 life point.",
+            "hidden": false
+          },
+          {
+            "name": "Sawbones",
+            "id": "1627-ba4c-d0ad-2170",
+            "description": "Once in each aftermath sequence, if this fighter was not taken down during battle, they can oversee the recovery of another fighter. Pick a friendly fighter that was taken down. When rolling on the lasting injury table for that fighter, you can roll twice and pick either result.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Witch Hunter's Apprentice",
+        "id": "9175-0cad-1d2a-29a6",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "8cc7-2493-6b4f-8f6f", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Mercenary", "id": "59c3-2ebf-f08f-3147", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Main List", "id": "73f6-5738-5ffb-58db", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Champion List", "id": "a75b-41a0-7d9e-e4c8", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
+          {"name": "Witch Hunter List", "id": "5e07-debc-b181-ea65", "hidden": false, "primary": false, "targetId": "04ce-3300-ed38-c04b"},
+          {"name": "Human", "id": "2574-43c1-a0a0-93f6", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Witch Hunter", "id": "37b4-b49f-de2a-88ef", "hidden": false, "primary": false, "targetId": "370a-c285-e09a-c5c0"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 80}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "1fba-1c79-a01d-59ca",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "043d-9e11-af0a-6f45", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Recite Holy Litanies [Action]", "id": "6523-a084-fee3-7082", "hidden": false, "targetId": "4bef-70e2-16ce-24b8", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Witch Hunter's Apprentice",
+            "id": "a7e0-094e-c851-448c",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Guild Mercenary",
+        "id": "ea39-f3bd-20ed-dc5b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 5,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Henchman", "id": "232b-f954-0a0a-9ed1", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
+          {"name": "Mercenary", "id": "504f-5460-dc43-59c4", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Main List", "id": "7424-b4ad-68f9-da2a", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Munitions List", "id": "35c6-d835-8b9c-d110", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"},
+          {"name": "Human", "id": "3b0d-fc98-5cfd-f20e", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "57d1-041b-3690-fbc3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "e037-624b-5ed2-f7ba", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Guild Mercenary",
+            "id": "54b6-df93-c0a8-3df5",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Guild Recruit",
+        "id": "0ee6-bae5-cebd-fa2b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 5,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Henchman", "id": "f345-7fdb-cec0-68f4", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
+          {"name": "Mercenary", "id": "18c5-1333-0773-f105", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Main List", "id": "9f6a-e11b-6729-c077", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Human", "id": "d031-f8b9-140e-eed4", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "b046-b09b-241c-1e57",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "7005-94af-6d75-2425", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Guild Recruit",
+            "id": "a2cf-f4b1-f31c-0582",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "5", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "5", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "2", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "3", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mercenary Ogre",
+        "id": "8459-fd86-5383-18aa",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 6,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Brute", "id": "0ef3-3f95-718a-09ff", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
+          {"name": "Mercenary", "id": "2799-777b-ac83-8718", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Ogre List", "id": "cfdd-36a0-7849-3109", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"},
+          {"name": "Ogre", "id": "affe-a604-7f70-a41f", "hidden": false, "primary": false, "targetId": "3491-ebed-2a64-f450"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 100}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "ab10-9a6c-015d-becd",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "0ea0-3a7b-100e-c02a", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Incredible Strength", "id": "8b43-5648-bac2-bf35", "hidden": false, "targetId": "a082-fb37-4f06-3cb9", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Mercenary Ogre",
+            "id": "fd68-1e93-7857-55c6",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "4", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "2", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hunting Dog",
+        "id": "500a-be01-ac9e-b861",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 7,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Beast", "id": "c6c7-d49b-f70b-8604", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
+          {"name": "Mercenary", "id": "2a5f-e7b3-a10f-e110", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Dog", "id": "8f04-4689-51cc-8196", "hidden": false, "primary": false, "targetId": "e55f-24f6-9c36-7e48"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+        "infoLinks": [{"name": "Sniff 'em Out", "id": "9184-bfa4-3f47-f7a3", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
+        "rules": [
+          {
+            "name": "Trackers",
+            "id": "a202-b17f-6ac7-6d01",
+            "description": "Each aftermath sequence, when you search the city. If your search party includes any Hunting Dogs, you can re-roll the exploration roll.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Vicious Bite",
+            "id": "bbd9-1048-2611-7e06",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "8dbc-f0b4-23ed-e946-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8dbc-f0b4-23ed-e946-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Natural Weapon", "id": "f36a-c9ad-67ec-7158", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Vicious Bite",
+                "id": "5841-082f-8cdd-258e",
+                "hidden": false,
+                "typeId": "f98d-f3e1-8544-adfc",
+                "typeName": "Melee Weapon",
+                "characteristics": [
+                  {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+                  {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+                  {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+                  {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Disgraced Noble",
+        "id": "ed00-e739-69a8-9b22",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "2c69-3496-1c68-0a8c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Disgraced Noble",
+            "id": "92c4-0f0d-75b0-5c1b",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {"name": "Restrictions", "$text": "**Leader**: You must hire a **Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Witch Hunters Guild",
+        "id": "9c14-3ded-9283-9467",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "5f1b-ce37-8c34-2f06", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Witch Hunters Guild",
+            "id": "6cfb-64d9-1109-9187",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter House** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wizard's Retinue",
+        "id": "0e95-042a-f5ee-3386",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "fc6f-17ae-f8d0-8ee3", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Wizard's Retinue",
+            "id": "389e-42ed-f16b-44a0",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Recite Holy Litanies [Action]",
+        "id": "4bef-70e2-16ce-24b8",
+        "description": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a *Wizard*, *Priest*, *Demon* or *Undead*. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers d3 damage.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Zweihander",
+        "id": "e8f4-c949-5622-ddf7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Melee Weapon", "id": "9eaa-30c2-1ea8-89a3", "hidden": false, "primary": false, "targetId": "439f-4735-b903-3387"},
+          {"name": "Melee Weapon/Held Item", "id": "8420-54ed-1ad7-156e", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"},
+          {"name": "Two-handed", "id": "8103-dd17-f553-4d7b", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 42}],
+        "infoLinks": [
+          {"name": "Two-handed", "id": "337d-81cc-8ff0-7483", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "baa1-efdc-fe99-82f6", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"},
+          {"name": "Guard", "id": "21dd-099a-cca4-c93f", "hidden": false, "targetId": "2bf7-a7b4-4024-0c96", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Zweihander",
+            "id": "2fc2-68f1-8ff6-1f21",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Guard, Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blackpowder Rifle",
+        "id": "1ec4-c9a3-232a-f482",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "d91c-4a3e-32f8-efe6", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "b388-90e4-07ed-71ed", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 22}],
+        "infoLinks": [
+          {"name": "Misfire", "id": "e05c-c060-c9be-5df9", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {"name": "Reload", "id": "47ff-d5d0-29ab-2c75", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "e482-7895-56a8-8d38", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Blackpowder Rifle",
+            "id": "b040-f308-81a2-1112",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "18", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blunderbuss",
+        "id": "1293-90a1-b0b7-a5b4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "6601-9aa9-53fc-ec00", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "71ae-27b4-212f-3bac", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
+        "infoLinks": [
+          {"name": "Two-handed", "id": "5d14-3592-ffce-5a92", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Reload", "id": "bbcc-3a9b-21b6-346d", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Misfire", "id": "25d3-4733-af77-90c8", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Blunderbuss",
+            "id": "d767-2c0a-3a61-9cd4",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "8", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "d3", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crossbow",
+        "id": "b450-3c34-fa0a-4ea8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "2052-cdb3-fdeb-b964", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "8680-5c92-9922-6a22", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 26}],
+        "infoLinks": [
+          {"name": "Reload", "id": "a091-7545-8bdd-5fb2", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "8085-c57e-d057-7558", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Crossbow",
+            "id": "0c4f-d66e-f2c0-ca06",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "20", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hand Crossbow",
+        "id": "5e31-7fd7-b52f-97c0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 16}],
+        "infoLinks": [{"name": "Reload", "id": "f0b3-c533-f9b7-41b0", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Hand Crossbow",
+            "id": "af2b-65b3-89ec-af8a",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Reload", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Long Bow",
+        "id": "f2d3-3e2a-73b4-5fa4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "624c-0d3a-5665-61f8", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "7143-e6e0-e50f-2150", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 28}],
+        "infoLinks": [
+          {"name": "Two-handed", "id": "6d85-b201-2666-b2de", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Heavy", "id": "d8ce-6c97-f4d1-6c23", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Long Bow",
+            "id": "cc75-f493-19af-091a",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "24", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Heavy, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Short Bow",
+        "id": "debe-0d29-1cc7-e463",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "df72-4c99-c2d0-117b", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "c713-8aba-a3d1-37d6", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 18}],
+        "infoLinks": [{"name": "Two-handed", "id": "64b5-330f-0c00-da05", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Short Bow",
+            "id": "eafc-1362-0265-6a85",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "16", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arbalest",
+        "id": "9628-2cfe-061a-5b07",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "3793-2686-f30a-56bb", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "4e33-da91-19db-81c1", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "constraints": [{"id": "85ce-96b4-62ee-d841", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 96}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "2d6b-991d-0af2-25f7",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Heavy", "id": "9262-5e83-93ee-2dfa", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
+          {"name": "Reload", "id": "bd45-c76b-c8d6-e601", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "c729-53d2-cd19-aa57", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "f52c-a1dc-1ea4-15aa", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Arbalest",
+            "id": "5aff-e7df-981f-c298",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "24", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "3", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Heavy, Rare 0-1, Reload, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brace of Pistols",
+        "id": "9628-54da-cbac-98c3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Two-handed Ranged Weapon", "id": "2122-5c13-ca02-8c27", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 32}],
+        "infoLinks": [
+          {"name": "Misfire", "id": "2431-9ff3-4644-2c6e", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {"name": "Reload", "id": "5b43-2f34-ba4c-3527", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "28ad-f25f-7634-8d86", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Brace of Pistols",
+            "id": "f198-5310-7735-e017",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "2", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fire Bombs",
+        "id": "df79-1958-0d09-529b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "03d2-14b9-793d-b49d", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 37}],
+        "infoLinks": [
+          {"name": "Blast", "id": "c22e-4f28-930d-3b52", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"},
+          {"name": "One-use", "id": "7e43-5d68-8e8b-eab4", "hidden": false, "targetId": "ae46-3e6f-2591-affb", "type": "rule"},
+          {
+            "name": "Rare (0-[x])",
+            "id": "0579-b445-c092-9f8d",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Scare", "id": "a293-330e-de4b-fa57", "hidden": false, "targetId": "2e54-c855-8f0c-e494", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Fire Bombs",
+            "id": "b464-6725-a0ee-431d",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "8", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Blast, One-use, Rare 0-1, Scare", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flamethrower",
+        "id": "53fa-2395-ca7e-d862",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "f932-ac5a-30b0-838e", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "12aa-60d4-948b-ee56", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "constraints": [{"id": "67f1-12d5-7e44-052f", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 88}],
+        "infoLinks": [
+          {"name": "Flame", "id": "4469-5806-ac31-8904", "hidden": false, "targetId": "706f-83cc-37eb-0360", "type": "rule"},
+          {
+            "name": "Rare (0-[x])",
+            "id": "278b-e4aa-a3a8-c9f4",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Reload", "id": "580e-5be5-da74-f577", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Scare", "id": "7187-50ed-13d5-ee98", "hidden": false, "targetId": "2e54-c855-8f0c-e494", "type": "rule"},
+          {"name": "Two-handed", "id": "f51d-0ac0-64d6-962f", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Flamethrower",
+            "id": "e707-0715-ba72-c270",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "Flame", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "d3", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Flame, Rare 0-1, Reload, Scare, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Cannon",
+        "id": "beb4-9514-f76f-ce7c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "2440-4ca2-9ed6-36e3", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "7f1f-1e8d-75c4-abf9", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "constraints": [{"id": "26ee-3437-12cc-eda8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 105}],
+        "infoLinks": [
+          {"name": "Blast", "id": "10f1-7c4b-202e-794d", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"},
+          {"name": "Heavy", "id": "ada4-a974-f8dd-40e2", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
+          {"name": "Misfire", "id": "024c-5235-61b2-006a", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {
+            "name": "Rare (0-[x])",
+            "id": "ebe2-1215-c1d7-6a96",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Reload", "id": "898e-9f5b-12e3-6e91", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Unwieldy", "id": "c843-075a-4b5b-10d5", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"},
+          {"name": "Two-handed", "id": "8000-97ab-862f-dab4", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Ogre Cannon",
+            "id": "0e06-ff7f-2403-fbdb",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "18", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-3", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Blast, Heavy, Misfire, Rare 0-1, Reload, Unwieldy, Two-handed", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Pistol",
+        "id": "77ef-b992-b918-0446",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+        "infoLinks": [
+          {"name": "Misfire", "id": "e365-c6a8-d72b-282f", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {"name": "Reload", "id": "e895-85bd-6811-fea7", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Ogre Pistol",
+            "id": "07f1-ed29-f6b1-8b36",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "16", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire, Reload", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Volley Fire",
+        "id": "ba51-37e5-072b-b886",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "0baa-add9-5d6d-a2bc", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "3690-45fb-1c3d-aa9b", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "constraints": [{"id": "e862-4425-9fe1-d094", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 75}],
+        "infoLinks": [
+          {"name": "Misfire", "id": "5572-836e-0253-830c", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {
+            "name": "Rare (0-[x])",
+            "id": "06ab-5610-2341-d7c9",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Reload", "id": "93e1-304a-cd80-624d", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "9e8b-6d56-1643-8218", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Volley", "id": "d97f-93ec-9bd0-a1c7", "hidden": false, "targetId": "f056-bb94-bf4b-2e4b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Volley Fire",
+            "id": "d0c8-a85b-935f-127a",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "16", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "3", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Misfire, Rare 0-1, Reload, Two-handed, Volley", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Long Rifle",
+        "id": "9f59-cf30-9f30-5763",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "95e3-5977-2aef-f9f2", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "7a53-51d9-ec2b-f347", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
+        "infoLinks": [
+          {"name": "Heavy", "id": "eebb-047c-6b8a-31bd", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
+          {"name": "Misfire", "id": "24ee-b2a1-a399-ee3c", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
+          {"name": "Reload", "id": "59cc-a0b1-e062-ca51", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
+          {"name": "Two-handed", "id": "2240-46d6-12ca-10e1", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "a76d-cab7-ffdb-bd20", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Long Rifle",
+            "id": "2c48-541a-528a-1d73",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "30", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Reload, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bomb-bolt",
+        "id": "ecd9-b841-e456-7f8d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a0ce-e7c7-9b06-b5d1", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {"id": "bc7f-1be4-0d85-3940", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 25}],
+        "modifiers": [
+          {
+            "field": "bc7f-1be4-0d85-3940",
+            "type": "increment",
+            "value": 0,
+            "conditions": [{"childId": "b450-3c34-fa0a-4ea8", "childName": "Crossbow", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bomb-bolt",
+            "id": "ac89-a39d-47c6-ae8e",
+            "description": "This item requires the fighter to be equipped with a Crossbow.\nOnce per battle, when this fighter makes a Ranged Attack action with their crossbow, they can use the bomb-bolt. If they do so, the weapon gains the\nfollowing for the attack:\n- Improve the Rend value by 1.\n- Add 1 to the Damage and Critical Damage values.\n- The Blast weapon trait.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Ogre Armour",
+        "id": "fa8d-51b9-8573-ff8e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+        "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "f4c3-01af-1566-67e5", "scope": "parent", "type": "set", "value": "5"}],
+        "rules": [{"name": "Ogre Armour", "id": "780f-de17-237e-e086", "description": "*Armour value 5+*", "hidden": false}]
+      },
+      {
+        "name": "Guild Banner",
+        "id": "b188-774f-1b7a-7e92",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Held Item", "id": "f3a9-afa4-9af6-ef73", "hidden": false, "primary": false, "targetId": "08f8-e0cc-9de3-6c2e"},
+          {"name": "Melee Weapon/Held Item", "id": "d3f9-b8dc-45e2-12f6", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}
+        ],
+        "constraints": [
+          {
+            "id": "73e6-4a4b-bef3-8f59",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 25}],
+        "rules": [
+          {
+            "name": "Guild Banner",
+            "id": "ff89-e54d-7288-7fe0",
+            "description": "While this fighter is on the battlefield, you can re-roll flee tests.\nYou can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Loyal Companion",
+        "id": "fbc3-9d57-a543-dd94",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "6250-aaa4-9d58-dfa5", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 20}],
+        "infoLinks": [{"name": "Natural Weapon", "id": "1f13-e73c-ef48-ecaf", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Loyal Companion",
+            "id": "2240-5ba1-5361-6641",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "1", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Loyal Companion",
+            "id": "2ce5-810c-e4ef-e17d",
+            "description": "Each time the bearer makes a melee attack, they can make 1 additional attack with the following weapon:\n|Rend|Damage|Critical Damage|Weapon Traits|\n|---|---|---|:--|\n|-1|1|d3|Natural Weapon|",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Torchlight/Lantern",
+        "id": "a478-bc73-7fbf-888a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Held Item", "id": "749a-e363-3c50-9539", "hidden": false, "primary": false, "targetId": "08f8-e0cc-9de3-6c2e"},
+          {"name": "Melee Weapon/Held Item", "id": "8403-623a-cd8c-515c", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 4}],
+        "rules": [
+          {
+            "name": "Torchlight/Lantern",
+            "id": "b31f-f650-883f-138f",
+            "description": "Worsen the Armour value of enemy *Demon* and *Undead* fighters by 1 while they are engaged with any fighters equipped with this item.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Wooden Stakes",
+        "id": "aa93-ff21-a5cb-edf6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "a2ab-2611-2963-eb0e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 5}],
+        "rules": [
+          {
+            "name": "Wooden Stakes",
+            "id": "c4b2-1063-f27d-45df",
+            "description": "Once per battle, while this fighter is engaged in melee with a *Undead* or *Demon* fighter that is bloodied, it can use the following bonus action:\n**Drive the Stake [Bonus Action]**: Pick an enemy *Demon* or *Undead* fighter this fighter is engaged in melee with, that is bloodied, to be the target. Roll a dice. On a 2+ the target is immediately taken down. In the aftermath of battle, this fighter earns 10 bonus experience.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Arcane Missile",
+        "id": "8465-4817-9bd3-3ee3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "f9ff-059e-f46a-bc25", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
+        "profiles": [
+          {
+            "name": "Arcane Missile",
+            "id": "fe7a-03c2-7c13-a645",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "attributes": [{"name": "Normal Effect", "$text": "\n", "typeId": "1388-9c1a-b3fa-361f"}, {"name": "Critical Effect", "$text": "\n", "typeId": "4a49-7ca7-f100-07a6"}],
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick the closest visible enemy fighter within 15\" of the caster to be the target. That fighter is hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-1|d3|",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Add 1 to the Damage value.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flaming Weapon",
+        "id": "c07f-b387-a394-8c76",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Enchant Spell", "id": "9e25-cbe1-1e9d-95ab", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
+        "profiles": [
+          {
+            "name": "Flaming Weapon",
+            "id": "cc97-ac26-669a-99f3",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible friendly fighter within 6\" of the caster to be the target, then pick 1 of the target’s melee weapons to be *ignited* until the end of the round. While a weapon is *ignited*:\n- It gains the *Arcane* Weapon Trait.\n- Improve it’s Rend characteristic by 1.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Increase the range of the spell from 6\" to 12\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eldritch Barrier",
+        "id": "8c8b-b2ae-1a81-b5ba",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Cantrip Spell", "id": "261e-16e8-77bc-8515", "hidden": false, "primary": false, "targetId": "dc87-ec46-e9ec-57d9"}],
+        "profiles": [
+          {
+            "name": "Eldritch Barrier",
+            "id": "7954-ef42-2b9d-178f",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick 2 visible points on a platform or the battlefield floor, each within 9\" of the caster, 6\" of each other and the same elevation. A barrier is drawn between these two points.\nThe barrier remains in play until the end of the round or the caster is taken down. While the barrier is in play:\n- Subtract 1 from attack rolls for ranged attacks made that cross the barrier.\n- Fighters that are activated in the barrier or move across the barrier suffer d3 damage.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "The 2 points can be set up within 9\" of each other instead of 6\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Silence",
+        "id": "efb3-29f3-b361-932f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Hex Spell", "id": "e282-a147-8272-b760", "hidden": false, "primary": false, "targetId": "c357-e647-ba26-1723"}],
+        "profiles": [
+          {
+            "name": "Silence",
+            "id": "0fa2-2bc4-68b9-9b03",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Hex Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible enemy *Wizard* or *Priest* within 12\" to be the target. Until the end of the round, that fighter cannot make arcane actions.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": " Increase the range from 12\" to 18\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Torrent of Fire",
+        "id": "edc8-f407-e0b2-3960",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "449c-5c82-9795-cede", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
+        "profiles": [
+          {
+            "name": "Torrent of Fire",
+            "id": "716d-dae2-a71d-4884",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Place the flame template. Each fighter in its area is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-1|d3+1|",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "The Rend value is -2.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Umbral Vortex",
+        "id": "3ca8-55e1-6708-d83b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "f178-1890-a8c1-2b62", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
+        "profiles": [
+          {
+            "name": "Umbral Vortex",
+            "id": "8c97-d647-2b9e-dec2",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "13", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters d6\".\nEach fighter in its area is hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-1|d3+1|\n\nAfter the attacks have been resolved, the blast template remains where it is. It represents a vortex that remains\nin play until the end of the round.\nLine of sight cannot be drawn across the vortex for fighters on the same elevation. In addition, fighters who start their activation within the vortex, or move across it, are hit with the same attack.\nAt the end of the round, remove the vortex.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "It does not scatter.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Noble",
+        "id": "880f-776b-65f5-2023",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "8db4-85cc-faf0-0023", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Main List", "id": "d56d-6fc5-3d7a-d877", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+          {"name": "Champion List", "id": "4752-c585-742f-f5a8", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
+          {"name": "Mercenary", "id": "e129-8be2-6910-7663", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Human", "id": "3c76-fec3-5e56-c66d", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Aristocrat", "id": "d1e4-ceec-4eac-e498", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "521f-03e0-3ea2-d2a4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "1936-bdec-2f0b-4a9a",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "06e2-4cad-3e8c-71b8", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Noble",
+            "id": "48a5-1464-ad87-ff15",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "4", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Trained Duellist",
+            "id": "e003-4c72-9e5a-731d",
+            "description": "When this fighter is recruited, they already have the Duellist skill. In addition, pick 1 skill for them.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Healing Essence",
+        "id": "3483-3f3e-07ce-1d11",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Healing Spell", "id": "d83b-843b-a8df-7c87", "hidden": false, "primary": false, "targetId": "3fec-3970-09cb-4412"}],
+        "profiles": [
+          {
+            "name": "Healing Essence",
+            "id": "f9b2-cfb2-1d14-a496",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Healing Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "6", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible friendly fighter within 15\" of the caster to be the target. Heal d3 life points to the target.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Heal 3 life points instead of d3.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bless Thy Blade",
+        "id": "af32-83f2-a234-3c82",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Enchant Spell", "id": "ab70-bfe3-32c0-9e9d", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
+        "profiles": [
+          {
+            "name": "Bless Thy Blade",
+            "id": "0ea9-ebc0-d16a-3514",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible friendly fighter within 9\" of the caster to have *blessed blades* until the end of the round. While a fighter has *blessed blades*, add 1 to hit rolls for melee attacks made by them.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "If critically cast, up to 2 friendly fighters can be picked instead of 1.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Godspeed",
+        "id": "30a7-d644-dee1-6248",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Aura Spell", "id": "98f9-55d5-6e73-9341", "hidden": false, "primary": false, "targetId": "7360-70b3-4075-6143"}],
+        "profiles": [
+          {
+            "name": "Godspeed",
+            "id": "ab99-2d85-c59c-c4ec",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "6", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Until the end of the round, the caster has a 9\" aura of *godspeed*. Friendly fighters who begin a move while they are within the aura add 1\" to the maximum distance they can move.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Increase the range of the aura from 9\" to 12\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Will of the Saint",
+        "id": "9177-c123-d227-97e3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Enchant Spell", "id": "d5f5-fb14-22bf-095c", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
+        "profiles": [
+          {
+            "name": "Will of the Saint",
+            "id": "2c28-4a8f-9933-618f",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible friendly fighter within 15\" of the caster. That fighter has the *Will of the Saints* until the end of the round. While a fighter has the *Will of the Saints*, improve their Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "If critically cast, up to 2 friendly fighters can be picked instead of 1.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Holy Strength",
+        "id": "3983-5c12-97b4-1e24",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Aura Spell", "id": "f1b7-e536-8c70-41f2", "hidden": false, "primary": false, "targetId": "7360-70b3-4075-6143"}],
+        "profiles": [
+          {
+            "name": "Holy Strength",
+            "id": "7e68-9eb0-ff57-60b3",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Until the end of the round, the caster has a 6\" aura of *holy strength*. Add 1 to the Critical Damage values of melee weapons used by friendly fighters while they are within the aura.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Increase the range of the aura\nfrom 6\" to 9\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Consecrated Ground",
+        "id": "06c5-225c-9456-a87e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Aura Spell", "id": "50b3-03c6-ec88-75e7", "hidden": false, "primary": false, "targetId": "7360-70b3-4075-6143"}],
+        "profiles": [
+          {
+            "name": "Consecrated Ground",
+            "id": "01ba-c97e-d827-9146",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible point on the battlefield floor within 12\" of the caster. While a friendly fighter is within 3\" of that point, their armour value is improved by 1.\nThe spell remains in play. While this spell is in play, the caster must pass a Willpower test at the start of their activation, else the spell ends. If they attempt to cast this spell again while it is still in play, the first instance of it ends (even if they fail to cast it again).\nIf the caster is taken down, the spell ends.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {
+                "name": "Critical Effect",
+                "$text": "While the spell is in play, friendly fighters are affected while they are within 6\" of that point, instead of 3\".",
+                "typeId": "7fba-d9e0-5873-b1bc"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Warhammer",
+        "id": "d907-9c1b-9e77-706a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Melee Weapon", "id": "435f-3491-1906-9e65", "hidden": false, "primary": false, "targetId": "439f-4735-b903-3387"},
+          {"name": "Melee Weapon/Held Item", "id": "9c27-3756-d5dc-f166", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"},
+          {"name": "Two-handed", "id": "bdd8-fd3b-fa34-341e", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 38}],
+        "infoLinks": [
+          {"name": "Bludgeon", "id": "6687-39c2-f322-6122", "hidden": false, "targetId": "e735-0c28-3ed6-3845", "type": "rule"},
+          {"name": "Two-handed", "id": "0137-65d0-1215-fc20", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Unwieldy", "id": "9466-a796-a4b0-b928", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Warhammer",
+            "id": "59cf-df1f-415a-60c0",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Bludgeon, Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "One-handed Melee Weapons and Held Items",
+        "id": "e9e2-eef5-1e92-f9fb",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Axe",
+            "id": "fdb0-1f85-a10a-6ff7",
+            "hidden": true,
+            "import": true,
+            "targetId": "a9e8-d8ce-5473-38bd",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "277b-758f-0c1c-d919", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Club/Mace/Hammer",
+            "id": "d6b0-7bee-c932-dea2",
+            "hidden": true,
+            "import": true,
+            "targetId": "9715-66bd-8690-4ca7",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Main List", "id": "96aa-6f22-f97a-bfa7", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+              {"name": "Cleric List", "id": "b240-8be4-bc8e-a4f5", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"}
+            ]
+          },
+          {
+            "name": "Dagger",
+            "id": "5198-bda9-3619-8007",
+            "hidden": true,
+            "import": true,
+            "targetId": "8c84-835f-e961-5eb1",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "0c9e-2a8e-16e0-e3a6", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Flail",
+            "id": "8de2-ad71-fa3a-340a",
+            "hidden": true,
+            "import": true,
+            "targetId": "401f-d006-7952-03af",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "819b-8ed9-c54a-46d0", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Sword",
+            "id": "72f6-ce00-c26c-40da",
+            "hidden": true,
+            "import": true,
+            "targetId": "8f51-1154-e31d-ca39",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Main List", "id": "531a-9a39-ca25-1598", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+              {"name": "Wizard List", "id": "9e03-bd63-0bd7-fe02", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"}
+            ]
+          },
+          {
+            "name": "Shield",
+            "id": "921e-0618-31bf-d386",
+            "hidden": true,
+            "import": true,
+            "targetId": "826b-a740-1462-e197",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Main List", "id": "117c-69b9-eb82-cefc", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+              {"name": "Ogre List", "id": "36bf-67f3-4939-fc94", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"},
+              {"name": "Cleric List", "id": "3dc0-a721-9749-7238", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"}
+            ]
+          },
+          {
+            "name": "Guild Banner",
+            "id": "ddf5-90c8-6b16-85fb",
+            "hidden": true,
+            "import": true,
+            "targetId": "b188-774f-1b7a-7e92",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "cabf-63b7-e8d5-dc95", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}]
+          },
+          {
+            "name": "Ogre Blade",
+            "id": "55cd-db90-d6b2-0389",
+            "hidden": true,
+            "import": true,
+            "targetId": "6e56-f92f-6fec-9efc",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "c01b-d167-416e-108f", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          },
+          {
+            "name": "Ogre Mace",
+            "id": "8d67-c6a0-8242-fb91",
+            "hidden": true,
+            "import": true,
+            "targetId": "57cb-8319-cb3e-1b22",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "4467-bd14-3335-c0f7", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          },
+          {
+            "name": "Arcane Staff",
+            "id": "90a0-d51b-ebf8-3bd7",
+            "hidden": true,
+            "import": true,
+            "targetId": "b011-e9e0-70a4-759c",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Cleric List", "id": "ffa5-dc56-c222-db69", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"},
+              {"name": "Wizard List", "id": "71aa-07f9-b004-e804", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"}
+            ]
+          },
+          {
+            "name": "Torchlight/Lantern",
+            "id": "4445-dca3-ada5-7774",
+            "hidden": true,
+            "import": true,
+            "targetId": "a478-bc73-7fbf-888a",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Witch Hunter List", "id": "d3a8-86b6-566c-346e", "hidden": false, "primary": false, "targetId": "04ce-3300-ed38-c04b"}]
+          },
+          {
+            "name": "Ensorcelled Weapon",
+            "id": "d703-100c-8b87-a422",
+            "hidden": true,
+            "import": true,
+            "targetId": "6f39-0474-ee95-8962",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Wizard List", "id": "2169-9985-9dd8-84d6", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"}]
+          },
+          {"name": "Filters", "id": "7ff9-16f7-bc0e-bd90", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Old Dogs Skills",
+        "id": "cf0e-97d0-a76f-24e7",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Rallying Cry",
+            "id": "80c5-f5b7-efdf-9462",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Rallying Cry",
+                "id": "c6bf-d0bf-ca03-a942",
+                "description": "Once per battle, this fighter can use the following bonus action:\n**Rallying Cry [Bonus Action]**: This fighter heals 1 damage. In addition, at the end of the round, if this fighter is still on the battlefield, the commanding player does not need to take a Flee test for their warband.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Point Blank Shot",
+            "id": "1f4f-f45c-d43d-c59b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Point Blank Shot",
+                "id": "6731-9219-1ba6-c3d4",
+                "description": "While this fighter is engaged in melee, they can attempt to make Ranged Attack action. To do so, they take an Initiative test. If passed they can make a Ranged Attack action but cannot use a *Heavy* weapon. The Ranged Attack actionmust target a fighter they are engaged in melee with. If failed, the action immediately ends.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Crackshot",
+            "id": "dc04-a5a6-dc92-7d66",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Crackshot",
+                "id": "aea1-db8c-75bb-219a",
+                "description": "When making a ranged attack action, this fighter scores a critical hit on a natural roll of a 5 or a 6.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Feint",
+            "id": "537c-ff44-444b-12b2",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Feint",
+                "id": "4a9e-fbb7-3721-a372",
+                "description": "Once per melee attack action, after an enemy has successfully parried one of this fighter’s hits, this fighter can attempt a feint. To do so, roll a dice. If the roll equals or exceeds the parry roll, the hit is not parried and it becomes a critical hit.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Explorer’s Instincts",
+            "id": "c695-2aaa-c46b-2834",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Explorer’s Instincts",
+                "id": "07e4-6b27-b79f-60b0",
+                "description": "If this fighter is picked to lead a search party, you can re-roll one of the dice in the exploration roll (either the ‘tens’ or the ‘units’).",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Right On Time",
+            "id": "fa2d-ce43-cd5b-6cc3",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Right On Time",
+                "id": "3e71-a143-76a7-e8e6",
+                "description": "You can re-roll reinforcement rolls made for a battle group that includes this fighter.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Two-handed Melee Weapons",
+        "id": "ae92-eb93-eb76-d48e",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Halberd",
+            "id": "2304-64ef-f2db-9af7",
+            "hidden": true,
+            "import": true,
+            "targetId": "bc5f-c68b-77ff-69c4",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "e6b4-9e39-34b7-57ab", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Heavy Axe",
+            "id": "b9cb-7a89-8a44-2a56",
+            "hidden": true,
+            "import": true,
+            "targetId": "4902-330b-b2c9-c777",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "4e8e-6a51-da59-1a1a", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Ogre Great Weapon",
+            "id": "c460-b2b4-9a47-7634",
+            "hidden": true,
+            "import": true,
+            "targetId": "6872-68be-77ca-3728",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "58fc-df35-4cce-b72f", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          },
+          {
+            "name": "Spear",
+            "id": "2f19-b3ba-ea7a-f169",
+            "hidden": true,
+            "import": true,
+            "targetId": "c61f-55b8-59d8-24bd",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "f062-0f34-1660-e944", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Warhammer",
+            "id": "8770-b6ae-aabe-4ce0",
+            "hidden": true,
+            "import": true,
+            "targetId": "d907-9c1b-9e77-706a",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "427a-0484-17ec-4109", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Zweihander",
+            "id": "eb87-c944-5a6d-5e1b",
+            "hidden": true,
+            "import": true,
+            "targetId": "e8f4-c949-5622-ddf7",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "ebed-2ed1-0ee8-bb5b", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {"name": "Filters", "id": "eaaa-99ff-a9c3-d8fd", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Non-held Items",
+        "id": "229f-2b80-b9f8-0499",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Grappling Hook",
+            "id": "b4aa-39f0-59b9-929c",
+            "hidden": true,
+            "import": true,
+            "targetId": "c436-71e0-c1d8-1788",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "e619-5180-4054-0fa6", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Bomb-bolt",
+            "id": "bc07-d2e8-890d-4de4",
+            "hidden": true,
+            "import": true,
+            "targetId": "ecd9-b841-e456-7f8d",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Munitions List", "id": "84d0-f5d9-437f-6a9c", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"}]
+          },
+          {
+            "name": "Loyal Companion",
+            "id": "3958-4a02-878a-79d2",
+            "hidden": true,
+            "import": true,
+            "targetId": "fbc3-9d57-a543-dd94",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "c020-908f-0ad6-5f77", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}]
+          },
+          {
+            "name": "Grimoire",
+            "id": "507d-3998-970a-96b5",
+            "hidden": true,
+            "import": true,
+            "targetId": "9b52-9a77-ac04-3645",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Cleric List", "id": "fc26-e9db-606b-2b59", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"},
+              {"name": "Wizard List", "id": "a4c3-e07a-7e20-bd8e", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"}
+            ]
+          },
+          {
+            "name": "Wooden Stakes",
+            "id": "d9e3-6134-291b-a6f6",
+            "hidden": true,
+            "import": true,
+            "targetId": "aa93-ff21-a5cb-edf6",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Witch Hunter List", "id": "a108-ee13-2525-10e0", "hidden": false, "primary": false, "targetId": "04ce-3300-ed38-c04b"},
+              {"name": "Cleric List", "id": "8e5d-01f5-abce-bd8b", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"}
+            ]
+          },
+          {"name": "Filters", "id": "dc20-7f01-ed4a-6793", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Armour",
+        "id": "b96f-4150-d589-bd55",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Cuirass",
+            "id": "9f86-5ddc-0140-db72",
+            "hidden": true,
+            "import": true,
+            "targetId": "64a0-2594-b94e-fa0d",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Main List", "id": "0963-f74c-b9ee-1b39", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
+              {"name": "Cleric List", "id": "487a-f709-b54b-02f4", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"}
+            ]
+          },
+          {
+            "name": "Full-plate",
+            "id": "ec85-a63a-894a-7722",
+            "hidden": true,
+            "import": true,
+            "targetId": "9dd9-261c-b23b-9cbb",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Cleric List", "id": "93d3-ec3f-585f-3183", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"},
+              {"name": "Champion List", "id": "49ac-6743-6560-9643", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}
+            ]
+          },
+          {
+            "name": "Warded Robes",
+            "id": "021d-e972-61c6-0f41",
+            "hidden": true,
+            "import": true,
+            "targetId": "e3fd-323c-4a22-3dfc",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Cleric List", "id": "0051-28ac-4a2a-f628", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"},
+              {"name": "Wizard List", "id": "3e9d-01fb-1a20-e6bc", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"}
+            ]
+          },
+          {
+            "name": "Ogre Armour",
+            "id": "cce2-5cee-51a1-0bd1",
+            "hidden": true,
+            "import": true,
+            "targetId": "fa8d-51b9-8573-ff8e",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "b5ff-34e3-ad9a-be57", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          },
+          {"name": "Filters", "id": "6403-fd07-9748-d021", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Ranged Weapon",
+        "id": "2686-524a-0ae2-0bf2",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Blackpowder Pistol",
+            "id": "9f6a-0d3e-0e42-0e5e",
+            "hidden": true,
+            "import": true,
+            "targetId": "525a-a039-b728-b205",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "c820-a3f5-2a53-b7b4", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Blackpowder Rifle",
+            "id": "0df3-b54f-53c8-1602",
+            "hidden": true,
+            "import": true,
+            "targetId": "1ec4-c9a3-232a-f482",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "fd41-ee67-05da-1fd0", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Blunderbuss",
+            "id": "9047-5777-3109-f2fa",
+            "hidden": true,
+            "import": true,
+            "targetId": "1293-90a1-b0b7-a5b4",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "4459-f69c-99bc-a32d", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Crossbow",
+            "id": "2726-e3ad-a4d1-ce56",
+            "hidden": true,
+            "import": true,
+            "targetId": "b450-3c34-fa0a-4ea8",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "d126-b380-a7d8-94e8", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Hand Crossbow",
+            "id": "88ed-0435-946a-3dd6",
+            "hidden": true,
+            "import": true,
+            "targetId": "5e31-7fd7-b52f-97c0",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "086a-bd0b-fa2a-0c95", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Long Bow",
+            "id": "a092-5d7d-04bc-69a7",
+            "hidden": true,
+            "import": true,
+            "targetId": "f2d3-3e2a-73b4-5fa4",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "3b84-f72e-c6d4-1951", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Short Bow",
+            "id": "c2f1-368d-ea12-282c",
+            "hidden": true,
+            "import": true,
+            "targetId": "debe-0d29-1cc7-e463",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "b458-33c2-f3c6-aa79", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"}]
+          },
+          {
+            "name": "Arbalest",
+            "id": "0a0c-8647-f95b-de20",
+            "hidden": true,
+            "import": true,
+            "targetId": "9628-2cfe-061a-5b07",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Munitions List", "id": "3f17-1bd0-773e-4228", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"},
+              {"name": "Ogre List", "id": "2d7d-b1ef-aef2-dfd2", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}
+            ]
+          },
+          {
+            "name": "Flamethrower",
+            "id": "51ef-cc0e-1504-3cb2",
+            "hidden": true,
+            "import": true,
+            "targetId": "53fa-2395-ca7e-d862",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Munitions List", "id": "c346-9659-7663-1b72", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"}]
+          },
+          {
+            "name": "Fire Bombs",
+            "id": "e97a-c586-6e1f-f31d",
+            "hidden": true,
+            "import": true,
+            "targetId": "df79-1958-0d09-529b",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Munitions List", "id": "4316-8d78-f489-37d8", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"}]
+          },
+          {
+            "name": "Volley Fire",
+            "id": "c84b-dffb-3522-4bcf",
+            "hidden": true,
+            "import": true,
+            "targetId": "ba51-37e5-072b-b886",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Munitions List", "id": "e1db-ae5f-39a1-e6e6", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"}]
+          },
+          {
+            "name": "Brace of Pistols",
+            "id": "42f4-f7a9-4bf4-c19d",
+            "hidden": true,
+            "import": true,
+            "targetId": "9628-54da-cbac-98c3",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "2da7-bb06-8e51-0172", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}]
+          },
+          {
+            "name": "Long Rifle",
+            "id": "8f53-b7cc-a2ec-c452",
+            "hidden": true,
+            "import": true,
+            "targetId": "9f59-cf30-9f30-5763",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "4528-ffc4-def0-9574", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}]
+          },
+          {
+            "name": "Repeater Pistol",
+            "id": "3373-d2d8-eb7e-dc15",
+            "hidden": true,
+            "import": true,
+            "targetId": "de41-2a99-b048-eac4",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "b269-1f09-50de-2fc7", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}]
+          },
+          {
+            "name": "Ogre Cannon",
+            "id": "a965-02df-067a-d14a",
+            "hidden": true,
+            "import": true,
+            "targetId": "beb4-9514-f76f-ce7c",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "b05f-8088-56ed-0b11", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          },
+          {
+            "name": "Ogre Pistol",
+            "id": "636b-7409-f239-db78",
+            "hidden": true,
+            "import": true,
+            "targetId": "77ef-b992-b918-0446",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "9f8e-a1ef-82fe-21c7", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          },
+          {"name": "Filters", "id": "b5d7-c7a5-4f80-36ee", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"}
+        ],
+        "modifiers": [
+          {
+            "affects": "self.entries.0d9b-60d9-ad23-757a",
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "08f8-e0cc-9de3-6c2e",
+                "childName": "Held Item",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "root-entry",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wargear",
+        "id": "1936-bdec-2f0b-4a9a",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Armour",
+            "id": "fe04-0021-2e41-b1ca",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "b96f-4150-d589-bd55",
+            "type": "selectionEntryGroup",
+            "constraints": [{"id": "4159-d462-e145-b256", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}]
+          },
+          {
+            "name": "Non-held Items",
+            "id": "f1e0-0614-582e-0a67",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "229f-2b80-b9f8-0499",
+            "type": "selectionEntryGroup",
+            "constraints": [
+              {"id": "94fe-5d42-03ea-1b05", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 2},
+              {"id": "292a-d39e-8572-5a96", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "id": "fdb2-e9c0-cb54-6286",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "2686-524a-0ae2-0bf2",
+            "type": "selectionEntryGroup",
+            "constraints": [{"id": "528b-ffcc-9e55-549c", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "1st Hand",
+            "id": "0f14-acba-fbc7-66d3",
+            "hidden": false,
+            "sortIndex": 1,
+            "constraints": [{"id": "3d52-acb1-32d4-e969", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "entryLinks": [
+              {
+                "name": "One-handed Melee Weapons and Held Items",
+                "id": "505f-57c3-b62c-860d",
+                "hidden": false,
+                "import": true,
+                "targetId": "e9e2-eef5-1e92-f9fb",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Two-handed Melee Weapons",
+                "id": "c55a-36d6-8de6-9c91",
+                "hidden": false,
+                "import": true,
+                "targetId": "ae92-eb93-eb76-d48e",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "2nd Hand",
+            "id": "e5c9-e2d5-f2a6-f050",
+            "hidden": false,
+            "sortIndex": 2,
+            "constraints": [{"id": "94ff-1350-bff8-4446", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "entryLinks": [
+              {
+                "name": "One-handed Melee Weapons and Held Items",
+                "id": "eeb4-28b2-b2d1-8638",
+                "flatten": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "e9e2-eef5-1e92-f9fb",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Filters",
+        "id": "b9e5-23e0-951f-69c9",
+        "flatten": true,
+        "hidden": false,
+        "modifiers": [
+          {
+            "affects": "entries.981a-4b36-e453-513e",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "981a-4b36-e453-513e", "childName": "Main List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "affects": "entries.368c-4513-dd81-71c4",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "368c-4513-dd81-71c4", "childName": "Ogre List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "affects": "entries.3e88-5bc3-8d88-64ba",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "3e88-5bc3-8d88-64ba", "childName": "Wizard List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "affects": "entries.04ce-3300-ed38-c04b",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "04ce-3300-ed38-c04b",
+                "childName": "Witch Hunter List",
+                "field": "selections",
+                "scope": "root-entry",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "affects": "entries.362d-9d5f-822e-e655",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {"childId": "362d-9d5f-822e-e655", "childName": "Champion List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          },
+          {
+            "affects": "entries.2b03-b506-90a3-bf0c",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "2b03-b506-90a3-bf0c", "childName": "Cleric List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "affects": "entries.8b6c-c7ac-efc0-cbca",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "8b6c-c7ac-efc0-cbca",
+                "childName": "Munitions List",
+                "field": "selections",
+                "scope": "root-entry",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldier's Cunning",
+        "id": "d346-3f03-f5da-62f1",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Blackpowder Specialist",
+            "id": "3e62-7437-655c-4a01",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [{"name": "Blackpowder Specialist", "id": "8384-2fc1-ce85-4c7d", "description": "You can re-roll misfire rolls made for this fighter.", "hidden": false}]
+          },
+          {
+            "name": "Shield Expert",
+            "id": "4781-6d01-5057-2726",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "affects": "profiles.Fighter Scroll",
+                "field": "f4c3-01af-1566-67e5",
+                "scope": "root-entry",
+                "type": "decrement",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "826b-a740-1462-e197",
+                    "childName": "Shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "root-entry",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Shield Expert",
+                "id": "8086-f89f-f361-4825",
+                "description": "If this fighter is equipped with a shield, improve their Armour value by an additional 1 (to a maximum of 2+), while they are the defending fighter and the attacking fighter made a Charge move this activation.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Marksman",
+            "id": "9935-88c5-96f6-5fab",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [{"affects": "entries.profiles.Ranged Weapon", "field": "f227-9a6c-ccc3-cd45", "position": "", "scope": "root-entry", "type": "increment", "value": 3}],
+            "rules": [
+              {
+                "name": "Marksman",
+                "id": "cead-d46b-c59b-5314",
+                "description": "Add 3\" to the Range value of this fighter's ranged weapons (excluding those with the *Flame* weapon trait).",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Fight Till the End",
+            "id": "f24e-af59-57f3-6cb2",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {"affects": "entries.profiles.Melee Weapon", "field": "f457-d95e-2518-ddad", "position": "", "scope": "root-entry", "type": "increment", "value": 1},
+              {"affects": "entries.profiles.Melee Weapon", "field": "0b2a-1a62-9dad-e51f", "join": "+", "position": 2, "scope": "root-entry", "type": "append", "value": 1}
+            ],
+            "rules": [
+              {
+                "name": "Fight Till the End",
+                "id": "c1c3-d011-6e71-ead7",
+                "description": "While this fighter is bloodied, add 1 to the Damage and Critical Damage value of their melee weapons.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Blessed by the Saints",
+            "id": "cfc5-430b-289c-c80e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Blessed by the Saints",
+                "id": "8d61-844a-1908-c728",
+                "description": "Each round, the first time this fighter is hit by a attack that is a critical hit, the hit is not a critical hit.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Stand Ground",
+            "id": "1423-9a5e-2011-de05",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Stand Ground",
+                "id": "97e6-dde4-eb4b-98f9",
+                "description": "Once per battle, at the start of a melee attack action in which this fighter is the defending fighter and the attacking fighter charged in the same activation, this fighter can attempt to *stand their ground*. If they do so, their melee weapons gain the *Brace* and *Bludgeon* weapon traits until the end of the activation",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lore of Sanctioned Magic",
+        "id": "ae08-1be4-ef78-9045",
+        "hidden": false,
+        "constraints": [{"id": "757f-94c8-b722-8ba0", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {
+            "name": "Arcane Missile",
+            "id": "5de6-ffe1-bfcf-48d7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "8465-4817-9bd3-3ee3",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Flaming Weapon",
+            "id": "4a53-294b-6b48-0213",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "c07f-b387-a394-8c76",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Eldritch Barrier",
+            "id": "809f-5539-9b56-1557",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "8c8b-b2ae-1a81-b5ba",
+            "type": "selectionEntry"
+          },
+          {"name": "Silence", "id": "72d4-d8ab-abab-0c61", "hidden": false, "import": true, "sortIndex": 4, "targetId": "efb3-29f3-b361-932f", "type": "selectionEntry"},
+          {
+            "name": "Torrent of Fire",
+            "id": "afd9-97b8-8417-1c7f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "edc8-f407-e0b2-3960",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Umbral Vortex",
+            "id": "57dc-8b3d-7d71-e993",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 6,
+            "targetId": "3ca8-55e1-6708-d83b",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Skills",
+        "id": "16f0-5346-75ed-1ef8",
+        "hidden": false,
+        "constraints": [{"id": "1c5d-f52b-bc40-e638", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {
+            "name": "Old Dogs Skills",
+            "id": "50ae-df1b-b3fc-ea18",
+            "hidden": true,
+            "import": true,
+            "targetId": "cf0e-97d0-a76f-24e7",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "f44d-d057-3822-ad30", "childName": "Champion", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "69a7-1a88-d493-5847", "childName": "Leader", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ],
+                    "conditions": [{"childId": "2f43-29de-09c4-ec4c", "childName": "Mercenary", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Veteran Skills",
+            "id": "d4a8-10c1-14f4-aa8b",
+            "hidden": false,
+            "import": true,
+            "targetId": "d23f-4752-4e2a-bfc6",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "affects": "2cc0-f10c-411d-8bb8",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "880f-776b-65f5-2023", "childName": "Noble", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Duellist",
+                "id": "781f-53e6-12cc-ce76",
+                "defaultAmount": "1",
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "7072-73c9-db4f-23da", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "infoLinks": [{"name": "Duellist", "id": "732b-95f8-918b-21b4", "hidden": false, "targetId": "573f-5b00-2489-dbcd", "type": "rule"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [{"childId": "880f-776b-65f5-2023", "childName": "Noble", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Soldier's Cunning",
+            "id": "b0b5-90a0-8f31-1993",
+            "hidden": true,
+            "import": true,
+            "targetId": "d346-3f03-f5da-62f1",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [{"childId": "2f43-29de-09c4-ec4c", "childName": "Mercenary", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lore of the Saints",
+        "id": "2684-c7ea-01bc-7c40",
+        "hidden": false,
+        "constraints": [{"id": "dcd5-a247-09e3-ea22", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {
+            "name": "Healing Essence",
+            "id": "b0da-8bc6-a896-341f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "3483-3f3e-07ce-1d11",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Bless Thy Blade",
+            "id": "cc07-61ef-d450-5481",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "af32-83f2-a234-3c82",
+            "type": "selectionEntry"
+          },
+          {"name": "Godspeed", "id": "7108-70d3-3da3-009c", "hidden": false, "import": true, "sortIndex": 3, "targetId": "30a7-d644-dee1-6248", "type": "selectionEntry"},
+          {
+            "name": "Will of the Saint",
+            "id": "0c74-5bc7-9dcf-f62a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "9177-c123-d227-97e3",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Holy Strength",
+            "id": "c1d3-45a1-a4f1-acc9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "3983-5c12-97b4-1e24",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Consecrated Ground",
+            "id": "fd12-4b02-960b-6db7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 6,
+            "targetId": "06c5-225c-9456-a87e",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}

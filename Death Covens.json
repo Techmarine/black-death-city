@@ -1,0 +1,2684 @@
+{
+  "catalogue": {
+    "name": "Death Covens",
+    "id": "abfa-f576-c0ce-7c82",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-b70a-fb57-3e2c-674f",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "categoryEntries": [
+      {"name": "Beast (Unlimited)", "id": "6f2c-d90b-1c22-099f", "hidden": false},
+      {"name": "Main List", "id": "315a-7be5-5bae-cdd3", "hidden": true},
+      {"name": "Champion List", "id": "e733-1dfc-cfd7-5da9", "hidden": true},
+      {"name": "Zombie Ogre List", "id": "e6dd-9d37-d85a-1e82", "hidden": true},
+      {"name": "Practitioner List", "id": "e85c-79be-6c14-d7c1", "hidden": true},
+      {"name": "Undead", "id": "0d93-3e97-1ca0-2472", "hidden": false},
+      {"name": "Vampyre", "id": "cde1-d8dc-ad42-6cdc", "hidden": false},
+      {"name": "Skeleton", "id": "3dcb-85f4-011d-ea82", "hidden": false},
+      {"name": "Werwulf", "id": "77bc-dafb-f489-71cb", "hidden": false},
+      {"name": "Thrall", "id": "5a65-7525-a4cd-d632", "hidden": false},
+      {"name": "Zombie", "id": "3f5a-29ec-db98-416e", "hidden": false},
+      {"name": "Gargoyle", "id": "aea2-4319-bbba-ff40", "hidden": false},
+      {"name": "Bat", "id": "4ac4-0b30-ee22-b7bb", "hidden": false}
+    ],
+    "forceEntries": [
+      {
+        "name": "Warband Roster",
+        "id": "97f5-0b3a-ae0c-ac4d",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Origin",
+            "id": "29e2-4f7a-6b30-974c",
+            "hidden": false,
+            "targetId": "a0ac-c18a-151b-4dfa",
+            "constraints": [
+              {"id": "4cc6-6642-f3d2-bf86-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+              {"id": "4cc6-6642-f3d2-bf86-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {"name": "Stronghold", "id": "55f5-0f0b-664a-d511", "hidden": false, "targetId": "bba8-3330-6b7c-e324"},
+          {
+            "name": "Leader",
+            "id": "1791-806f-d7db-f58f",
+            "hidden": false,
+            "targetId": "69a7-1a88-d493-5847",
+            "constraints": [
+              {"id": "e460-6211-288b-dcd7-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+              {"id": "e460-6211-288b-dcd7-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Champion",
+            "id": "75ea-9d4b-491b-1902",
+            "hidden": false,
+            "targetId": "f44d-d057-3822-ad30",
+            "constraints": [{"id": "617e-7a19-698e-c8dc", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
+          },
+          {
+            "name": "Henchman",
+            "id": "912d-5aa0-6ed4-2f3c",
+            "hidden": false,
+            "targetId": "2594-e088-657e-98c8",
+            "constraints": [{"id": "0c4d-f58e-e144-0af2", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 5}]
+          },
+          {
+            "name": "Brute",
+            "id": "fb43-5fae-9660-48f7",
+            "hidden": false,
+            "targetId": "eea3-65a8-e483-ad71",
+            "constraints": [{"id": "db58-deee-ae69-1cda", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
+          },
+          {
+            "name": "Beast",
+            "id": "f5eb-cdcc-fb42-2a41",
+            "hidden": false,
+            "targetId": "054d-3052-d990-09f1",
+            "constraints": [{"id": "8a43-77c2-f45c-9667", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
+          },
+          {
+            "name": "Beast (Unlimited)",
+            "id": "57f2-dfed-0165-beed",
+            "hidden": true,
+            "targetId": "6f2c-d90b-1c22-099f",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "85b9-430c-75c9-ef8a",
+                    "childName": "The Hunt Descends",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Aristocrats of Blood",
+        "id": "3d8b-d427-6861-aab2",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "8887-9ed9-5952-443e", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Aristocrats of Blood",
+            "id": "aa51-df16-f307-5b0d",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must recruit a **Bloodcursed Noble** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {
+                "name": "Special Rules",
+                "$text": "- You begin the campaign with the **Opulent Manor** stronghold.\n- Your warband can include 0-3 Bloodcursed Knights.",
+                "typeId": "c519-23f5-a727-b90e"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Hunt Descends",
+        "id": "85b9-430c-75c9-ef8a",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "fdfb-b8ba-30c4-dbad", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "The Hunt Descends",
+            "id": "bc46-7842-ee84-ffcc",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must recruit a **Lycanfell Noble** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {
+                "name": "Special Rules",
+                "$text": "- You begin the campaign with the **Grand Pavilion** stronghold.\n- Your warband can include any number of Dire Wolves (they do not count towards your Beasts limit)",
+                "typeId": "c519-23f5-a727-b90e"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rogue Necromancer",
+        "id": "bc0b-37cf-ca36-9a38",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "80bd-5d17-3e4d-e4bd", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Rogue Necromancer",
+            "id": "1850-1ac0-1a42-8100",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must recruit a **Necromancer** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Embalmer's Hall** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Awakened Lord",
+        "id": "ee62-6b34-d2d1-9965",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "69b0-9687-ad93-da02", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Awakened Lord",
+            "id": "7210-c090-d7f0-51ea",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must recruit a **Barrow Lord** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Ancient Barrows** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Opulent Manor",
+        "id": "b9c7-4bb2-6a8e-0d5f",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "0a46-4ed0-cddd-ad47", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Opulent Manor",
+            "id": "445b-024d-6349-e953",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Banquet of Blood**: In step 3 of the Aftermath sequence pick up to 3 friendly *Vampyre* fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grand Pavilion",
+        "id": "5e72-f0b9-0d40-89b8",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "fc94-a040-8c9d-e59f", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Grand Pavilion",
+            "id": "3c8b-096b-38c7-58e6",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Bestial Trophies**: Each time a *Beast* that was taken down by your Leader is killed, your Leader earns 10 bonus experience.\n**A Howl in the Night**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from of the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Embalmer's Hall",
+        "id": "df1f-85e3-b11c-f70b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "dc75-f770-9d84-eb09", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Embalmer's Hall",
+            "id": "ed1a-6b00-e80b-98bd",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Necromantic Study**: In each Aftermath sequence, pick 1 of the following:\n- *Read Forbidden Scrolls*: In step 3, your Leader gains 5 bonus experience.\n- *Create a Zombie*: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one of the hall’s corpses. You can recruit a Zombie to your warband for 0 silver.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ancient Barrows",
+        "id": "b89a-7aff-9881-7ea1",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 2,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "ce06-55a4-6350-98ac", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Ancient Barrows",
+            "id": "e397-f444-d572-3e6c",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Barrow Offering**: In step 5 of the Aftermath\nsequence, roll a dice. On a 6, mortals from the City\nhave left an offering. Roll once on the treasure\ntable.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bloodcursed Noble",
+        "id": "2031-82ad-e224-ab8d",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "4c81-82e6-6b21-61a8", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Main List", "id": "f908-0046-e99f-6124", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "2b0a-103e-3581-f0a2", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Undead", "id": "61e9-b3f6-eef7-a0be", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Wizard", "id": "5d01-cd93-4b74-3eb6", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
+          {"name": "Vampyre", "id": "85c9-903a-91d0-1e55", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
+          {"name": "Aristocrat", "id": "af30-8c3f-26a6-0df2", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 185}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "3077-c790-a096-81ab",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lore of Blood",
+            "id": "b800-8956-5ecd-1294",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "f97c-4e5c-40f6-9a78",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "70e1-20d2-3f5f-4942", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Noble Blood", "id": "6c67-8063-c33d-95e8", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Bloodcursed Noble",
+            "id": "3861-75a0-b130-c04c",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "5", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "5", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Spellcraft",
+            "id": "cd33-f172-d10d-5783",
+            "description": "This fighter knows the **Lore of Blood**. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Necromancer",
+        "id": "c140-91e3-ff4d-ad48",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "efe4-5e58-496f-c260", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Practitioner List", "id": "d883-5576-50b4-bd72", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"},
+          {"name": "Human", "id": "b7cb-62c0-ffac-beea", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Wizard", "id": "f731-b529-71df-c793", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 165}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "e549-7596-67ce-4e16",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lore of Necromancy",
+            "id": "b43c-0d32-722e-2998",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "40b0-45f3-5797-d09c",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "2827-ae1a-ea91-cf2c", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Necromancer",
+            "id": "8335-d623-afbf-fdb3",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "5", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Necromancy",
+            "id": "fb8a-b63b-dee4-01c3",
+            "description": "This fighter knows the **Lore of Necromancy**. When they are recruited,\npick 2 spells from it to be their signature spells. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Lycanfell Noble",
+        "id": "0362-3c7f-4288-126b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "dade-2844-c81a-f6ae", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Main List", "id": "8de5-d55a-d839-7cea", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "cb63-a6c7-9914-a02d", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Undead", "id": "456b-2dfd-35b4-562d", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Aristocrat", "id": "ca98-19e3-e259-896b", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
+          {"name": "Werwulf", "id": "ae30-9b11-fb6d-4732", "hidden": false, "primary": false, "targetId": "77bc-dafb-f489-71cb"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 170}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "6860-3461-699b-1c19",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Skills",
+            "id": "7816-5eff-26b6-1d94",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lycanfell Beast",
+            "id": "ac65-81bc-4336-297c",
+            "hidden": false,
+            "import": true,
+            "targetId": "1aa5-57e8-747f-2b42",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "de87-2ae2-5972-9b9c-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
+              {"id": "de87-2ae2-5972-9b9c-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}
+            ],
+            "modifiers": [{"field": "name", "join": " ", "type": "append", "value": "Reference"}]
+          }
+        ],
+        "infoLinks": [{"name": "Noble Blood", "id": "7a9f-a9e1-afec-914e", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Lycanfell Noble",
+            "id": "aa9b-a5dd-78b1-2b12",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "4", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bestial Transformation",
+            "id": "28c2-f582-5823-82d5",
+            "description": "Once per battle, at the start of this fighter’s activation it can *transform*. If it does so, remove this fighter from the battlefield and set up the Lycanfell Beast at the same location (or as close to it as possible). Any damage the Lycanfell Noble has suffered, the Lycanfell Beast has also suffered.\nThe Lycanfell Beast immediately makes its activation.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Barrow Lord",
+        "id": "f365-6cab-defc-57b1",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 3,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Leader", "id": "ffb9-2f73-cc6e-8dec", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Main List", "id": "4abf-e475-e22b-23f2", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "b728-94b2-5fbc-fa2b", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Undead", "id": "9dd1-c13e-39c3-1ff6", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Skeleton", "id": "72e2-dcc3-5f42-4d4f", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 130}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "0262-a522-8757-3903",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "2b9c-6aee-a55b-a67b", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Unshakeable", "id": "dccb-41c9-3fbc-7e86", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Barrow Lord",
+            "id": "b563-fb82-0e5c-d0b5",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "4", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Noble Lineage", "id": "3f41-f474-5712-e776", "description": "When this fighter is recruited, pick 2 skills for them.", "hidden": false}]
+      },
+      {
+        "name": "Bloodcursed Courtesan",
+        "id": "8e18-ae95-e253-f8c6",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "d570-a59a-5437-9d66", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Practitioner List", "id": "fb19-633d-66b7-23c6", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"},
+          {"name": "Undead", "id": "75fe-42bf-2c1f-2e75", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Aristocrat", "id": "e31f-bed0-bca2-deac", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
+          {"name": "Vampyre", "id": "7663-8c45-a31a-c0eb", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
+          {"name": "Wizard", "id": "0dac-c92e-beac-9c3e", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+        ],
+        "constraints": [{"id": "8c3e-d691-b73a-4f2d", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 125}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "7af5-14af-5f99-c176",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lore of Blood",
+            "id": "0250-ac76-78af-5718",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "f97c-4e5c-40f6-9a78",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "e829-b2c2-eba9-a1b5", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Bloodcursed Courtesan",
+            "id": "885f-47c3-9ec8-1f17",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "5", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Blood Magic",
+            "id": "cede-056f-875f-2e4d",
+            "description": "This fighter knows the **Lore of Blood**. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Bloodcursed Knight",
+        "id": "18ac-38d4-4534-1145",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "bf5c-11c0-9ef8-1b0a", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Main List", "id": "96bc-59d0-8d7d-c847", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "93b8-d082-8d38-b4de", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Undead", "id": "99de-6bac-6867-f494", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Vampyre", "id": "4470-fd0a-a9a9-7f8c", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
+          {"name": "Aristocrat", "id": "81df-eb76-03fc-b75b", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"}
+        ],
+        "constraints": [{"id": "df32-5c1b-1b66-74a4", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 95}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "7382-60ee-70b5-2a85",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "4773-ea4e-584e-1a7e", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "modifiers": [
+          {
+            "field": "df32-5c1b-1b66-74a4",
+            "type": "set",
+            "value": 3,
+            "conditions": [
+              {
+                "childId": "3d8b-d427-6861-aab2",
+                "childName": "Aristocrats of Blood",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Bloodcursed Knight",
+            "id": "8ff4-f752-6031-c479",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "5", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "5", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Martial Lineage", "id": "d379-a61a-d162-8702", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false}]
+      },
+      {
+        "name": "Misbegotten",
+        "id": "6e80-cf37-8115-44ca",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "79f4-bd87-423c-2543", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Main List", "id": "6b5f-ebab-e28c-c996", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "d851-b434-d5b9-6370", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Undead", "id": "48e0-a0a1-5f73-b811", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Vampyre", "id": "474e-b0a9-35af-1178", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"}
+        ],
+        "constraints": [{"id": "5593-2a62-84fa-45e9", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 65}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "ebf0-97af-6034-6272",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "f72a-5217-1e5c-172a", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Misbegotten",
+            "id": "abfd-767f-b755-9f18",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "5", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "5", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bloodline Mutations",
+            "id": "3c9a-76f8-2380-9dc2",
+            "description": "When this fighter is recruited, you can pick 1 of the following bloodline mutations:\n- *Bat Wings*: This fighter has the *Fly* keyword.\n- *Wulfen Legs*: This fighter's Move value is 7\".\n- *Hulking Form*: This fighter's Life value is 8.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Bloodline Mutations",
+            "id": "cf4e-a92b-0181-5a2b",
+            "hidden": false,
+            "sortIndex": 2,
+            "constraints": [{"id": "120d-07a6-c5dd-1660", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "selectionEntries": [
+              {
+                "name": "Bat Wings",
+                "id": "163a-6b6e-116e-9362",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}]
+              },
+              {
+                "name": "Wulfen Legs",
+                "id": "c540-12b3-6f3f-c659",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
+                "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "62c9-14c7-812c-5e90", "scope": "root-entry", "type": "set", "value": "7"}]
+              },
+              {
+                "name": "Hulking Form",
+                "id": "1135-b40d-158d-b05f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+                "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "c149-c58e-1146-bf30", "scope": "root-entry", "type": "set", "value": "8"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Necromancer's Apprentice",
+        "id": "9441-5aaa-0bfa-4ae1",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "4dd6-98bb-3ed1-6d1d", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Practitioner List", "id": "ff77-1666-0557-3ec9", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"},
+          {"name": "Human", "id": "a9e7-5cb6-ca62-8dae", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Wizard", "id": "e58e-4fe4-7a1d-4d94", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+        ],
+        "constraints": [{"id": "b968-6906-e479-72ba", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "af3e-fc87-a8ea-a3d6",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Lore of Necromancy",
+            "id": "b53d-b800-2d0c-e2ac",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "40b0-45f3-5797-d09c",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "991a-5250-ccac-d6c4", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Necromancer's Apprentice",
+            "id": "4143-3adc-5444-091c",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Spellcraft",
+            "id": "f234-bd8e-de06-57ea",
+            "description": "This fighter knows the **Lore of Necromancy**. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Barrow Champion",
+        "id": "e1ae-2265-d897-41ab",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 4,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Champion", "id": "fd35-68d4-df8a-992a", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
+          {"name": "Main List", "id": "1e68-1f15-49e2-6c42", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "d278-8501-0ca8-700d", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Undead", "id": "df6c-8fc9-54f0-31e4", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Skeleton", "id": "1712-bb5d-6c9b-b9bc", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 85}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "8ff8-365e-622e-b24e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "68c6-7caa-150f-7eb7", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Unshakeable", "id": "7ede-685c-18d5-3ea2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Barrow Champion",
+            "id": "b111-a203-a829-1c25",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "4", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Veteran in Life", "id": "75a9-2092-b0ce-802a", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false}]
+      },
+      {
+        "name": "Skeleton Warrior",
+        "id": "0af9-f266-2271-876b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 5,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Henchman", "id": "0413-3c63-974e-25ad", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
+          {"name": "Main List", "id": "7bbb-4cb3-9a6e-8e6f", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Undead", "id": "1a7e-f534-e00c-942b", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Skeleton", "id": "c7a4-23a7-2e4f-cef6", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"},
+          {"name": "Thrall", "id": "3db1-f207-3bf1-2e4d", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "63b9-95f8-be7d-f34f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "83a0-2595-4a6d-b764", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Unshakeable", "id": "1dd8-3573-07d0-5fe2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Skeleton Warrior",
+            "id": "2fdd-295c-6492-cf17",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "4", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zombie",
+        "id": "ec3b-81c8-b3ee-69a0",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 5,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Henchman", "id": "34e7-5eb0-2282-ddfa", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
+          {"name": "Undead", "id": "441b-e7c1-8f93-a605", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Zombie", "id": "098b-f8f0-ae49-e692", "hidden": false, "primary": false, "targetId": "3f5a-29ec-db98-416e"},
+          {"name": "Thrall", "id": "6d4b-7688-1c1b-5b5c", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
+        "entryLinks": [{"name": "Skills", "id": "8a38-ec59-8eb6-4572", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Unshakeable", "id": "da75-cf95-a3f0-f074", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
+        "selectionEntries": [
+          {
+            "name": "Zombie Bite",
+            "id": "ff86-a362-8f51-3d09",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "369b-d294-ec2a-0842", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+            "constraints": [
+              {"id": "2b43-e85a-7a9c-7c99-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "2b43-e85a-7a9c-7c99-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [
+              {"name": "Natural Weapon", "id": "5817-1f03-9b03-9171", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"},
+              {"name": "Poison", "id": "8474-98be-4872-7c72", "hidden": false, "targetId": "a705-5389-de52-9d30", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Zombie Bite",
+                "id": "42a6-947d-6003-eefd",
+                "hidden": false,
+                "typeId": "f98d-f3e1-8544-adfc",
+                "typeName": "Melee Weapon",
+                "characteristics": [
+                  {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+                  {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+                  {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+                  {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Weapon Traits", "$text": "Natural Weapon, Poison", "typeId": "2397-722e-6b58-da62"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zombie Ogre",
+        "id": "0eb9-6e4f-141b-3b50",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 6,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Brute", "id": "d0df-b7b1-bf77-5e49", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
+          {"name": "Zombie Ogre List", "id": "ea56-0c6b-c7eb-84df", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"},
+          {"name": "Undead", "id": "559e-19b4-55d8-8b67", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Zombie", "id": "e74d-89e7-9ddf-76e4", "hidden": false, "primary": false, "targetId": "3f5a-29ec-db98-416e"},
+          {"name": "Thrall", "id": "624a-3b60-80cd-8111", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 95}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "ce70-ef84-0e0f-728e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "a3c9-afa9-884c-2871", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Incredible Strength", "id": "282b-23d9-4796-9d5a", "hidden": false, "targetId": "a082-fb37-4f06-3cb9", "type": "rule"},
+          {"name": "Unshakeable", "id": "ec54-2b37-836e-6bad", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Zombie Ogre",
+            "id": "d89e-a409-4546-cdcf",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "4", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "1", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gargoyle",
+        "id": "63e7-899b-4f57-1a20",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 6,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Brute", "id": "a4fb-0288-2403-8e7b", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
+          {"name": "Gargoyle", "id": "305b-3ae9-dc25-0f00", "hidden": false, "primary": false, "targetId": "aea2-4319-bbba-ff40"},
+          {"name": "Undead", "id": "8042-d8a5-622f-ba3e", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Thrall", "id": "a3fa-2fa4-d14c-ff33", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"},
+          {"name": "Fly", "id": "6ff4-a627-1dae-57ac", "hidden": false, "primary": false, "targetId": "4d87-219d-0f14-9182"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
+        "entryLinks": [{"name": "Skills", "id": "02b1-e526-82c5-1a0f", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Unshakeable", "id": "d828-17d4-52f5-0219", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Gargoyle",
+            "id": "8a1b-006f-0085-21a6",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "6", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Stone Talons",
+            "id": "1e65-4eb8-464a-3b2f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "a6b0-6618-b6a1-7f6d", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+            "constraints": [
+              {"id": "f662-1c7d-be48-fcc2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f662-1c7d-be48-fcc2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [
+              {"name": "Bludgeon", "id": "f455-37b4-5b56-8100", "hidden": false, "targetId": "e735-0c28-3ed6-3845", "type": "rule"},
+              {"name": "Natural Weapon", "id": "ac13-4096-a233-3f33", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Stone Talons",
+                "id": "c632-427a-b7b2-f66f",
+                "hidden": false,
+                "typeId": "f98d-f3e1-8544-adfc",
+                "typeName": "Melee Weapon",
+                "characteristics": [
+                  {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+                  {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+                  {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+                  {"name": "Critical Damage", "$text": "d6+1", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Weapon Traits", "$text": "Bludgeon, Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dire Bat",
+        "id": "3cd6-99cd-0b40-0815",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 7,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Beast", "id": "fe46-a933-1fa8-e2dc", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
+          {"name": "Undead", "id": "a737-99ef-cb26-bfff", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Bat", "id": "1e82-8a7d-c374-9f01", "hidden": false, "primary": false, "targetId": "4ac4-0b30-ee22-b7bb"},
+          {"name": "Fly", "id": "358d-4c10-3469-f3cd", "hidden": false, "primary": false, "targetId": "4d87-219d-0f14-9182"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 60}],
+        "entryLinks": [{"name": "Skills", "id": "d185-86ab-7a7c-842e", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Dire Bat",
+            "id": "f4cd-9704-aa8b-8c11",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "10", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "5", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "1", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "3", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Vampyric Bite",
+            "id": "ec92-8968-0b49-f369",
+            "description": "Each time an enemy suffers 1 or more damage from a melee attack made by this fighter, heal this fighter 1 life point.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Biting Fangs",
+            "id": "5656-9d24-55ac-2000",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "4a78-aeab-fe3b-3d64", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+            "constraints": [
+              {"id": "4b7f-6a2f-3fa5-5665-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4b7f-6a2f-3fa5-5665-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Natural Weapon", "id": "e358-7c04-4896-ddfb", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Biting Fangs",
+                "id": "258a-65c8-2b3c-1cd0",
+                "hidden": false,
+                "typeId": "f98d-f3e1-8544-adfc",
+                "typeName": "Melee Weapon",
+                "characteristics": [
+                  {"name": "Attacks", "$text": "4", "typeId": "5b07-00a6-1754-048e"},
+                  {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+                  {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+                  {"name": "Critical Damage", "$text": "1", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dire Wolf",
+        "id": "97ce-11c7-22a3-5b7b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 7,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Beast", "id": "5c89-a0a4-a236-ea6f", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
+          {"name": "Undead", "id": "4b03-3431-7f0e-a5e4", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Dog", "id": "4043-6832-976e-f895", "hidden": false, "primary": false, "targetId": "e55f-24f6-9c36-7e48"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
+        "entryLinks": [{"name": "Skills", "id": "e3fd-eec1-efee-dc6d", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Sniff 'em Out", "id": "4fde-d231-040e-828c", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "85b9-430c-75c9-ef8a",
+                "childName": "The Hunt Descends",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"field": "category", "type": "remove", "value": "054d-3052-d990-09f1"},
+              {"field": "category", "type": "add", "value": "6f2c-d90b-1c22-099f"},
+              {"field": "category", "type": "unset-primary", "value": "054d-3052-d990-09f1"},
+              {"field": "category", "type": "set-primary", "value": "6f2c-d90b-1c22-099f"}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Dire Wolf",
+            "id": "d588-6544-d90a-09c3",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "7", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "3", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "4", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "1", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "5", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Trackers",
+            "id": "9853-7797-d868-1c50",
+            "description": "Each aftermath sequence, when you search the city. If your search party includes any Dire Wolves, you can re-roll the exploration roll.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Necrotic Bite",
+            "id": "fae1-fddb-447b-1296",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "07a9-922b-3f5c-c3e9", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+            "constraints": [
+              {"id": "ce95-de20-14b6-85f1-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "ce95-de20-14b6-85f1-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Natural Weapon", "id": "b25b-4c07-cb6b-6e88", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Necrotic Bite",
+                "id": "c96c-fb92-1021-0c27",
+                "hidden": false,
+                "typeId": "f98d-f3e1-8544-adfc",
+                "typeName": "Melee Weapon",
+                "characteristics": [
+                  {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+                  {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+                  {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+                  {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Noble Blood", "id": "e278-fca3-588e-8538", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false},
+      {
+        "name": "Unshakeable",
+        "id": "117b-d26b-f4c1-6522",
+        "description": "This fighter ignores the *Fear* special rule and all rules that would make them scatter (eg. the *Scare* weapon trait).",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Cursed Blade",
+        "id": "2f1e-775b-b7e4-8148",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "bf3c-2627-025f-7d35", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
+        "infoLinks": [
+          {"name": "Arcane", "id": "fbeb-6a17-7e69-c860", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"},
+          {"name": "Guard", "id": "5501-b174-0777-f153", "hidden": false, "targetId": "2bf7-a7b4-4024-0c96", "type": "rule"},
+          {"name": "Off-hand", "id": "4573-4425-27d9-9347", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"},
+          {"name": "Poison", "id": "4f81-a05b-8694-cab0", "hidden": false, "targetId": "a705-5389-de52-9d30", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Cursed Blade",
+            "id": "3bf4-2ff4-736c-c599",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Arcane, Guard, Off-hand, Poison", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ancient Banner",
+        "id": "4d62-5b6d-0b43-15b8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Held Item", "id": "58e5-b3d0-74dc-21db", "hidden": false, "primary": false, "targetId": "08f8-e0cc-9de3-6c2e"},
+          {"name": "Melee Weapon/Held Item", "id": "8331-c99b-4d23-6a96", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}
+        ],
+        "constraints": [{"id": "bd79-026c-5518-a7a6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 25}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "3271-212f-b7fb-d42c",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Ancient Banner",
+            "id": "4073-daae-5538-497f",
+            "description": "While this fighter is on the battlefield, you can re-roll flee tests.\nYou can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Bestial Companion",
+        "id": "b02c-3570-e8b8-8623",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "8ff3-74a4-7f46-961b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "bda0-8b8f-2939-8210",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Natural Weapon", "id": "abc7-2f69-312a-68f6", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Bestial Companion",
+            "id": "5dd6-21e2-6f6e-e5cb",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "1", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bestial Companion",
+            "id": "a922-05f9-90eb-84d9",
+            "description": "Each time this fighter makes a melee attack, they can make 1 additional attack with the following weapon:\n|Rend|Damage|Critical Damage|Weapon Traits|\n|---|---|---|:--|\n|-1|2|d3+1|Natural Weapon|",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Spirit Guardian",
+        "id": "8aff-1269-f4d4-aab7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "dba9-1110-4d01-0b4e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 45}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "58b2-c1c1-0d61-ca7f",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Spirit Guardian",
+            "id": "59b0-9191-4ad9-dfdc",
+            "description": "Once per battle this fighter can use the following bonus action:\n**Invoke Ethereal Protection [Bonus Action]**: Until the end of the round, this fighter ignores Rend for attacks that target them. In addition, each time they make a successful armour roll against a melee attack, the attacking fighters suffers 1 damage.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Winged Familiar",
+        "id": "44c9-5f0b-4575-4435",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "b321-c218-855e-2eb6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 12}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "cd0d-b135-0152-3de9",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Winged Familiar",
+            "id": "1ac7-7457-e7e3-32ad",
+            "description": "Once per battle fighter can use the following bonus action:\n**Harry [Bonus Action]**: Pick a visible enemy fighter within 24\". Until the end of the round, that enemy fighter is *harried*. While a fighter is *harried*, each time they make a Move or Action they must pass a Willpower test, else they lose that Move or Action.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Witchfire",
+        "id": "9c6f-94cd-af39-1917",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Witchfire",
+            "id": "e8b5-688a-e991-2ae2",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Place d3 witchfire tokens by the caster, to a maximum of 3. Once per activation, the caster can spend a witchfire token to make the following bonus action:\n**Witchfire Attack [Bonus Action]**: The closest visible enemy fighter within 12\" is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-|d3|",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Place 3 witchfire token by the caster (to a maximum of 3) instead of d3.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ethereal Armour",
+        "id": "96e7-5c0f-c1ec-a48a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ethereal Armour",
+            "id": "d098-7320-2c8c-fd84",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a visible friendly fighter within 6\" of the caster to be the target, that fighter becomes *ethereal* until the end of the round. While a fighter is *ethereal*, Improve its Armour value by 1 (to a maximum of 2+).",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Increase the range of the spell from 6\" to 12\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Raise Zombie",
+        "id": "3a5b-29a3-a9ac-30c7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Raise Zombie",
+            "id": "ca82-2294-2d44-83ac",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Summon Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "A *summoned* **Zombie** fighter, is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nA warband cannot have more than 3 *summoned* fighters at any time. If the caster's warband already has 3 *summoned* fighters, they cannot cast this spell.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "The fighter can be set up within 9\" of the caster and not engaged in melee.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Twilight Translocation",
+        "id": "f11d-2add-5c75-cd74",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Twilight Translocation",
+            "id": "c255-177d-ce29-97b8",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick another visible friendly fighter within 6\" of the caster to be the target, remove them from the battlefield and set them up again, anywhere on the battlefield within 15\" of the caster and not engaged in melee.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "When setting up the fighter, increase the range to 18\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Death Blast",
+        "id": "f7e0-1575-6157-5b9c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Death Blast",
+            "id": "d1e9-da4c-91cb-f037",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following successful attack:\n|Rend|Damage|\n|---|---|\n|-1|d3+1|",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "It does not scatter.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Balefire",
+        "id": "1849-9797-a74f-928a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Balefire",
+            "id": "122a-36cf-fb4d-86fd",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "13", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Place the flame template from the caster. Each fighter in the template is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-2|d3|",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Add 1 to the Damage value.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Draw Blood",
+        "id": "bfbf-08a4-b0c4-8cf4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Draw Blood",
+            "id": "f759-af49-a488-0f66",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick the closest visible enemy fighter within 9\" of the casting fighter to be the target. That fighter suffers 1 damage and the caster heals 1 point of life.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "The target suffers 2 damage and the caster heals 2 points of life instead.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cursed Blades",
+        "id": "08fe-e7ba-cfda-0372",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cursed Blades",
+            "id": "d617-d9d2-0344-de20",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a friendly fighter within 6\" of the caster to be the target, then pick 1 of the target’s melee weapons to be *cursed* until the end of the round. While a weapon is *cursed* it gains the *Arcane* and *Poison* weapon traits.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": " Increase the range of the spell from 6\" to 12\".", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Raise Skeleton",
+        "id": "e589-207b-9cf6-4a65",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Raise Skeleton",
+            "id": "8f3b-d82d-b86d-4084",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Summon Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "10", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "14", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "A *summoned* **Skeleton** fighter, is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nThe Skeleton is equipped with a Cuirass and a Shield as well as 1 of the following melee weapons; Club, Spear or Sword.\nA warband cannot have more than 3 *summoned* fighters at any time. If the castor's warband already has 3 *summoned* fighters, they cannot cast this spell.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "The fighter can be set up within 9\" of the caster and not engaged in melee.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Recall",
+        "id": "41a1-90bc-7b82-cb65",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Recall",
+            "id": "ef49-7069-17bb-ab29",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Pick a friendly *Thrall* on the battlefield to be the target. Remove them from the battlefield and set them up again within 3\" of the caster and not engaged in melee.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "You can pick up to 2 friendly *Thralls* instead of 1", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bat Scream",
+        "id": "6d03-beb1-3236-3c0c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bat Scream",
+            "id": "e2e6-c4f2-ca4a-242a",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Hex Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Place the flame template from the caster. Each fighter in its area is targeted. Each targeted fighter suffers 1 damage. In addition they must pass a Willpower test else they become *disorientated* until the end of the round. While a fighter is *disorientated* , subtract 1 from their Attack and Parry rolls.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": "Subtract 1 from the Willpower tests targeted fighters make.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sanguine Spear",
+        "id": "81d4-5173-9807-faec",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Sanguine Spear",
+            "id": "7c8a-3a45-c2be-1079",
+            "hidden": false,
+            "typeId": "6e24-2b14-5ff8-de41",
+            "typeName": "Spell",
+            "characteristics": [
+              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
+              {"name": "Casting Value", "$text": "10", "typeId": "1538-b905-e373-4307"},
+              {"name": "Critical Cast", "$text": "14", "typeId": "dd5b-a428-2ecb-8342"},
+              {
+                "name": "Normal Effect",
+                "$text": "Draw a line from the caster, 12\" long and 1\" wide. Each visible enemy fighter the line passes through is hit by the following attack:\n|Rend|Damage|\n|---|---|\n|-2|d3|\n\n\nFor each point of damage a target suffers, heal the caster 1 life point.",
+                "typeId": "365b-5938-66e2-d41d"
+              },
+              {"name": "Critical Effect", "$text": " Increase the range to 15”.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lycanfell Beast",
+        "id": "1aa5-57e8-747f-2b42",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Leader", "id": "b0c9-c93f-1a91-7a5e", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
+          {"name": "Undead", "id": "49ec-4c25-8d0f-e1e7", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
+          {"name": "Werwulf", "id": "0c9a-9990-fddd-de5a", "hidden": false, "primary": false, "targetId": "77bc-dafb-f489-71cb"}
+        ],
+        "profiles": [
+          {
+            "name": "Lycanfell Beast",
+            "id": "a39d-b526-1f41-68b8",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "2", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "5", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "5", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Temperamental Transformation",
+            "id": "94b5-d9b2-5e41-17e2",
+            "description": "Each time this fighter activates, at the end of its activation it must pass a Willpower test else the *transformation* ends.\nWhen the transformation ends, remove this fighter from the battlefield then set up the Lycanfell Noble at the same location (or as close to it as possible). Any damage the Lycanfell Beast has suffered, the Lycanfell Noble has also suffered. If this would reduce the Lycanfell Noble to zero life, they are taken down.",
+            "hidden": false
+          },
+          {
+            "name": "Vestiges of the Noble",
+            "id": "9b88-daeb-7687-8372",
+            "description": "While this fighter is on the battlefield, it is treated as a new fighter that is added to the warband. It has none of the Lycanfell Noble’s Wargear, Skills or Injuries etc. If the Lycanfell Noble was under the effects of a spell or another rule, this fighter is not affected. In addition, the following rules\napply:\n- **Scenarios**: If the scenario gave the Lycanfell Noble a mark (such as being the ‘Hit’ in Street of Death), this fighter has that mark.\n- **Treasure**: If the Lycanfell Noble was carrying treasure when it transformed, this fighter is carrying the treasure. Likewise, if this fighter is\ncarrying treasure when the transformation ends, the Lycanfell Noble is now carrying that treasure.\n- **Taken Down**: If this fighter is taken down, the Lycanfell Noble is also taken down, (together they count as 1 for the purposes of Flee Tests).\n- **Experience**: Any bonus experience this fighter would have earned is granted to the Lycanfell Noble instead.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Wulfen Claws",
+            "id": "9b43-b65f-a4a3-1abb",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "6284-e0cf-8fec-aada-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "6284-e0cf-8fec-aada-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Wulfen Claws",
+                "id": "70c7-117d-5995-6708",
+                "hidden": false,
+                "typeId": "f98d-f3e1-8544-adfc",
+                "typeName": "Melee Weapon",
+                "characteristics": [
+                  {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
+                  {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
+                  {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
+                  {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Weapon Traits", "$text": "Bludgeon, Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Armour",
+        "id": "597b-de67-7bea-0283",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Cuirass",
+            "id": "ff34-c6b5-a0ca-af51",
+            "hidden": true,
+            "import": true,
+            "targetId": "64a0-2594-b94e-fa0d",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "a792-59d2-ebd8-1376", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Full-plate",
+            "id": "6f2d-d2ec-0ab8-4128",
+            "hidden": true,
+            "import": true,
+            "targetId": "9dd9-261c-b23b-9cbb",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "d6c3-2cb3-d840-dede", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"}]
+          },
+          {
+            "name": "Warded Robes",
+            "id": "2dce-e972-04c4-ef93",
+            "hidden": true,
+            "import": true,
+            "targetId": "e3fd-323c-4a22-3dfc",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Practitioner List", "id": "1a04-34e7-6dec-8b1f", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}]
+          },
+          {"name": "Filters", "id": "a9dd-314e-e058-521a", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Filters",
+        "id": "0eb6-a495-e1a2-31a8",
+        "flatten": true,
+        "hidden": false,
+        "modifiers": [
+          {
+            "affects": "entries.315a-7be5-5bae-cdd3",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "315a-7be5-5bae-cdd3", "childName": "Main List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "affects": "entries.e6dd-9d37-d85a-1e82",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "e6dd-9d37-d85a-1e82",
+                "childName": "Zombie Ogre List",
+                "field": "selections",
+                "scope": "root-entry",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "affects": "entries.e85c-79be-6c14-d7c1",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "e85c-79be-6c14-d7c1",
+                "childName": "Practitioner List",
+                "field": "selections",
+                "scope": "root-entry",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "affects": "entries.e733-1dfc-cfd7-5da9",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {"childId": "e733-1dfc-cfd7-5da9", "childName": "Champion List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Non-held Items",
+        "id": "64b0-a48c-2e42-308c",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Grimoire",
+            "id": "cdb2-3382-0f04-b7ef",
+            "hidden": true,
+            "import": true,
+            "targetId": "9b52-9a77-ac04-3645",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Practitioner List", "id": "9f5f-75bb-bb65-8ecb", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}]
+          },
+          {"name": "Filters", "id": "c4e1-5ea4-990f-dc2e", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"},
+          {
+            "name": "Bestial Companion",
+            "id": "e11a-a400-eaba-61b2",
+            "hidden": true,
+            "import": true,
+            "targetId": "b02c-3570-e8b8-8623",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Champion List", "id": "858c-2bdf-85a8-271e", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+              {"name": "Practitioner List", "id": "2b22-af61-2a03-abdb", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ]
+          },
+          {
+            "name": "Spirit Guardian",
+            "id": "1e8c-cbc3-ae9d-0709",
+            "hidden": true,
+            "import": true,
+            "targetId": "8aff-1269-f4d4-aab7",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Champion List", "id": "8835-57e7-08eb-5f0f", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+              {"name": "Practitioner List", "id": "c63a-8af0-5f70-a370", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ]
+          },
+          {
+            "name": "Winged Familiar",
+            "id": "76e7-c483-db2d-88f7",
+            "hidden": true,
+            "import": true,
+            "targetId": "44c9-5f0b-4575-4435",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Champion List", "id": "581f-ea6f-2f0b-f087", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+              {"name": "Practitioner List", "id": "4e40-3c95-a97d-638e", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "One-handed Melee Weapons and Held Items",
+        "id": "2243-5748-3d73-f77b",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Axe",
+            "id": "e6ce-e7cc-4fa6-546a",
+            "hidden": true,
+            "import": true,
+            "targetId": "a9e8-d8ce-5473-38bd",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "7566-c384-7526-39ff", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Club/Mace/Hammer",
+            "id": "a24e-fc49-cd0f-17a6",
+            "hidden": true,
+            "import": true,
+            "targetId": "9715-66bd-8690-4ca7",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "5e60-3bb0-d330-27aa", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Dagger",
+            "id": "cc98-5c03-cdab-c2ea",
+            "hidden": true,
+            "import": true,
+            "targetId": "8c84-835f-e961-5eb1",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "6a47-805e-3faf-2a4a", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Flail",
+            "id": "9fab-bf92-92ee-cc5e",
+            "hidden": true,
+            "import": true,
+            "targetId": "401f-d006-7952-03af",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "0cf6-5c13-2903-5962", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Sword",
+            "id": "3262-5f64-d30c-2e03",
+            "hidden": true,
+            "import": true,
+            "targetId": "8f51-1154-e31d-ca39",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Main List", "id": "a5c9-005c-65a4-142a", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+              {"name": "Practitioner List", "id": "60e3-dc31-f2d5-c3ed", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ]
+          },
+          {
+            "name": "Shield",
+            "id": "153e-0447-4536-a925",
+            "hidden": true,
+            "import": true,
+            "targetId": "826b-a740-1462-e197",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Main List", "id": "71eb-d0a3-61a3-0e5d", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+              {"name": "Zombie Ogre List", "id": "6a6c-a741-c0c8-626e", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"}
+            ]
+          },
+          {
+            "name": "Ogre Blade",
+            "id": "1d95-46a8-834b-c4fe",
+            "hidden": true,
+            "import": true,
+            "targetId": "6e56-f92f-6fec-9efc",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Zombie Ogre List", "id": "7aa1-d352-1d92-f1d9", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"}]
+          },
+          {
+            "name": "Ogre Mace",
+            "id": "bd66-349a-0731-a21f",
+            "hidden": true,
+            "import": true,
+            "targetId": "57cb-8319-cb3e-1b22",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Zombie Ogre List", "id": "6966-691d-1137-85c5", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"}]
+          },
+          {
+            "name": "Arcane Staff",
+            "id": "8f28-bebc-2b3c-418d",
+            "hidden": true,
+            "import": true,
+            "targetId": "b011-e9e0-70a4-759c",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Practitioner List", "id": "2ed6-3d93-3f18-b8f1", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}]
+          },
+          {
+            "name": "Ensorcelled Weapon",
+            "id": "465b-a07e-ca08-f0eb",
+            "hidden": true,
+            "import": true,
+            "targetId": "6f39-0474-ee95-8962",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Practitioner List", "id": "5d49-940f-789c-7403", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}]
+          },
+          {"name": "Filters", "id": "f969-6547-0863-a5b3", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"},
+          {
+            "name": "Cursed Blade",
+            "id": "f4d2-380d-7845-107a",
+            "hidden": true,
+            "import": true,
+            "targetId": "2f1e-775b-b7e4-8148",
+            "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "Champion List", "id": "0ef9-19a4-ce1f-722a", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+              {"name": "Practitioner List", "id": "8391-d172-1920-b98f", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ]
+          },
+          {
+            "name": "Ancient Banner",
+            "id": "13e9-b0d1-8c3b-a9ff",
+            "hidden": true,
+            "import": true,
+            "targetId": "4d62-5b6d-0b43-15b8",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "026c-6c4f-461b-019e", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"}]
+          }
+        ]
+      },
+      {
+        "name": "Skills",
+        "id": "d24e-b6fe-9b74-971c",
+        "hidden": false,
+        "constraints": [{"id": "4cba-9656-c69a-d0e4", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {
+            "name": "Dark Aristocracy",
+            "id": "e190-4079-c0a0-8309",
+            "hidden": true,
+            "import": true,
+            "targetId": "b3d9-9dc2-8b8c-7c20",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "69a7-1a88-d493-5847", "childName": "Leader", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f44d-d057-3822-ad30", "childName": "Champion", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {"childId": "a86d-3138-99c0-5732", "childName": "Aristocrat", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "0d93-3e97-1ca0-2472", "childName": "Undead", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Veteran Skills",
+            "id": "4490-5d89-3be5-81f9",
+            "hidden": false,
+            "import": true,
+            "targetId": "d23f-4752-4e2a-bfc6",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "affects": "2cc0-f10c-411d-8bb8",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "880f-776b-65f5-2023", "childName": "Noble", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Duellist",
+                "id": "717f-6b7f-3cf4-6a4e",
+                "defaultAmount": "1",
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "85b1-944c-5ff8-ba41", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "infoLinks": [{"name": "Duellist", "id": "896e-b582-ea42-e0b4", "hidden": false, "targetId": "573f-5b00-2489-dbcd", "type": "rule"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [{"childId": "880f-776b-65f5-2023", "childName": "Noble", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Undying Lords",
+            "id": "7b8b-daf9-85fb-cea1",
+            "hidden": true,
+            "import": true,
+            "targetId": "f55c-1d6a-2866-4fbd",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "f44d-d057-3822-ad30", "childName": "Champion", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "69a7-1a88-d493-5847", "childName": "Leader", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {"childId": "3dcb-85f4-011d-ea82", "childName": "Skeleton", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "0d93-3e97-1ca0-2472", "childName": "Undead", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Two-handed Melee Weapons",
+        "id": "6a84-6610-4241-5fdd",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Halberd",
+            "id": "247a-6f09-f125-aa85",
+            "hidden": true,
+            "import": true,
+            "targetId": "bc5f-c68b-77ff-69c4",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "3541-0093-c263-f413", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Heavy Axe",
+            "id": "2c02-d0ea-80db-3a64",
+            "hidden": true,
+            "import": true,
+            "targetId": "4902-330b-b2c9-c777",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "8250-6a6c-3603-3521", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {
+            "name": "Ogre Great Weapon",
+            "id": "69fe-009a-3792-a683",
+            "hidden": true,
+            "import": true,
+            "targetId": "6872-68be-77ca-3728",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Zombie Ogre List", "id": "79b5-6e7b-9758-3584", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"}]
+          },
+          {
+            "name": "Spear",
+            "id": "1195-119f-bbb5-ffd5",
+            "hidden": true,
+            "import": true,
+            "targetId": "c61f-55b8-59d8-24bd",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Main List", "id": "df83-f08c-8b90-2e2b", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
+          },
+          {"name": "Filters", "id": "d1d3-fd12-106d-8d4f", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Wargear",
+        "id": "69fa-7737-0f73-5f04",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Armour",
+            "id": "6664-2ac9-842a-d5de",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "597b-de67-7bea-0283",
+            "type": "selectionEntryGroup",
+            "constraints": [{"id": "1c0d-8746-02e7-f2fe", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}]
+          },
+          {
+            "name": "Non-held Items",
+            "id": "4983-a2ab-3108-a6c5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "64b0-a48c-2e42-308c",
+            "type": "selectionEntryGroup",
+            "constraints": [
+              {"id": "48c2-32a4-2a89-0c5e", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 2},
+              {"id": "ca04-c00b-1f60-f8df", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "1st Hand",
+            "id": "766c-71f0-6897-7303",
+            "hidden": false,
+            "sortIndex": 1,
+            "constraints": [{"id": "bfb3-bbe2-2763-c190", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "entryLinks": [
+              {
+                "name": "One-handed Melee Weapons and Held Items",
+                "id": "aaae-9ea3-dcde-97dd",
+                "hidden": false,
+                "import": true,
+                "targetId": "2243-5748-3d73-f77b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Two-handed Melee Weapons",
+                "id": "30fb-62df-0ad6-53bf",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a84-6610-4241-5fdd",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "2nd Hand",
+            "id": "7cef-7f80-1f45-f0e5",
+            "hidden": false,
+            "sortIndex": 2,
+            "constraints": [{"id": "91c6-23bc-9d1b-5201", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "entryLinks": [
+              {
+                "name": "One-handed Melee Weapons and Held Items",
+                "id": "40a6-86ad-3e51-7ae5",
+                "flatten": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "2243-5748-3d73-f77b",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dark Aristocracy",
+        "id": "b3d9-9dc2-8b8c-7c20",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Cloud of Bats",
+            "id": "6e5e-004a-f569-e7f2",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Cloud of Bats",
+                "id": "1b9a-18f2-1f93-0d0e",
+                "description": "Once per battle, this fighter can use the following bonus action:\n**Cloud of Bats [Bonus Action]**: Remove the fighter from the battlefield, set them up again anywhere on the battlefield, wholly within 9\" horizontally of their previous location. They cannot be set up engaged in melee.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Mesmeric Gaze",
+            "id": "600e-42f6-b4c3-afa0",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Mesmeric Gaze",
+                "id": "7dc0-68d7-27a3-ac0d",
+                "description": "Once per battle, when this fighter makes a Melee Attack action, it can attempt to *mesmerise* the defending fighter. If they do so, the controlling players each roll a dice and add their fighter’s Willpower value to the score. If this fighter’s total exceeds the defending fighter’s total, they are *mesmerised* for that action. While they are *mesmerised*, subtract 1 from the Attacks value of their melee weapons (off-hand attacks are not affected).",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Unholy Strength",
+            "id": "19d7-3da3-6808-0215",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "affects": "self.entries.profiles.Melee Weapon",
+                "field": "2397-722e-6b58-da62",
+                "join": ", ",
+                "scope": "root-entry",
+                "skipIfPresent": "Bludgeon",
+                "type": "append",
+                "value": "Bludgeon"
+              }
+            ],
+            "rules": [{"name": "Unholy Strength", "id": "3153-2151-248d-4f99", "description": "This fighters melee weapons gain the Bludgeon weapon trait.", "hidden": false}]
+          },
+          {
+            "name": "Supernatural Healing",
+            "id": "7145-d31c-da7f-bfe4",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Supernatural Healing",
+                "id": "2a58-b4da-7c9b-a4eb",
+                "description": "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary. In addition, if this fighter is killed. You can immediately make a Willpower test for them. If passed, they are not killed but must miss the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Leech Blood",
+            "id": "9821-2c11-25d3-079b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Leech Blood",
+                "id": "a069-8780-36ee-62b5",
+                "description": "Once per battle, this fighter can use the following bonus action:\n**Leech Blood [Bonus Action]**: Each enemy fighter within 9\" of this fighter must take a Willpower test. If they fail, they suffer 1 damage and this fighter heals 1 life.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Relentless Attacker",
+            "id": "10db-dc82-4912-12c2",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Relentless Attacker",
+                "id": "e971-2510-106c-bab2",
+                "description": "Subtract 1 from parry rolls made against attacks made by this fighter.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Undying Lords",
+        "id": "f55c-1d6a-2866-4fbd",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Death March",
+            "id": "dc0d-5c48-a357-346e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Death March",
+                "id": "f35f-fe96-15d1-b41f",
+                "description": "Once per battle, this fighter can use the following bonus action:\n**Death March [Bonus Action]**: Until the end of the round, add 2 to the Move value of friendly *Thralls* who begin a move while they are within 9\" of this fighter.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Rise Again",
+            "id": "3d4f-b61c-4823-baef",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Rise Again",
+                "id": "4ba4-09e7-e63d-ff68",
+                "description": "When this fighter is taken down for the first time in battle, mark its location with a token. At the start of each subsequent round you can roll a dice, on a 6 the fighter returns.\nIf the fighter returns, set them up on the battlefield as close to the marked location as possible. They heal d3 life points. A fighter can only return once per battle in this manner.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Chill Touch",
+            "id": "539f-9dac-64ee-2bd2",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [{"affects": "entries.profiles.Melee Weapon", "field": "0b2a-1a62-9dad-e51f", "join": "+", "position": 2, "scope": "root-entry", "type": "append", "value": 1}],
+            "rules": [{"name": "Chill Touch", "id": "0e5b-1b2c-7031-7ac0", "description": "Add 1 to the Critical Damage value of this fighter’s melee weapons.", "hidden": false}]
+          },
+          {
+            "name": "Dread Aura",
+            "id": "fea1-2402-e656-c6cb",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Dread Aura",
+                "id": "4642-f2fc-04be-0aa8",
+                "description": "This fighter *causes fear*. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Drag Down Into the Earth",
+            "id": "b690-bb9c-112e-1138",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "rules": [
+              {
+                "name": "Drag Down Into the Earth",
+                "id": "ee30-7d86-fb9d-5eda",
+                "description": "When this fighter is taken down while engaged in melee, pick 1 fighter it is engaged with, they suffer d3 damage.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Kingsguard",
+            "id": "5241-3fa4-9a9b-c57b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "f44d-d057-3822-ad30", "childName": "Champion", "field": "selections", "scope": "root-entry", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Kingsguard",
+                "id": "6429-0061-3fd9-aba4",
+                "description": "This skill can only be picked for a *Champion*.\nIf an enemy fighter finishes a Charge Move engaged in melee with a friendly Leader, and this fighter is not engaged, this fighter can make a Charge Move. This fighter must finish that Charge Move engaged in melee\nwith that enemy fighter. If it does so, the enemy fighter must target this fighter with any melee attack actions it makes this activation.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lore of Necromancy",
+        "id": "40b0-45f3-5797-d09c",
+        "hidden": false,
+        "constraints": [{"id": "cc57-a86b-fd08-1901", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {"name": "Witchfire", "id": "d273-eb76-8270-4c08", "hidden": false, "import": true, "sortIndex": 1, "targetId": "9c6f-94cd-af39-1917", "type": "selectionEntry"},
+          {
+            "name": "Ethereal Armour",
+            "id": "59b8-92dd-ba68-6512",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "96e7-5c0f-c1ec-a48a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Twilight Translocation",
+            "id": "0a95-4632-3561-779f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "f11d-2add-5c75-cd74",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Raise Zombie",
+            "id": "e6a5-96ea-7945-a489",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "3a5b-29a3-a9ac-30c7",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Death Blast",
+            "id": "5cc2-3d94-0c0f-8bea",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "f7e0-1575-6157-5b9c",
+            "type": "selectionEntry"
+          },
+          {"name": "Balefire", "id": "052f-7963-084b-508c", "hidden": false, "import": true, "sortIndex": 6, "targetId": "1849-9797-a74f-928a", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Lore of Blood",
+        "id": "f97c-4e5c-40f6-9a78",
+        "hidden": false,
+        "constraints": [{"id": "42da-276d-a861-1f50", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {
+            "name": "Draw Blood",
+            "id": "35f8-9bcd-c1d1-0b4f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "bfbf-08a4-b0c4-8cf4",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Cursed Blades",
+            "id": "4f70-169a-ceb5-c126",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "08fe-e7ba-cfda-0372",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Raise Skeleton",
+            "id": "2d20-1f37-9c64-e241",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "e589-207b-9cf6-4a65",
+            "type": "selectionEntry"
+          },
+          {"name": "Recall", "id": "8147-f100-4ca0-f7df", "hidden": false, "import": true, "sortIndex": 4, "targetId": "41a1-90bc-7b82-cb65", "type": "selectionEntry"},
+          {
+            "name": "Bat Scream",
+            "id": "8e46-2c7b-13a2-3a27",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "6d03-beb1-3236-3c0c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Sanguine Spear",
+            "id": "fccd-eb9b-c795-0807",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 6,
+            "targetId": "81d4-5173-9807-faec",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}
