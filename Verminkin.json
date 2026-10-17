@@ -20,6 +20,32 @@
       {"name": "Contraption", "id": "69ca-bb14-e790-efec", "hidden": false},
       {"name": "Rat", "id": "b7aa-a5a5-c1bd-8b5c", "hidden": false}
     ],
+    "entryLinks": [
+      {
+        "name": "Rat Mutant",
+        "id": "a4c7-e572-98cc-6d1b",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 7,
+        "targetId": "f651-a48e-cc18-ef06",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Oversized Claw",
+            "id": "1cdb-70d3-2053-dab3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "e560-0a42-ff27-e5a2",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "aefc-e739-9ffe-3458-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "aefc-e739-9ffe-3458-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      }
+    ],
     "forceEntries": [
       {
         "name": "Warband Roster",
@@ -127,7 +153,7 @@
             "characteristics": [
               {
                 "name": "Restrictions",
-                "$text": "**Leader**: You must hire a **Sparkseer** to lead your warband at the start of the campaign.",
+                "$text": "**Leader**: You must recruit a **Sparkseer** to lead your warband at the start of the campaign.",
                 "typeId": "7d47-e888-6003-11c3"
               },
               {
@@ -306,7 +332,8 @@
           {"name": "Leader", "id": "781d-5b26-6f6c-8c01", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
           {"name": "Verminkin", "id": "34d0-84ad-fd4a-8648", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Practitioner List", "id": "b1db-a350-96dd-d579", "hidden": false, "primary": false, "targetId": "914e-0a0d-16cc-13eb"},
-          {"name": "Priest", "id": "310f-fef9-c962-89e7", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"}
+          {"name": "Priest", "id": "310f-fef9-c962-89e7", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"},
+          {"name": "Fighter", "id": "bff1-9f13-612a-21f2", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 170}],
         "entryLinks": [
@@ -369,7 +396,8 @@
           {"name": "Verminkin", "id": "9877-26e7-1e6d-bf2b", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Main List", "id": "309b-b6a8-6913-b2f1", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
           {"name": "Champion List", "id": "fe7e-6fc9-9eb4-e687", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"},
-          {"name": "Assassin", "id": "4a5c-8704-4fa7-a4a4", "hidden": false, "primary": false, "targetId": "ad69-11e6-e601-40b0"}
+          {"name": "Assassin", "id": "4a5c-8704-4fa7-a4a4", "hidden": false, "primary": false, "targetId": "ad69-11e6-e601-40b0"},
+          {"name": "Fighter", "id": "0a29-e2cd-fc37-8a2c", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140}],
         "entryLinks": [
@@ -416,7 +444,8 @@
           {"name": "Leader", "id": "a2d6-7ec2-1fb6-2b03", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
           {"name": "Verminkin", "id": "a0e6-05e8-26c5-71c8", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Main List", "id": "7e18-b7e2-4ce3-bb1a", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
-          {"name": "Champion List", "id": "e638-92f8-94b9-7ddd", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"}
+          {"name": "Champion List", "id": "e638-92f8-94b9-7ddd", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"},
+          {"name": "Fighter", "id": "772b-4a32-c359-83df", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 135}],
         "entryLinks": [
@@ -463,7 +492,8 @@
           {"name": "Verminkin", "id": "fd31-ae7e-1eb1-f3c4", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Main List", "id": "b72f-7f02-94eb-27a9", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
           {"name": "Champion List", "id": "2f37-9962-c780-92b0", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"},
-          {"name": "Sparkseer List", "id": "810f-7756-c770-50c1", "hidden": false, "primary": false, "targetId": "bd54-31af-4c6e-8bfb"}
+          {"name": "Sparkseer List", "id": "810f-7756-c770-50c1", "hidden": false, "primary": false, "targetId": "bd54-31af-4c6e-8bfb"},
+          {"name": "Fighter", "id": "d62a-582f-46de-56e6", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 130}],
         "entryLinks": [
@@ -510,7 +540,8 @@
           {"name": "Champion", "id": "d8c3-885a-798f-6d1f", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
           {"name": "Verminkin", "id": "586e-1375-41ae-318b", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Practitioner List", "id": "87ef-07da-c334-8bbe", "hidden": false, "primary": false, "targetId": "914e-0a0d-16cc-13eb"},
-          {"name": "Wizard", "id": "65ab-657c-f926-c170", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+          {"name": "Wizard", "id": "65ab-657c-f926-c170", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
+          {"name": "Fighter", "id": "6d0d-3839-27f4-6c5a", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "ed82-3285-cde7-7305", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 125}],
@@ -573,7 +604,8 @@
           {"name": "Champion", "id": "584d-9b36-026c-c75c", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
           {"name": "Verminkin", "id": "fd47-b804-bb69-a137", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Practitioner List", "id": "aab8-529f-9286-fc07", "hidden": false, "primary": false, "targetId": "914e-0a0d-16cc-13eb"},
-          {"name": "Priest", "id": "cbf3-b4ed-5712-76db", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"}
+          {"name": "Priest", "id": "cbf3-b4ed-5712-76db", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"},
+          {"name": "Fighter", "id": "6835-f4ca-804c-e483", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "0152-4efd-b1d9-e27b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 125}],
@@ -656,7 +688,8 @@
           {"name": "Verminkin", "id": "1add-4e00-fb3b-0bd5", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Main List", "id": "3784-9966-d3de-a1af", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
           {"name": "Champion List", "id": "a774-6be0-fd48-b31d", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"},
-          {"name": "Assassin", "id": "e22b-e1e9-3acf-5749", "hidden": false, "primary": false, "targetId": "ad69-11e6-e601-40b0"}
+          {"name": "Assassin", "id": "e22b-e1e9-3acf-5749", "hidden": false, "primary": false, "targetId": "ad69-11e6-e601-40b0"},
+          {"name": "Fighter", "id": "d5ac-2e89-dd5e-5804", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
         "entryLinks": [
@@ -702,7 +735,8 @@
           {"name": "Champion", "id": "03d0-8578-b152-f02d", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
           {"name": "Verminkin", "id": "cc1d-138e-0459-b7d1", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Main List", "id": "d35e-d794-1f95-f368", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
-          {"name": "Champion List", "id": "bcf0-bbc6-8eb9-d286", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"}
+          {"name": "Champion List", "id": "bcf0-bbc6-8eb9-d286", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"},
+          {"name": "Fighter", "id": "e16b-c95b-f3fd-1504", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 95}],
         "entryLinks": [
@@ -749,7 +783,8 @@
           {"name": "Verminkin", "id": "41c7-639b-7bb9-5dcf", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
           {"name": "Main List", "id": "e65d-db07-a65b-d954", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
           {"name": "Champion List", "id": "12e6-097f-f95f-49e1", "hidden": false, "primary": false, "targetId": "7411-39ac-6a65-4baf"},
-          {"name": "Sparkseer List", "id": "7ba8-4a2d-557f-b260", "hidden": false, "primary": false, "targetId": "bd54-31af-4c6e-8bfb"}
+          {"name": "Sparkseer List", "id": "7ba8-4a2d-557f-b260", "hidden": false, "primary": false, "targetId": "bd54-31af-4c6e-8bfb"},
+          {"name": "Fighter", "id": "23d1-91a6-0380-5e20", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "5399-dae6-be0e-0daf", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 85}],
@@ -795,7 +830,8 @@
         "categoryLinks": [
           {"name": "Henchman", "id": "ae13-711a-a303-64f8", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
           {"name": "Verminkin", "id": "8698-d81a-7aa5-422b", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
-          {"name": "Main List", "id": "d47a-64cf-9f80-b930", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"}
+          {"name": "Main List", "id": "d47a-64cf-9f80-b930", "hidden": false, "primary": false, "targetId": "2d70-9611-df01-b420"},
+          {"name": "Fighter", "id": "8ec1-e75c-60ea-53cc", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
         "entryLinks": [
@@ -830,65 +866,6 @@
         ]
       },
       {
-        "name": "Rat Mutant",
-        "id": "f651-a48e-cc18-ef06",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 6,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Brute", "id": "a5f3-9f7c-0c3d-28c0", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
-          {"name": "Verminkin", "id": "22b1-cd88-d6ae-d8aa", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
-          {"name": "Rat-mutant List", "id": "999f-72cd-06a0-ef08", "hidden": false, "primary": false, "targetId": "d8cc-f874-b0de-7916"},
-          {"name": "Ogre", "id": "cced-c695-4eca-d4a7", "hidden": false, "primary": false, "targetId": "3491-ebed-2a64-f450"}
-        ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 105}],
-        "entryLinks": [
-          {
-            "name": "Wargear",
-            "id": "fce0-7131-7f66-f5af",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "23f9-f995-e9dc-3ee2",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Skills", "id": "92aa-7c12-e399-cbd4", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
-          {
-            "name": "Oversized Claw",
-            "id": "8b4c-d889-57af-233d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "e560-0a42-ff27-e5a2",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "7a36-6704-bb47-0d91-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "7a36-6704-bb47-0d91-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
-          }
-        ],
-        "infoLinks": [{"name": "Incredible Strength", "id": "3ad6-e45a-ce86-75eb", "hidden": false, "targetId": "a082-fb37-4f06-3cb9", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Rat Mutant",
-            "id": "10a5-563f-aad4-f0f3",
-            "hidden": false,
-            "typeId": "b012-448f-6072-da0c",
-            "typeName": "Fighter Scroll",
-            "characteristics": [
-              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
-              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
-              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
-              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
-              {"name": "Initiative", "$text": "2", "typeId": "b562-c0a5-7d5d-39eb"},
-              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
-              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Rolling-Contraption",
         "id": "3a94-a3a5-041e-daf2",
         "hidden": false,
@@ -899,7 +876,8 @@
           {"name": "Brute", "id": "2ee9-f900-c9ca-0091", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
           {"name": "Contraption List", "id": "d0b7-2c72-45a2-aee6", "hidden": false, "primary": false, "targetId": "d404-533e-15a3-4b65"},
           {"name": "Verminkin", "id": "cde0-bc3c-6e9f-6e4f", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
-          {"name": "Contraption", "id": "7a4c-a8c7-00d6-f056", "hidden": false, "primary": false, "targetId": "69ca-bb14-e790-efec"}
+          {"name": "Contraption", "id": "7a4c-a8c7-00d6-f056", "hidden": false, "primary": false, "targetId": "69ca-bb14-e790-efec"},
+          {"name": "Fighter", "id": "b59c-aa0b-b3cb-899b", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
         "entryLinks": [
@@ -976,7 +954,8 @@
         "categoryLinks": [
           {"name": "Beast", "id": "8fe9-6580-179b-37a1", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
           {"name": "Verminkin", "id": "4f2d-2132-aa2e-a81b", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
-          {"name": "Rat", "id": "0d4d-cc1d-fc67-9d16", "hidden": false, "primary": false, "targetId": "b7aa-a5a5-c1bd-8b5c"}
+          {"name": "Rat", "id": "0d4d-cc1d-fc67-9d16", "hidden": false, "primary": false, "targetId": "b7aa-a5a5-c1bd-8b5c"},
+          {"name": "Fighter", "id": "6574-a9a7-d2f4-f54b", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 20}],
         "entryLinks": [
@@ -1305,8 +1284,7 @@
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 62}],
         "infoLinks": [
           {"name": "Arcane", "id": "3254-53b7-89d5-90f7", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"},
-          {"name": "Two-handed", "id": "3746-b4a8-3517-a559", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Unwieldy", "id": "2cad-11ae-55f9-f2ce", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+          {"name": "Two-handed", "id": "3746-b4a8-3517-a559", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
         ],
         "profiles": [
           {
@@ -1320,7 +1298,7 @@
               {"name": "Rend", "$text": "-3", "typeId": "f48c-351f-2957-da29"},
               {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
               {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
-              {"name": "Weapon Traits", "$text": "Arcane, Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+              {"name": "Weapon Traits", "$text": "Arcane, Two-handed", "typeId": "2397-722e-6b58-da62"}
             ]
           }
         ]
@@ -1340,8 +1318,7 @@
         "infoLinks": [
           {"name": "Arcane", "id": "56b5-c052-aa93-dfaf", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"},
           {"name": "Bludgeon", "id": "4bb6-a469-2afd-19d5", "hidden": false, "targetId": "e735-0c28-3ed6-3845", "type": "rule"},
-          {"name": "Two-handed", "id": "3b18-c7f9-deb1-2f1f", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Unwieldy", "id": "c0bd-2a31-fe1c-7f25", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+          {"name": "Two-handed", "id": "3b18-c7f9-deb1-2f1f", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
         ],
         "profiles": [
           {
@@ -1355,7 +1332,7 @@
               {"name": "Rend", "$text": "-2", "typeId": "f48c-351f-2957-da29"},
               {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
               {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
-              {"name": "Weapon Traits", "$text": "Arcane, Bludgeon, Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+              {"name": "Weapon Traits", "$text": "Arcane, Bludgeon, Two-handed", "typeId": "2397-722e-6b58-da62"}
             ]
           }
         ]
@@ -1371,7 +1348,7 @@
           {"name": "Two-handed", "id": "c741-ddd5-5629-d0b3", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
         "constraints": [{"id": "73d0-0ff9-cccb-c00d", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 100}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
         "infoLinks": [
           {"name": "Heavy", "id": "1932-082b-b43e-0700", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
           {"name": "Misfire", "id": "11b7-90d1-fd4a-a911", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
@@ -1384,8 +1361,8 @@
             "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
           },
           {"name": "Two-handed", "id": "175a-f91a-689e-a1df", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Unwieldy", "id": "eb8e-59f8-d01f-7321", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"},
-          {"name": "Volley", "id": "74a4-7a2f-b22a-d9a5", "hidden": false, "targetId": "f056-bb94-bf4b-2e4b", "type": "rule"}
+          {"name": "Volley", "id": "74a4-7a2f-b22a-d9a5", "hidden": false, "targetId": "f056-bb94-bf4b-2e4b", "type": "rule"},
+          {"name": "Arcane", "id": "d5cf-5651-4757-54e0", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"}
         ],
         "profiles": [
           {
@@ -1400,7 +1377,7 @@
               {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
               {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "d3", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Rare 0-1, Two-handed,", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Weapon Traits", "$text": "Arcane, Heavy, Misfire, Rare 0-1, Two-handed, Volley", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1437,7 +1414,7 @@
               {"name": "Range", "$text": "Flame", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "d3", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Damage", "$text": "d3+1", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Flame, One-use, Rare 0-2, Scare", "typeId": "a727-f7da-c245-5268"}
             ]
@@ -1467,7 +1444,6 @@
           },
           {"name": "Heavy", "id": "82bb-e406-2649-654a", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
           {"name": "Misfire", "id": "b70e-1e4a-51ae-f0c5", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
-          {"name": "Unwieldy", "id": "6697-697f-ab2d-d56c", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"},
           {"name": "Two-handed", "id": "571e-a676-4343-945b", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
           {"name": "Volley", "id": "d553-3dfd-7d6a-dfbf", "hidden": false, "targetId": "f056-bb94-bf4b-2e4b", "type": "rule"}
         ],
@@ -1484,7 +1460,7 @@
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
               {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "d6+1", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Rare 0-1, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Rare 0-1, Two-handed, Volley", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1520,8 +1496,8 @@
               {"name": "Range", "$text": "8", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d3+1", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "d3+1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "\n", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Blast, One-use, Rare 0-5", "typeId": "a727-f7da-c245-5268"}
             ]
           }
@@ -1538,7 +1514,7 @@
           {"name": "Two-handed", "id": "c734-5f68-eafb-84e7", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
         "constraints": [{"id": "fdb9-002f-46fa-796c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 100}],
         "infoLinks": [
           {
             "name": "Rare (0-[x])",
@@ -1551,7 +1527,6 @@
           {"name": "Blast", "id": "dcfe-27ef-2de6-e2b8", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"},
           {"name": "Heavy", "id": "4251-50d5-e5fa-3dd3", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
           {"name": "Misfire", "id": "ccfe-bb02-57b3-88bd", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
-          {"name": "Unwieldy", "id": "31f1-f8a4-7063-4c04", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"},
           {"name": "Two-handed", "id": "5cb9-5291-daf0-780a", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
           {"name": "Reload", "id": "d748-cc12-6482-b4a2", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"}
         ],
@@ -1566,9 +1541,9 @@
               {"name": "Range", "$text": "20", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d3+1", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Blast, Misfire, Rare 0-1, Reload, Unwieldy, Two-handed", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Damage", "$text": "d3+1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "\n", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Blast, Misfire, Rare 0-1, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1584,7 +1559,7 @@
           {"name": "Two-handed", "id": "af9e-794c-5acb-7d27", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
         "constraints": [{"id": "c78d-9ba7-4346-c81b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 105}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 75}],
         "infoLinks": [
           {"name": "Blast", "id": "18a8-bd12-6fa5-8d01", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"},
           {"name": "Heavy", "id": "f4b8-7089-dc0a-aeb9", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
@@ -1598,8 +1573,7 @@
             "type": "rule",
             "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
           },
-          {"name": "Two-handed", "id": "90a7-2878-3d7c-b6d6", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Unwieldy", "id": "2407-4681-8964-2f5c", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+          {"name": "Two-handed", "id": "90a7-2878-3d7c-b6d6", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
         ],
         "profiles": [
           {
@@ -1612,9 +1586,9 @@
               {"name": "Range", "$text": "30", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6+1", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Blast, Heavy, Misfire, One-use, Rare 0-1, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Damage", "$text": "d6+1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "\n", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Blast, Heavy, Misfire, One-use, Rare 0-1, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1625,7 +1599,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 12}],
         "profiles": [
           {
             "name": "Sling",
@@ -1650,7 +1624,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 12}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
         "infoLinks": [{"name": "Poison", "id": "5123-c444-c418-fa92", "hidden": false, "targetId": "a705-5389-de52-9d30", "type": "rule"}],
         "profiles": [
           {
@@ -1997,12 +1971,11 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
                 "name": "Normal Effect",
-                "$text": "Until the end of the round, the caster has a 6\" aura of *shadows* friendly fighters are in cover while they are within 6\" of the caster.",
+                "$text": "Until the end of the round, the caster has a 6\" aura of *shadows* Friendly fighters are in cover while they are within 6\" of the caster.",
                 "typeId": "365b-5938-66e2-d41d"
               },
               {"name": "Critical Effect", "$text": "Increase the range of the aura from 6\" to 9\".", "typeId": "7fba-d9e0-5873-b1bc"}
@@ -2025,12 +1998,11 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
                 "name": "Normal Effect",
-                "$text": "Place the blast template centred on a point within 15\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following successful attack:\n|Rend|Damage|\n|---|---|\n|-1|d3|\n\n\nThen, the blast scatters d6\" again, and every fighter under it is targeted and hit with the above attack, (it is possible for the same fighter to be hit both times).",
+                "$text": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters d6\".\nEach fighter in its area is targeted and hit with the following successful attack:\n|Rend|Damage|\n|---|---|\n|-1|d3|\n\n\nThen, the blast scatters d6\" again, and every fighter in its areais targeted and hit with the above attack, (it is possible for the same fighter to be hit with an attack both times).",
                 "typeId": "365b-5938-66e2-d41d"
               },
               {"name": "Critical Effect", "$text": "When the blast template is first placed, it does not scatter.", "typeId": "7fba-d9e0-5873-b1bc"}
@@ -2189,15 +2161,59 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
                 "name": "Normal Effect",
-                "$text": "Place the blast template centred within 12\" of the caster, it then scatters d6\".\nEach fighter in its area is targeted and hit with the following successful attack:\n|Rend|Damage|\n|---|---|\n|-|d3|\n\n\nEach fighter hit by the spell becomes *poisoned*, (see *Poison* weapon trait).",
+                "$text": "Place the blast template centred on a visible point within 12\" of the caster, it then scatters d6\".\nEach fighter in its area is hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-|d3|\n\n\nEach fighter hit by the spell becomes *poisoned*, (see *Poison* weapon trait).",
                 "typeId": "365b-5938-66e2-d41d"
               },
               {"name": "Critical Effect", "$text": " It does not scatter.", "typeId": "7fba-d9e0-5873-b1bc"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rat Mutant",
+        "id": "f651-a48e-cc18-ef06",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Brute", "id": "a5f3-9f7c-0c3d-28c0", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
+          {"name": "Verminkin", "id": "22b1-cd88-d6ae-d8aa", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
+          {"name": "Rat-mutant List", "id": "999f-72cd-06a0-ef08", "hidden": false, "primary": false, "targetId": "d8cc-f874-b0de-7916"},
+          {"name": "Ogre", "id": "cced-c695-4eca-d4a7", "hidden": false, "primary": false, "targetId": "3491-ebed-2a64-f450"},
+          {"name": "Fighter", "id": "9d14-f22a-92c2-f79d", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 105}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "fce0-7131-7f66-f5af",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "23f9-f995-e9dc-3ee2",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "92aa-7c12-e399-cbd4", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+        ],
+        "profiles": [
+          {
+            "name": "Rat Mutant",
+            "id": "10a5-563f-aad4-f0f3",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "2", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
             ]
           }
         ]
@@ -2515,12 +2531,29 @@
                 "import": true,
                 "targetId": "1269-ebf3-b7fd-6133",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Unarmed Strike",
+                "id": "c756-6d28-d63d-eb83",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "97e9-6b13-7c7a-ec1d",
+                "type": "selectionEntry",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [{"childId": "f651-a48e-cc18-ef06", "childName": "Rat Mutant", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}],
+                    "modifiers": [{"field": "hidden", "type": "set", "value": true}]
+                  }
+                ]
               }
             ]
           },
           {
             "name": "2nd Hand",
             "id": "26b0-b614-6e3a-af43",
+            "defaultSelectionEntryId": "1cdb-70d3-2053-dab3",
             "hidden": false,
             "sortIndex": 2,
             "constraints": [{"id": "ecb7-500d-c5a2-1859", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
@@ -2533,6 +2566,14 @@
                 "import": true,
                 "targetId": "1513-5aff-b2f3-749f",
                 "type": "selectionEntryGroup"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "a4c7-e572-98cc-6d1b", "childName": "Rat Mutant", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
               }
             ]
           }

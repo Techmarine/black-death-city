@@ -337,7 +337,8 @@
           {"name": "Undead", "id": "61e9-b3f6-eef7-a0be", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Wizard", "id": "5d01-cd93-4b74-3eb6", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
           {"name": "Vampyre", "id": "85c9-903a-91d0-1e55", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
-          {"name": "Aristocrat", "id": "af30-8c3f-26a6-0df2", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"}
+          {"name": "Aristocrat", "id": "af30-8c3f-26a6-0df2", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
+          {"name": "Fighter", "id": "5947-5e22-3dac-cee0", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 185}],
         "entryLinks": [
@@ -400,7 +401,8 @@
           {"name": "Leader", "id": "efe4-5e58-496f-c260", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
           {"name": "Practitioner List", "id": "d883-5576-50b4-bd72", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"},
           {"name": "Human", "id": "b7cb-62c0-ffac-beea", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Wizard", "id": "f731-b529-71df-c793", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+          {"name": "Wizard", "id": "f731-b529-71df-c793", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
+          {"name": "Fighter", "id": "39bb-661a-669f-183e", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 165}],
         "entryLinks": [
@@ -464,7 +466,8 @@
           {"name": "Champion List", "id": "cb63-a6c7-9914-a02d", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
           {"name": "Undead", "id": "456b-2dfd-35b4-562d", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Aristocrat", "id": "ca98-19e3-e259-896b", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
-          {"name": "Werwulf", "id": "ae30-9b11-fb6d-4732", "hidden": false, "primary": false, "targetId": "77bc-dafb-f489-71cb"}
+          {"name": "Werwulf", "id": "ae30-9b11-fb6d-4732", "hidden": false, "primary": false, "targetId": "77bc-dafb-f489-71cb"},
+          {"name": "Fighter", "id": "0d1c-4cbe-f9c5-9ebf", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 170}],
         "entryLinks": [
@@ -540,7 +543,8 @@
           {"name": "Main List", "id": "4abf-e475-e22b-23f2", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
           {"name": "Champion List", "id": "b728-94b2-5fbc-fa2b", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
           {"name": "Undead", "id": "9dd1-c13e-39c3-1ff6", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
-          {"name": "Skeleton", "id": "72e2-dcc3-5f42-4d4f", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"}
+          {"name": "Skeleton", "id": "72e2-dcc3-5f42-4d4f", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"},
+          {"name": "Fighter", "id": "cdf6-948e-5688-d2e4", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 130}],
         "entryLinks": [
@@ -589,7 +593,8 @@
           {"name": "Undead", "id": "75fe-42bf-2c1f-2e75", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Aristocrat", "id": "e31f-bed0-bca2-deac", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
           {"name": "Vampyre", "id": "7663-8c45-a31a-c0eb", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
-          {"name": "Wizard", "id": "0dac-c92e-beac-9c3e", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+          {"name": "Wizard", "id": "0dac-c92e-beac-9c3e", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
+          {"name": "Fighter", "id": "0688-bdd5-8f4f-caf1", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "8c3e-d691-b73a-4f2d", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 125}],
@@ -654,7 +659,8 @@
           {"name": "Champion List", "id": "93b8-d082-8d38-b4de", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
           {"name": "Undead", "id": "99de-6bac-6867-f494", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Vampyre", "id": "4470-fd0a-a9a9-7f8c", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
-          {"name": "Aristocrat", "id": "81df-eb76-03fc-b75b", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"}
+          {"name": "Aristocrat", "id": "81df-eb76-03fc-b75b", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
+          {"name": "Fighter", "id": "7ba7-5bd1-31be-a890", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "df32-5c1b-1b66-74a4", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 95}],
@@ -721,7 +727,8 @@
           {"name": "Main List", "id": "6b5f-ebab-e28c-c996", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
           {"name": "Champion List", "id": "d851-b434-d5b9-6370", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
           {"name": "Undead", "id": "48e0-a0a1-5f73-b811", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
-          {"name": "Vampyre", "id": "474e-b0a9-35af-1178", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"}
+          {"name": "Vampyre", "id": "474e-b0a9-35af-1178", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
+          {"name": "Fighter", "id": "87ae-4088-59de-036c", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "5593-2a62-84fa-45e9", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 65}],
@@ -812,7 +819,8 @@
           {"name": "Champion", "id": "4dd6-98bb-3ed1-6d1d", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
           {"name": "Practitioner List", "id": "ff77-1666-0557-3ec9", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"},
           {"name": "Human", "id": "a9e7-5cb6-ca62-8dae", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Wizard", "id": "e58e-4fe4-7a1d-4d94", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+          {"name": "Wizard", "id": "e58e-4fe4-7a1d-4d94", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
+          {"name": "Fighter", "id": "ac47-fd57-05c7-ec25", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "b968-6906-e479-72ba", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
@@ -876,7 +884,8 @@
           {"name": "Main List", "id": "1e68-1f15-49e2-6c42", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
           {"name": "Champion List", "id": "d278-8501-0ca8-700d", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
           {"name": "Undead", "id": "df6c-8fc9-54f0-31e4", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
-          {"name": "Skeleton", "id": "1712-bb5d-6c9b-b9bc", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"}
+          {"name": "Skeleton", "id": "1712-bb5d-6c9b-b9bc", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"},
+          {"name": "Fighter", "id": "759b-ae93-9f30-0f5c", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 85}],
         "entryLinks": [
@@ -924,7 +933,8 @@
           {"name": "Main List", "id": "7bbb-4cb3-9a6e-8e6f", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
           {"name": "Undead", "id": "1a7e-f534-e00c-942b", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Skeleton", "id": "c7a4-23a7-2e4f-cef6", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"},
-          {"name": "Thrall", "id": "3db1-f207-3bf1-2e4d", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"}
+          {"name": "Thrall", "id": "3db1-f207-3bf1-2e4d", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"},
+          {"name": "Fighter", "id": "e116-7fdc-efd6-09a2", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
         "entryLinks": [
@@ -970,7 +980,8 @@
           {"name": "Henchman", "id": "34e7-5eb0-2282-ddfa", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
           {"name": "Undead", "id": "441b-e7c1-8f93-a605", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Zombie", "id": "098b-f8f0-ae49-e692", "hidden": false, "primary": false, "targetId": "3f5a-29ec-db98-416e"},
-          {"name": "Thrall", "id": "6d4b-7688-1c1b-5b5c", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"}
+          {"name": "Thrall", "id": "6d4b-7688-1c1b-5b5c", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"},
+          {"name": "Fighter", "id": "99c0-8179-0968-0b0a", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
         "entryLinks": [{"name": "Skills", "id": "8a38-ec59-8eb6-4572", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
@@ -1023,7 +1034,8 @@
           {"name": "Zombie Ogre List", "id": "ea56-0c6b-c7eb-84df", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"},
           {"name": "Undead", "id": "559e-19b4-55d8-8b67", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Zombie", "id": "e74d-89e7-9ddf-76e4", "hidden": false, "primary": false, "targetId": "3f5a-29ec-db98-416e"},
-          {"name": "Thrall", "id": "624a-3b60-80cd-8111", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"}
+          {"name": "Thrall", "id": "624a-3b60-80cd-8111", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"},
+          {"name": "Fighter", "id": "8bed-cf4b-5ea2-b355", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 95}],
         "entryLinks": [
@@ -1038,10 +1050,7 @@
           },
           {"name": "Skills", "id": "a3c9-afa9-884c-2871", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
         ],
-        "infoLinks": [
-          {"name": "Incredible Strength", "id": "282b-23d9-4796-9d5a", "hidden": false, "targetId": "a082-fb37-4f06-3cb9", "type": "rule"},
-          {"name": "Unshakeable", "id": "ec54-2b37-836e-6bad", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Unshakeable", "id": "ec54-2b37-836e-6bad", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
           {
             "name": "Zombie Ogre",
@@ -1073,7 +1082,8 @@
           {"name": "Gargoyle", "id": "305b-3ae9-dc25-0f00", "hidden": false, "primary": false, "targetId": "aea2-4319-bbba-ff40"},
           {"name": "Undead", "id": "8042-d8a5-622f-ba3e", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Thrall", "id": "a3fa-2fa4-d14c-ff33", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"},
-          {"name": "Fly", "id": "6ff4-a627-1dae-57ac", "hidden": false, "primary": false, "targetId": "4d87-219d-0f14-9182"}
+          {"name": "Fly", "id": "6ff4-a627-1dae-57ac", "hidden": false, "primary": false, "targetId": "4d87-219d-0f14-9182"},
+          {"name": "Fighter", "id": "8085-124b-07c7-8b94", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
         "entryLinks": [{"name": "Skills", "id": "02b1-e526-82c5-1a0f", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
@@ -1124,7 +1134,7 @@
                   {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
                   {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
                   {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
-                  {"name": "Critical Damage", "$text": "d6+1", "typeId": "0b2a-1a62-9dad-e51f"},
+                  {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
                   {"name": "Weapon Traits", "$text": "Bludgeon, Natural Weapon", "typeId": "2397-722e-6b58-da62"}
                 ]
               }
@@ -1143,7 +1153,8 @@
           {"name": "Beast", "id": "fe46-a933-1fa8-e2dc", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
           {"name": "Undead", "id": "a737-99ef-cb26-bfff", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Bat", "id": "1e82-8a7d-c374-9f01", "hidden": false, "primary": false, "targetId": "4ac4-0b30-ee22-b7bb"},
-          {"name": "Fly", "id": "358d-4c10-3469-f3cd", "hidden": false, "primary": false, "targetId": "4d87-219d-0f14-9182"}
+          {"name": "Fly", "id": "358d-4c10-3469-f3cd", "hidden": false, "primary": false, "targetId": "4d87-219d-0f14-9182"},
+          {"name": "Fighter", "id": "d21a-d843-3104-6909", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 60}],
         "entryLinks": [{"name": "Skills", "id": "d185-86ab-7a7c-842e", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
@@ -1216,7 +1227,8 @@
         "categoryLinks": [
           {"name": "Beast", "id": "5c89-a0a4-a236-ea6f", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
           {"name": "Undead", "id": "4b03-3431-7f0e-a5e4", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
-          {"name": "Dog", "id": "4043-6832-976e-f895", "hidden": false, "primary": false, "targetId": "e55f-24f6-9c36-7e48"}
+          {"name": "Dog", "id": "4043-6832-976e-f895", "hidden": false, "primary": false, "targetId": "e55f-24f6-9c36-7e48"},
+          {"name": "Fighter", "id": "3ce0-24c4-73ab-3741", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
         "entryLinks": [{"name": "Skills", "id": "e3fd-eec1-efee-dc6d", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
@@ -1596,12 +1608,11 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
                 "name": "Normal Effect",
-                "$text": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following successful attack:\n|Rend|Damage|\n|---|---|\n|-1|d3+1|",
+                "$text": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-1|d3+1|",
                 "typeId": "365b-5938-66e2-d41d"
               },
               {"name": "Critical Effect", "$text": "It does not scatter.", "typeId": "7fba-d9e0-5873-b1bc"}
@@ -2356,6 +2367,15 @@
                 "import": true,
                 "targetId": "6a84-6610-4241-5fdd",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Unarmed Strike",
+                "id": "8a75-ab8b-6e05-5454",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "97e9-6b13-7c7a-ec1d",
+                "type": "selectionEntry"
               }
             ]
           },
@@ -2409,7 +2429,7 @@
               {
                 "name": "Mesmeric Gaze",
                 "id": "7dc0-68d7-27a3-ac0d",
-                "description": "Once per battle, when this fighter makes a Melee Attack action, it can attempt to *mesmerise* the defending fighter. If they do so, the controlling players each roll a dice and add their fighter’s Willpower value to the score. If this fighter’s total exceeds the defending fighter’s total, they are *mesmerised* for that action. While they are *mesmerised*, subtract 1 from the Attacks value of their melee weapons (off-hand attacks are not affected).",
+                "description": "Once per battle, when this fighter makes a Melee Attack action, it can attempt to *mesmerise* the defending fighter. If they do so, the commanding players each roll a dice and add their fighter’s Willpower value to the score. If this fighter’s total exceeds the defending fighter’s total, they are *mesmerised* for that action. While they are *mesmerised*, subtract 1 from the Attacks value of their melee weapons (off-hand attacks are not affected).",
                 "hidden": false
               }
             ]

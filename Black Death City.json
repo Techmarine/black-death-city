@@ -13,19 +13,7 @@
       {"name": "Henchman", "id": "2594-e088-657e-98c8", "hidden": false},
       {"name": "Brute", "id": "eea3-65a8-e483-ad71", "hidden": false},
       {"name": "Beast", "id": "054d-3052-d990-09f1", "hidden": false},
-      {
-        "name": "Held Item",
-        "id": "08f8-e0cc-9de3-6c2e",
-        "hidden": true,
-        "rules": [
-          {
-            "name": "Held Item",
-            "id": "a53e-63ee-3533-fba1",
-            "description": "Some items have the *Held Item* keyword (eg. Shields). These items count towards the number of melee weapons a fighter can be equipped with\ninstead of the number of items. In addition, they have the following rules:\n**Two-Handed Melee Weapons**: A fighter can be equipped with a *held item* and a *two-handed* melee weapon (eg. a Spear and Shield), however, subtract 1 from the Attacks value of the fighter's *two-handed* melee weapons.\n**Two-Handed Ranged Weapons**: A fighter cannot be equipped with a *held item* and a *two-handed* ranged weapon.",
-            "hidden": false
-          }
-        ]
-      },
+      {"name": "Held Item", "id": "08f8-e0cc-9de3-6c2e", "hidden": true},
       {
         "name": "Two-handed Melee Weapon",
         "id": "439f-4735-b903-3387",
@@ -87,7 +75,13 @@
       {"name": "Ogre", "id": "3491-ebed-2a64-f450", "hidden": false},
       {"name": "Dog", "id": "e55f-24f6-9c36-7e48", "hidden": false},
       {"name": "Fly", "id": "4d87-219d-0f14-9182", "hidden": false},
-      {"name": "Summon Spell", "id": "200f-0093-e878-2e53", "hidden": false}
+      {"name": "Summon Spell", "id": "200f-0093-e878-2e53", "hidden": false},
+      {
+        "name": "Fighter",
+        "id": "2440-29a6-376e-748a",
+        "hidden": true,
+        "constraints": [{"id": "f984-d5a4-eb8a-9cf9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 15}]
+      }
     ],
     "costTypes": [{"name": "Silver", "id": "3892-0a24-b2ab-55d1", "defaultCostLimit": -1}],
     "profileTypes": [
@@ -279,7 +273,7 @@
       {
         "name": "Brace",
         "id": "68e3-1e11-de30-b7ac",
-        "description": "*(Initiative vs charging fighters)*\nIf the defending fighter uses this weapon while they are the defending fighter, they automatically have the initiative if the attacking fighter charged this activation.",
+        "description": "*(Initiative vs charging fighters)*\nIf a fighter uses this weapon while they are the defending fighter, they automatically have the initiative if the attacking fighter charged this activation.",
         "hidden": false
       },
       {"name": "Flame", "id": "706f-83cc-37eb-0360", "description": "*(Flame template. Auto-hits)*\nThis weapon uses the Flame template.", "hidden": false},
@@ -292,7 +286,7 @@
       {
         "name": "Heavy",
         "id": "69d1-83cb-5d71-43c6",
-        "description": "*(Move or Attack. Can still reload before or after)*\nThis weapon cannot be used to make an attack if the fighter has made a move during their activation. In addition, if this weapon has been used to make an attack, the fighter cannot make a move during their activation.\n**Reloading**: The weapon can be used to attack if the fighter spent their move to reload it. Likewise, after the weapon has been used to attack, if they have not yet spent their Move, they can do so to reload it, (see Reload Weapon Trait).\n",
+        "description": "*(Move or Attack)*\nThis weapon cannot be used to make an attack if the fighter has made a move during the same activation. In addition, if this weapon has been used to make an attack, the fighter cannot make a move in that same activation.",
         "hidden": false
       },
       {
@@ -310,7 +304,7 @@
       {
         "name": "Off-hand",
         "id": "86e9-90ef-bfd2-d3b2",
-        "description": "*(Can be used off-hand: 1 attack)*\nWhen making a melee attack action, this weapon can be used to make an off-hand attack.",
+        "description": "*(Can be used off-hand: 1 attack)*\nWhen making a melee attack, this weapon can be used to make an off-hand attack.",
         "hidden": false
       },
       {"name": "One-use", "id": "ae46-3e6f-2591-affb", "description": "*(1 attack per battle)*\nThis weapon can only be used once each battle.", "hidden": false},
@@ -330,7 +324,7 @@
       {
         "name": "Reload",
         "id": "abe8-eb2b-8cae-ff9c",
-        "description": "*(Spend a Move or Action to reload)*\nEach time this weapon is used to make an attack, before it can be used again, the fighter must **reload** it. To reload a weapon, the fighter must spend either their Move or their Action during their activation. When a fighter spends either a Move or Action, they forfeit it.",
+        "description": "*(Forgo a Move or Action to reload)*\nThis weapon begins the battle **loaded**. Each time this weapon is used to make an attack, before it can be used again, the fighter must **reload** it. To reload a weapon, the fighter must forgo either their Move or their Action during their activation. A fighter cannot reload a weapon while engaged in melee.",
         "hidden": false
       },
       {
@@ -343,7 +337,7 @@
       {
         "name": "Volley",
         "id": "f056-bb94-bf4b-2e4b",
-        "description": "*(Multiple targets within 3\")*\nEach time this weapon is used for a ranged attack, it can target a number of enemy fighters equal to its Attacks value. Before resolving any Attack rolls, assign each attack to a target. The first target must be picked as normal, each additional attack can be assigned to that target, or to a different visible enemy fighter within 3\" of the target that is not engaged in melee.\nThen resolve all the attacks.",
+        "description": "*(Multiple targets within 3\")*\nEach time this weapon is used for a ranged attack, it can target a number of enemy fighters equal to its Attacks value. Before resolving any attack rolls, assign each attack to a target. The first target must be picked as normal, each additional attack can be assigned to that target, or to a different visible enemy fighter within 3\" of the target that is not engaged in melee.\nThen resolve all the attacks.",
         "hidden": false
       },
       {
@@ -364,20 +358,14 @@
         "description": "Fighters can be equipped with up to 2 items. These range from shields, to potions, bombs and all sorts of other esoteric equipment. Every item has one or more special rules and a cost in silver.",
         "hidden": false
       },
-      {"name": "Duellist", "id": "573f-5b00-2489-dbcd", "description": "This fighter can parry critical hits with any hit.", "hidden": false},
+      {"name": "Duellist", "id": "573f-5b00-2489-dbcd", "description": "This fighter can parry critical hits with any successful attack.", "hidden": false},
       {
         "name": "Sniff 'em Out",
         "id": "e3a1-32d0-7696-22f5",
         "description": "Enemy fighters that are hidden are not hidden while they are within 9\" of this fighter.",
         "hidden": false
       },
-      {"name": "Seasoned Warrior", "id": "ec34-bd52-e574-4bcd", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false},
-      {
-        "name": "Incredible Strength",
-        "id": "a082-fb37-4f06-3cb9",
-        "description": "This fighter ignores the *Heavy* and *Unwieldy* weapon traits on weapons they are equipped with.",
-        "hidden": false
-      }
+      {"name": "Seasoned Warrior", "id": "ec34-bd52-e574-4bcd", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
@@ -451,7 +439,18 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "constraints": [{"id": "0e39-1962-bcde-ad20", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "9c33-4350-2882-8a1a",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          }
+        ],
         "rules": [
           {
             "name": "Grimoire",
@@ -494,7 +493,7 @@
           {
             "name": "Fast Learner",
             "id": "249b-2be8-955c-afc1",
-            "description": "In the aftermath of each battle, this fighter earns d6 bonus experience.",
+            "description": "In the Aftermath sequence of each battle, this fighter earns d6 bonus experience.",
             "hidden": false
           }
         ]
@@ -524,7 +523,7 @@
           {
             "name": "Shooting Drills",
             "id": "86d2-b3be-3be3-bfb4",
-            "description": "Each time this fighter reloads a weapon, they can make a Willpower test. If they pass, they do not need to sacrifice a Move or Action as part of the reload.",
+            "description": "Each time this fighter reloads a weapon, they can make a Willpower test. If they pass, they do not need to forgo a Move or Action, (see Reload weapon trait).",
             "hidden": false
           }
         ]
@@ -799,8 +798,8 @@
               {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+1", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Misfire, Reload", "typeId": "a727-f7da-c245-5268"}
             ]
           }
@@ -812,7 +811,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
         "infoLinks": [{"name": "Misfire", "id": "106a-6499-40c9-c25b", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"}],
         "profiles": [
           {
@@ -825,8 +824,8 @@
               {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+1", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Misfire", "typeId": "a727-f7da-c245-5268"}
             ]
           }
@@ -842,13 +841,11 @@
           {"name": "Two-handed Ranged Weapon", "id": "158b-84d9-afe5-729d", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "9c71-ff7d-b5f8-63ef", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 70}],
         "infoLinks": [
           {"name": "Heavy", "id": "8b91-e70e-3f36-e939", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
           {"name": "Misfire", "id": "6ed2-b8aa-f46a-0264", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
-          {"name": "Reload", "id": "5839-966a-ae16-7991", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
-          {"name": "Two-handed", "id": "4de4-376b-d76a-5905", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Unwieldy", "id": "13b7-831f-c8ca-d6da", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+          {"name": "Two-handed", "id": "4de4-376b-d76a-5905", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
         ],
         "profiles": [
           {
@@ -863,7 +860,7 @@
               {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
               {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Reload, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1119,6 +1116,30 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "d8b9-eedb-c4d4-3558", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+      },
+      {
+        "name": "Unarmed Strike",
+        "id": "97e9-6b13-7c7a-ec1d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Natural Weapon", "id": "82bc-33e8-a116-c822", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Unarmed Strike",
+            "id": "e0b4-b232-b955-6f89",
+            "hidden": false,
+            "typeId": "f98d-f3e1-8544-adfc",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Attacks", "$text": "2", "typeId": "5b07-00a6-1754-048e"},
+              {"name": "Rend", "$text": "", "typeId": "f48c-351f-2957-da29"},
+              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
+              {"name": "Critical Damage", "$text": "1", "typeId": "0b2a-1a62-9dad-e51f"},
+              {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [

@@ -390,7 +390,8 @@
           {"name": "Main List", "id": "d052-cde0-70d7-3d78", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
           {"name": "Champion List", "id": "43de-0169-9f54-31a5", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
           {"name": "Mercenary", "id": "aa9a-a829-d93b-7e48", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
-          {"name": "Human", "id": "1cfd-57c6-a756-ca55", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+          {"name": "Human", "id": "1cfd-57c6-a756-ca55", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Fighter", "id": "b1c7-30ad-8210-2a29", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140}],
         "entryLinks": [
@@ -440,7 +441,8 @@
           {"name": "Witch Hunter List", "id": "68ae-19ea-fece-c6ae", "hidden": false, "primary": false, "targetId": "04ce-3300-ed38-c04b"},
           {"name": "Mercenary", "id": "c421-91d1-0681-7dc8", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Human", "id": "2a61-40d2-4bd6-1e52", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Witch Hunter", "id": "c5fb-6a1e-80e8-8193", "hidden": false, "primary": false, "targetId": "370a-c285-e09a-c5c0"}
+          {"name": "Witch Hunter", "id": "c5fb-6a1e-80e8-8193", "hidden": false, "primary": false, "targetId": "370a-c285-e09a-c5c0"},
+          {"name": "Fighter", "id": "f684-ab02-77a2-2379", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140}],
         "entryLinks": [
@@ -488,7 +490,8 @@
         "categoryLinks": [
           {"name": "Leader", "id": "7cab-f108-e189-2b14", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
           {"name": "Wizard List", "id": "36ba-4fd4-7811-03eb", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"},
-          {"name": "Mercenary", "id": "41cd-6a23-1848-246e", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"}
+          {"name": "Mercenary", "id": "41cd-6a23-1848-246e", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
+          {"name": "Fighter", "id": "5eaa-78cf-e7ac-a408", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 165}],
         "entryLinks": [
@@ -551,7 +554,8 @@
           {"name": "Mercenary", "id": "ecca-4941-6f7a-5218", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Wizard List", "id": "7a88-07af-8a28-09bb", "hidden": false, "primary": false, "targetId": "3e88-5bc3-8d88-64ba"},
           {"name": "Human", "id": "0c70-e993-effb-e802", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Wizard", "id": "3104-f21c-0efb-36fd", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"}
+          {"name": "Wizard", "id": "3104-f21c-0efb-36fd", "hidden": false, "primary": false, "targetId": "7a14-b9e5-8753-9d26"},
+          {"name": "Fighter", "id": "f15a-6f3d-f2d3-89a2", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "5a76-2586-90ca-c4ef", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
@@ -615,7 +619,8 @@
           {"name": "Mercenary", "id": "f999-b5d9-6516-6735", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Cleric List", "id": "154d-7d0f-9fe2-3858", "hidden": false, "primary": false, "targetId": "2b03-b506-90a3-bf0c"},
           {"name": "Human", "id": "c4ff-129f-984a-4f0c", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Priest", "id": "7d88-bb1c-996f-83f0", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"}
+          {"name": "Priest", "id": "7d88-bb1c-996f-83f0", "hidden": false, "primary": false, "targetId": "d285-085c-9b0e-8cfb"},
+          {"name": "Fighter", "id": "3b28-43c3-36bd-2468", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "0db9-c6b3-137e-4887", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
@@ -679,7 +684,8 @@
           {"name": "Mercenary", "id": "9d82-0352-8f86-2b8f", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Main List", "id": "fda2-bbcf-a919-1d85", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
           {"name": "Champion List", "id": "e590-3e98-a1f9-4ceb", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
-          {"name": "Human", "id": "8bd7-2e1b-4a2f-ee0d", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+          {"name": "Human", "id": "8bd7-2e1b-4a2f-ee0d", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Fighter", "id": "eccb-ffc1-7668-1372", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
         "entryLinks": [
@@ -725,7 +731,8 @@
           {"name": "Champion", "id": "6e57-c281-9073-db83", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
           {"name": "Mercenary", "id": "7abf-a620-efe2-0767", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Main List", "id": "dafc-2b21-bf4e-cdfd", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
-          {"name": "Human", "id": "3bf1-3923-3f9d-cbd0", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+          {"name": "Human", "id": "3bf1-3923-3f9d-cbd0", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Fighter", "id": "c35f-6686-8a5c-64bd", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 65}],
         "entryLinks": [
@@ -787,7 +794,8 @@
           {"name": "Champion List", "id": "a75b-41a0-7d9e-e4c8", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
           {"name": "Witch Hunter List", "id": "5e07-debc-b181-ea65", "hidden": false, "primary": false, "targetId": "04ce-3300-ed38-c04b"},
           {"name": "Human", "id": "2574-43c1-a0a0-93f6", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Witch Hunter", "id": "37b4-b49f-de2a-88ef", "hidden": false, "primary": false, "targetId": "370a-c285-e09a-c5c0"}
+          {"name": "Witch Hunter", "id": "37b4-b49f-de2a-88ef", "hidden": false, "primary": false, "targetId": "370a-c285-e09a-c5c0"},
+          {"name": "Fighter", "id": "ad35-7d16-658e-d3cf", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 80}],
         "entryLinks": [
@@ -834,7 +842,8 @@
           {"name": "Mercenary", "id": "504f-5460-dc43-59c4", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Main List", "id": "7424-b4ad-68f9-da2a", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
           {"name": "Munitions List", "id": "35c6-d835-8b9c-d110", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"},
-          {"name": "Human", "id": "3b0d-fc98-5cfd-f20e", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+          {"name": "Human", "id": "3b0d-fc98-5cfd-f20e", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Fighter", "id": "5871-51ae-950b-e541", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
         "entryLinks": [
@@ -879,7 +888,8 @@
           {"name": "Henchman", "id": "f345-7fdb-cec0-68f4", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
           {"name": "Mercenary", "id": "18c5-1333-0773-f105", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Main List", "id": "9f6a-e11b-6729-c077", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
-          {"name": "Human", "id": "d031-f8b9-140e-eed4", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"}
+          {"name": "Human", "id": "d031-f8b9-140e-eed4", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
+          {"name": "Fighter", "id": "d956-d735-dffe-9e6f", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
         "entryLinks": [
@@ -924,7 +934,8 @@
           {"name": "Brute", "id": "0ef3-3f95-718a-09ff", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
           {"name": "Mercenary", "id": "2799-777b-ac83-8718", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Ogre List", "id": "cfdd-36a0-7849-3109", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"},
-          {"name": "Ogre", "id": "affe-a604-7f70-a41f", "hidden": false, "primary": false, "targetId": "3491-ebed-2a64-f450"}
+          {"name": "Ogre", "id": "affe-a604-7f70-a41f", "hidden": false, "primary": false, "targetId": "3491-ebed-2a64-f450"},
+          {"name": "Fighter", "id": "c0d1-4d23-b289-76b8", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 100}],
         "entryLinks": [
@@ -939,7 +950,6 @@
           },
           {"name": "Skills", "id": "0ea0-3a7b-100e-c02a", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
         ],
-        "infoLinks": [{"name": "Incredible Strength", "id": "8b43-5648-bac2-bf35", "hidden": false, "targetId": "a082-fb37-4f06-3cb9", "type": "rule"}],
         "profiles": [
           {
             "name": "Mercenary Ogre",
@@ -969,7 +979,8 @@
         "categoryLinks": [
           {"name": "Beast", "id": "c6c7-d49b-f70b-8604", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
           {"name": "Mercenary", "id": "2a5f-e7b3-a10f-e110", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
-          {"name": "Dog", "id": "8f04-4689-51cc-8196", "hidden": false, "primary": false, "targetId": "e55f-24f6-9c36-7e48"}
+          {"name": "Dog", "id": "8f04-4689-51cc-8196", "hidden": false, "primary": false, "targetId": "e55f-24f6-9c36-7e48"},
+          {"name": "Fighter", "id": "f38f-afc4-f06c-9a55", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
         "infoLinks": [{"name": "Sniff 'em Out", "id": "9184-bfa4-3f47-f7a3", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
@@ -1140,7 +1151,7 @@
           {"name": "Two-handed Ranged Weapon", "id": "d91c-4a3e-32f8-efe6", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "b388-90e4-07ed-71ed", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 22}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 24}],
         "infoLinks": [
           {"name": "Misfire", "id": "e05c-c060-c9be-5df9", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
           {"name": "Reload", "id": "47ff-d5d0-29ab-2c75", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
@@ -1174,7 +1185,7 @@
           {"name": "Two-handed Ranged Weapon", "id": "6601-9aa9-53fc-ec00", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "71ae-27b4-212f-3bac", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 14}],
         "infoLinks": [
           {"name": "Two-handed", "id": "5d14-3592-ffce-5a92", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
           {"name": "Reload", "id": "bbcc-3a9b-21b6-346d", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
@@ -1208,7 +1219,7 @@
           {"name": "Two-handed Ranged Weapon", "id": "2052-cdb3-fdeb-b964", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "8680-5c92-9922-6a22", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 26}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 20}],
         "infoLinks": [
           {"name": "Reload", "id": "a091-7545-8bdd-5fb2", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
           {"name": "Two-handed", "id": "8085-c57e-d057-7558", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
@@ -1267,7 +1278,7 @@
           {"name": "Two-handed Ranged Weapon", "id": "624c-0d3a-5665-61f8", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "7143-e6e0-e50f-2150", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 28}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 26}],
         "infoLinks": [
           {"name": "Two-handed", "id": "6d85-b201-2666-b2de", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
           {"name": "Heavy", "id": "d8ce-6c97-f4d1-6c23", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"}
@@ -1300,7 +1311,7 @@
           {"name": "Two-handed Ranged Weapon", "id": "df72-4c99-c2d0-117b", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "c713-8aba-a3d1-37d6", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 18}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 16}],
         "infoLinks": [{"name": "Two-handed", "id": "64b5-330f-0c00-da05", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}],
         "profiles": [
           {
@@ -1331,7 +1342,7 @@
           {"name": "Two-handed", "id": "4e33-da91-19db-81c1", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
         "constraints": [{"id": "85ce-96b4-62ee-d841", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 96}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
         "infoLinks": [
           {
             "name": "Rare (0-[x])",
@@ -1342,7 +1353,6 @@
             "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
           },
           {"name": "Heavy", "id": "9262-5e83-93ee-2dfa", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
-          {"name": "Reload", "id": "bd45-c76b-c8d6-e601", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
           {"name": "Two-handed", "id": "c729-53d2-cd19-aa57", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
           {"name": "Unwieldy", "id": "f52c-a1dc-1ea4-15aa", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
         ],
@@ -1359,7 +1369,7 @@
               {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
               {"name": "Damage", "$text": "3", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Heavy, Rare 0-1, Reload, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Weapon Traits", "$text": "Heavy, Rare 0-1, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1371,7 +1381,7 @@
         "import": true,
         "type": "upgrade",
         "categoryLinks": [{"name": "Two-handed Ranged Weapon", "id": "2122-5c13-ca02-8c27", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 32}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
         "infoLinks": [
           {"name": "Misfire", "id": "2431-9ff3-4644-2c6e", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
           {"name": "Reload", "id": "5b43-2f34-ba4c-3527", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
@@ -1388,8 +1398,8 @@
               {"name": "Range", "$text": "12", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "2", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+1", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Misfire, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
@@ -1402,7 +1412,7 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "03d2-14b9-793d-b49d", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 37}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 34}],
         "infoLinks": [
           {"name": "Blast", "id": "c22e-4f28-930d-3b52", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"},
           {"name": "One-use", "id": "7e43-5d68-8e8b-eab4", "hidden": false, "targetId": "ae46-3e6f-2591-affb", "type": "rule"},
@@ -1427,8 +1437,8 @@
               {"name": "Range", "$text": "8", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d3+1", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "d3+1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "\n", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Blast, One-use, Rare 0-1, Scare", "typeId": "a727-f7da-c245-5268"}
             ]
           }
@@ -1445,7 +1455,7 @@
           {"name": "Two-handed", "id": "12aa-60d4-948b-ee56", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
         "constraints": [{"id": "67f1-12d5-7e44-052f", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 88}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 80}],
         "infoLinks": [
           {"name": "Flame", "id": "4469-5806-ac31-8904", "hidden": false, "targetId": "706f-83cc-37eb-0360", "type": "rule"},
           {
@@ -1489,10 +1499,9 @@
           {"name": "Two-handed", "id": "7f1f-1e8d-75c4-abf9", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
         "constraints": [{"id": "26ee-3437-12cc-eda8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 105}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 112}],
         "infoLinks": [
           {"name": "Blast", "id": "10f1-7c4b-202e-794d", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"},
-          {"name": "Heavy", "id": "ada4-a974-f8dd-40e2", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
           {"name": "Misfire", "id": "024c-5235-61b2-006a", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
           {
             "name": "Rare (0-[x])",
@@ -1503,7 +1512,6 @@
             "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
           },
           {"name": "Reload", "id": "898e-9f5b-12e3-6e91", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
-          {"name": "Unwieldy", "id": "c843-075a-4b5b-10d5", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"},
           {"name": "Two-handed", "id": "8000-97ab-862f-dab4", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"}
         ],
         "profiles": [
@@ -1517,9 +1525,9 @@
               {"name": "Range", "$text": "18", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-3", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d3+1", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Blast, Heavy, Misfire, Rare 0-1, Reload, Unwieldy, Two-handed", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Damage", "$text": "d6+1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "\n", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Blast, Misfire, Rare 0-1, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1546,15 +1554,15 @@
               {"name": "Range", "$text": "16", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "3", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Misfire, Reload", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
       },
       {
-        "name": "Volley Fire",
+        "name": "Volley Rifle",
         "id": "ba51-37e5-072b-b886",
         "hidden": false,
         "import": true,
@@ -1581,7 +1589,7 @@
         ],
         "profiles": [
           {
-            "name": "Volley Fire",
+            "name": "Volley Rifle",
             "id": "d0c8-a85b-935f-127a",
             "hidden": false,
             "typeId": "e759-d91c-e4a6-8b61",
@@ -1590,8 +1598,8 @@
               {"name": "Range", "$text": "16", "typeId": "f227-9a6c-ccc3-cd45"},
               {"name": "Attacks", "$text": "3", "typeId": "c6c8-c109-b266-f754"},
               {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "1", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+1", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Misfire, Rare 0-1, Reload, Two-handed, Volley", "typeId": "a727-f7da-c245-5268"}
             ]
           }
@@ -1607,13 +1615,11 @@
           {"name": "Two-handed Ranged Weapon", "id": "95e3-5977-2aef-f9f2", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
           {"name": "Two-handed", "id": "7a53-51d9-ec2b-f347", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 70}],
         "infoLinks": [
-          {"name": "Heavy", "id": "eebb-047c-6b8a-31bd", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"},
           {"name": "Misfire", "id": "24ee-b2a1-a399-ee3c", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
-          {"name": "Reload", "id": "59cc-a0b1-e062-ca51", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"},
           {"name": "Two-handed", "id": "2240-46d6-12ca-10e1", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Unwieldy", "id": "a76d-cab7-ffdb-bd20", "hidden": false, "targetId": "f067-7526-0e8a-79d5", "type": "rule"}
+          {"name": "Heavy", "id": "a164-a64a-8a3f-865c", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"}
         ],
         "profiles": [
           {
@@ -1628,7 +1634,7 @@
               {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
               {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Reload, Two-handed, Unwieldy", "typeId": "a727-f7da-c245-5268"}
+              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -1644,6 +1650,7 @@
           {"id": "bc7f-1be4-0d85-3940", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 25}],
+        "infoLinks": [{"name": "Blast", "id": "c154-3a7a-6322-dbc9", "hidden": false, "targetId": "8ec9-4cf0-5f0c-1ecf", "type": "rule"}],
         "modifiers": [
           {
             "field": "bc7f-1be4-0d85-3940",
@@ -1652,11 +1659,28 @@
             "conditions": [{"childId": "b450-3c34-fa0a-4ea8", "childName": "Crossbow", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
           }
         ],
+        "profiles": [
+          {
+            "name": "Bomb-bolt",
+            "id": "1c6d-4d70-c736-f55c",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "20", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-1", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "d3+1", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Blast", "typeId": "a727-f7da-c245-5268"}
+            ]
+          }
+        ],
         "rules": [
           {
             "name": "Bomb-bolt",
             "id": "ac89-a39d-47c6-ae8e",
-            "description": "This item requires the fighter to be equipped with a Crossbow.\nOnce per battle, when this fighter makes a Ranged Attack action with their crossbow, they can use the bomb-bolt. If they do so, the weapon gains the\nfollowing for the attack:\n- Improve the Rend value by 1.\n- Add 1 to the Damage and Critical Damage values.\n- The Blast weapon trait.",
+            "description": "This item requires the fighter to be equipped with a Crossbow.\nOnce per battle, when this fighter can make a Ranged Attack action with the following weapon:\n|Range|Attacks|Rend|Damage|Critical Damage|Weapon Traits|\n|---|---|---|---|---|:--|\n|20\"|1|-1|d3+1|-|*Blast*|",
             "hidden": false
           }
         ]
@@ -1955,7 +1979,8 @@
           {"name": "Champion List", "id": "4752-c585-742f-f5a8", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"},
           {"name": "Mercenary", "id": "e129-8be2-6910-7663", "hidden": false, "primary": false, "targetId": "2f43-29de-09c4-ec4c"},
           {"name": "Human", "id": "3c76-fec3-5e56-c66d", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Aristocrat", "id": "d1e4-ceec-4eac-e498", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"}
+          {"name": "Aristocrat", "id": "d1e4-ceec-4eac-e498", "hidden": false, "primary": false, "targetId": "a86d-3138-99c0-5732"},
+          {"name": "Fighter", "id": "4ae1-5866-177d-2d1d", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
         "entryLinks": [
@@ -2199,6 +2224,48 @@
               {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
               {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
               {"name": "Weapon Traits", "$text": "Bludgeon, Two-handed, Unwieldy", "typeId": "2397-722e-6b58-da62"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Arbalest",
+        "id": "c619-66ba-74b4-2f6c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Two-handed Ranged Weapon", "id": "64e1-ada5-7065-35c7", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
+          {"name": "Two-handed", "id": "4eea-4ab6-9065-5020", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
+        ],
+        "constraints": [{"id": "402e-a7c8-ed28-1746", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 90}],
+        "infoLinks": [
+          {
+            "name": "Rare (0-[x])",
+            "id": "b3b4-b24f-e408-10d5",
+            "hidden": false,
+            "targetId": "ba2d-a850-6dde-772e",
+            "type": "rule",
+            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Two-handed", "id": "8d50-d76b-4ace-0a78", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
+          {"name": "Reload", "id": "3c2d-92e1-7155-e66b", "hidden": false, "targetId": "abe8-eb2b-8cae-ff9c", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Arbalest",
+            "id": "8ad4-d0b1-67bd-175c",
+            "hidden": false,
+            "typeId": "e759-d91c-e4a6-8b61",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "24", "typeId": "f227-9a6c-ccc3-cd45"},
+              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
+              {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
+              {"name": "Damage", "$text": "3", "typeId": "8490-6720-799a-d1e9"},
+              {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
+              {"name": "Weapon Traits", "$text": "Rare 0-1, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
             ]
           }
         ]
@@ -2757,7 +2824,16 @@
             "type": "selectionEntry",
             "categoryLinks": [{"name": "Ogre List", "id": "9f8e-a1ef-82fe-21c7", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
           },
-          {"name": "Filters", "id": "b5d7-c7a5-4f80-36ee", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"}
+          {"name": "Filters", "id": "b5d7-c7a5-4f80-36ee", "hidden": false, "import": true, "targetId": "b9e5-23e0-951f-69c9", "type": "selectionEntryGroup"},
+          {
+            "name": "Ogre Arbalest",
+            "id": "c5cd-b707-07bd-ee53",
+            "hidden": true,
+            "import": true,
+            "targetId": "c619-66ba-74b4-2f6c",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Ogre List", "id": "8471-660a-a727-f6a3", "hidden": false, "primary": false, "targetId": "368c-4513-dd81-71c4"}]
+          }
         ],
         "modifiers": [
           {
@@ -2843,6 +2919,15 @@
                 "import": true,
                 "targetId": "ae92-eb93-eb76-d48e",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Unarmed Strike",
+                "id": "e600-4b57-75e5-4baa",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "97e9-6b13-7c7a-ec1d",
+                "type": "selectionEntry"
               }
             ]
           },
@@ -3046,7 +3131,7 @@
               {
                 "name": "Blessed by the Saints",
                 "id": "8d61-844a-1908-c728",
-                "description": "Each round, the first time this fighter is hit by a attack that is a critical hit, the hit is not a critical hit.",
+                "description": "Each round, the first time this fighter is hit by an attack that is a critical hit, the attack is not a critical hit.",
                 "hidden": false
               }
             ]
@@ -3061,7 +3146,7 @@
               {
                 "name": "Stand Ground",
                 "id": "97e6-dde4-eb4b-98f9",
-                "description": "Once per battle, at the start of a melee attack action in which this fighter is the defending fighter and the attacking fighter charged in the same activation, this fighter can attempt to *stand their ground*. If they do so, their melee weapons gain the *Brace* and *Bludgeon* weapon traits until the end of the activation",
+                "description": "Once per battle, at the start of a melee attack action in which this fighter is the defending fighter and the attacking fighter charged in the same activation, this fighter can *stand their ground*. If they do so, their melee weapons gain the *Brace* and *Bludgeon* weapon traits until the end of the activation",
                 "hidden": false
               }
             ]
