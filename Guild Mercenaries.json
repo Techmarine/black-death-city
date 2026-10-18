@@ -420,8 +420,7 @@
               {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
               {"name": "Initiative", "$text": "4", "typeId": "b562-c0a5-7d5d-39eb"},
               {"name": "Willpower", "$text": "4", "typeId": "6512-20c9-bd6f-ace9"},
-              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"},
-              {"name": "Special Rules", "$text": "Veteran of the City", "typeId": "a3eb-7ef5-25f5-6eec"}
+              {"name": "Life", "$text": "6", "typeId": "c149-c58e-1146-bf30"}
             ]
           }
         ],
@@ -1812,9 +1811,7 @@
             "hidden": false,
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
-            "attributes": [{"name": "Normal Effect", "$text": "\n", "typeId": "1388-9c1a-b3fa-361f"}, {"name": "Critical Effect", "$text": "\n", "typeId": "4a49-7ca7-f100-07a6"}],
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1842,7 +1839,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1870,7 +1866,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1898,7 +1893,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Hex Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1926,7 +1920,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1954,7 +1947,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "13", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2037,7 +2029,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Healing Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "6", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2065,7 +2056,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2093,7 +2083,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "6", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2121,7 +2110,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2149,7 +2137,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2177,7 +2164,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2771,7 +2757,7 @@
             "categoryLinks": [{"name": "Munitions List", "id": "4316-8d78-f489-37d8", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"}]
           },
           {
-            "name": "Volley Fire",
+            "name": "Volley Rifle",
             "id": "c84b-dffb-3522-4bcf",
             "hidden": true,
             "import": true,

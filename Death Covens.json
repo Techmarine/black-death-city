@@ -784,7 +784,8 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}]
+                "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
+                "modifiers": [{"field": "category", "scope": "root-entry", "type": "add", "value": "4d87-219d-0f14-9182"}]
               },
               {
                 "name": "Wulfen Legs",
@@ -1492,6 +1493,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "a12a-d5e6-03de-1756", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
         "profiles": [
           {
             "name": "Witchfire",
@@ -1500,7 +1502,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1519,6 +1520,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Enchant Spell", "id": "9983-a8f6-077b-6b04", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
         "profiles": [
           {
             "name": "Ethereal Armour",
@@ -1527,7 +1529,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1546,6 +1547,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Summon Spell", "id": "768a-4f06-6bde-7f7f", "hidden": false, "primary": false, "targetId": "200f-0093-e878-2e53"}],
         "profiles": [
           {
             "name": "Raise Zombie",
@@ -1554,7 +1556,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Summon Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1573,6 +1574,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Cantrip Spell", "id": "1431-4130-989b-cf71", "hidden": false, "primary": false, "targetId": "dc87-ec46-e9ec-57d9"}],
         "profiles": [
           {
             "name": "Twilight Translocation",
@@ -1581,7 +1583,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1600,6 +1601,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "404e-0c40-117a-b89f", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
         "profiles": [
           {
             "name": "Death Blast",
@@ -1626,6 +1628,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "53b0-836c-c230-3da9", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
         "profiles": [
           {
             "name": "Balefire",
@@ -1634,7 +1637,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "13", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1653,6 +1655,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "d149-6828-ba47-c4b1", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
         "profiles": [
           {
             "name": "Draw Blood",
@@ -1661,7 +1664,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1680,6 +1682,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Enchant Spell", "id": "e4a4-0682-ac1f-3846", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
         "profiles": [
           {
             "name": "Cursed Blades",
@@ -1688,7 +1691,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1707,6 +1709,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Summon Spell", "id": "e2e3-f68f-c79c-bd3a", "hidden": false, "primary": false, "targetId": "200f-0093-e878-2e53"}],
         "profiles": [
           {
             "name": "Raise Skeleton",
@@ -1715,7 +1718,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Summon Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "10", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "14", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1734,6 +1736,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Cantrip Spell", "id": "a5a2-de19-8f90-d0af", "hidden": false, "primary": false, "targetId": "dc87-ec46-e9ec-57d9"}],
         "profiles": [
           {
             "name": "Recall",
@@ -1742,7 +1745,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1761,6 +1763,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Hex Spell", "id": "4c88-d07b-d2fd-35ee", "hidden": false, "primary": false, "targetId": "c357-e647-ba26-1723"}],
         "profiles": [
           {
             "name": "Bat Scream",
@@ -1769,7 +1772,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Hex Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1788,6 +1790,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Attack Spell", "id": "1fce-897a-1362-70c9", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
         "profiles": [
           {
             "name": "Sanguine Spear",
@@ -1796,7 +1799,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "10", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "14", "typeId": "dd5b-a428-2ecb-8342"},
               {

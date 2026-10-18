@@ -44,6 +44,15 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Rolling-Contraption",
+        "id": "f244-f7dc-0a36-3af3",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 7,
+        "targetId": "3a94-a3a5-041e-daf2",
+        "type": "selectionEntry"
       }
     ],
     "forceEntries": [
@@ -862,85 +871,6 @@
               {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
               {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
             ]
-          }
-        ]
-      },
-      {
-        "name": "Rolling-Contraption",
-        "id": "3a94-a3a5-041e-daf2",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 6,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Brute", "id": "2ee9-f900-c9ca-0091", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
-          {"name": "Contraption List", "id": "d0b7-2c72-45a2-aee6", "hidden": false, "primary": false, "targetId": "d404-533e-15a3-4b65"},
-          {"name": "Verminkin", "id": "cde0-bc3c-6e9f-6e4f", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
-          {"name": "Contraption", "id": "7a4c-a8c7-00d6-f056", "hidden": false, "primary": false, "targetId": "69ca-bb14-e790-efec"},
-          {"name": "Fighter", "id": "b59c-aa0b-b3cb-899b", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
-        ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
-        "entryLinks": [
-          {
-            "name": "Wargear",
-            "id": "dacc-1f59-d7b6-3e61",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "23f9-f995-e9dc-3ee2",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Skills", "id": "3438-9373-7b44-7e1f", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
-          {
-            "name": "Crushing Bulk",
-            "id": "ec48-a877-d3fe-e8b6",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "57d8-5e78-76a8-0eee",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "15ca-d28a-84f9-1ec4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "15ca-d28a-84f9-1ec4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Rolling-Contraption",
-            "id": "a316-7346-3a28-d2ff",
-            "hidden": false,
-            "typeId": "b012-448f-6072-da0c",
-            "typeName": "Fighter Scroll",
-            "characteristics": [
-              {"name": "Move", "$text": "2d6", "typeId": "62c9-14c7-812c-5e90"},
-              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
-              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
-              {"name": "Armour", "$text": "4", "typeId": "f4c3-01af-1566-67e5"},
-              {"name": "Initiative", "$text": "1", "typeId": "b562-c0a5-7d5d-39eb"},
-              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
-              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Unpredictable Movement",
-            "id": "7b18-3595-a8c2-d62d",
-            "description": "This fighter has a Move value of 2d6\". Each time it makes a move, roll the dice to determine its Move value for that move, (for example, if this fighter makes a Run Move, first roll 2d6\" to determine its Move value, then roll an\nadditional d6 and add it to the Move value as normal).",
-            "hidden": false
-          },
-          {
-            "name": "Splat!",
-            "id": "6366-8e20-572d-7e1a",
-            "description": "After this fighter finishes a Charge move, pick 1 enemy fighter they are engaged with. That fighter is hit with the following attack 3 times:\n|Rend|Damage|\n|---|---|\n|-1|1|",
-            "hidden": false
-          },
-          {
-            "name": "Large and Heavy",
-            "id": "724c-087a-090a-5826",
-            "description": "This fighter cannot climb or jump. In addition, each time this fighter is set-up, they must be set up on the battlefield floor and they must finish each move on the battlefield floor.",
-            "hidden": false
           }
         ]
       },
@@ -1855,7 +1785,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1883,7 +1812,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Hex Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "6", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1911,7 +1839,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -1943,7 +1870,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Cantrip Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2025,7 +1951,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Attack Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2053,7 +1978,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Enchant Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2081,7 +2005,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Aura Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2109,7 +2032,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Hex Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
               {
@@ -2137,7 +2059,6 @@
             "typeId": "6e24-2b14-5ff8-de41",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Type", "$text": "Healing Spell", "typeId": "1650-8583-baca-be0b"},
               {"name": "Casting Value", "$text": "6", "typeId": "1538-b905-e373-4307"},
               {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
               {"name": "Normal Effect", "$text": "Each friendly fighter within 3\" of the caster heals 1 life.", "typeId": "365b-5938-66e2-d41d"},
@@ -2215,6 +2136,84 @@
               {"name": "Willpower", "$text": "2", "typeId": "6512-20c9-bd6f-ace9"},
               {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
             ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling-Contraption",
+        "id": "3a94-a3a5-041e-daf2",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Brute", "id": "2ee9-f900-c9ca-0091", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
+          {"name": "Contraption List", "id": "d0b7-2c72-45a2-aee6", "hidden": false, "primary": false, "targetId": "d404-533e-15a3-4b65"},
+          {"name": "Verminkin", "id": "cde0-bc3c-6e9f-6e4f", "hidden": false, "primary": false, "targetId": "1c33-6e56-bef5-9992"},
+          {"name": "Contraption", "id": "7a4c-a8c7-00d6-f056", "hidden": false, "primary": false, "targetId": "69ca-bb14-e790-efec"},
+          {"name": "Fighter", "id": "b59c-aa0b-b3cb-899b", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+        ],
+        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
+        "entryLinks": [
+          {
+            "name": "Wargear",
+            "id": "dacc-1f59-d7b6-3e61",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "23f9-f995-e9dc-3ee2",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Skills", "id": "3438-9373-7b44-7e1f", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
+          {
+            "name": "Crushing Bulk",
+            "id": "ec48-a877-d3fe-e8b6",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "57d8-5e78-76a8-0eee",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "15ca-d28a-84f9-1ec4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "15ca-d28a-84f9-1ec4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Rolling-Contraption",
+            "id": "a316-7346-3a28-d2ff",
+            "hidden": false,
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
+            "characteristics": [
+              {"name": "Move", "$text": "2d6", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "4", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "4", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "1", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "8", "typeId": "c149-c58e-1146-bf30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Unpredictable Movement",
+            "id": "7b18-3595-a8c2-d62d",
+            "description": "This fighter has a Move value of 2d6\". Each time it makes a move, roll the dice to determine its Move value for that move, (for example, if this fighter makes a Run Move, first roll 2d6\" to determine its Move value, then roll an\nadditional d6 and add it to the Move value as normal).",
+            "hidden": false
+          },
+          {
+            "name": "Splat!",
+            "id": "6366-8e20-572d-7e1a",
+            "description": "After this fighter finishes a Charge move, pick 1 enemy fighter they are engaged with. That fighter is hit with the following attack 3 times:\n|Rend|Damage|\n|---|---|\n|-1|1|",
+            "hidden": false
+          },
+          {
+            "name": "Large and Heavy",
+            "id": "724c-087a-090a-5826",
+            "description": "This fighter cannot climb or jump. In addition, each time this fighter is set-up, they must be set up on the battlefield floor and they must finish each move on the battlefield floor.",
+            "hidden": false
           }
         ]
       }
@@ -2543,7 +2542,23 @@
                 "modifierGroups": [
                   {
                     "type": "and",
-                    "conditions": [{"childId": "f651-a48e-cc18-ef06", "childName": "Rat Mutant", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "f651-a48e-cc18-ef06", "childName": "Rat Mutant", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "3a94-a3a5-041e-daf2",
+                            "childName": "Rolling-Contraption",
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
                     "modifiers": [{"field": "hidden", "type": "set", "value": true}]
                   }
                 ]
@@ -2573,7 +2588,23 @@
                 "field": "hidden",
                 "type": "set",
                 "value": true,
-                "conditions": [{"childId": "a4c7-e572-98cc-6d1b", "childName": "Rat Mutant", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {"childId": "f651-a48e-cc18-ef06", "childName": "Rat Mutant", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "3a94-a3a5-041e-daf2",
+                        "childName": "Rolling-Contraption",
+                        "field": "selections",
+                        "scope": "root-entry",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
