@@ -25,7 +25,7 @@
         "id": "2967-9b14-fae6-eb7f",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 1,
         "targetId": "ed0d-ef35-0edc-3e72",
         "type": "selectionEntry",
         "rules": [{"name": "Lord of the Cloister", "id": "cd6a-07ef-5012-8b8e", "description": "When this fighter is recruited, pick 2 skills for them.", "hidden": false}]
@@ -35,7 +35,7 @@
         "id": "5382-d319-6ecc-7940",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 6,
         "targetId": "5a89-2fa8-71ee-7b3b",
         "type": "selectionEntry"
       },
@@ -44,135 +44,284 @@
         "id": "a627-4783-9bc5-3ca7",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 7,
         "targetId": "409a-0911-9162-6631",
         "type": "selectionEntry"
-      }
-    ],
-    "forceEntries": [
+      },
       {
-        "name": "Warband Roster",
-        "id": "e7b5-2dd3-fd84-2e1f",
+        "name": "Warband Info",
+        "id": "c6b1-38a7-5f62-c7b4",
         "hidden": false,
-        "categoryLinks": [
+        "import": true,
+        "sortIndex": 0,
+        "targetId": "b736-8a1d-7bd8-8f1b",
+        "type": "selectionEntry",
+        "selectionEntryGroups": [
           {
             "name": "Origin",
-            "id": "620f-f79a-5c98-62aa",
+            "id": "fda8-cd90-e551-0610",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "a0ac-c18a-151b-4dfa",
+            "sortIndex": 1,
             "constraints": [
-              {"id": "75b1-8b87-b419-8e38-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
-              {"id": "75b1-8b87-b419-8e38-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
-            ]
-          },
-          {"name": "Stronghold", "id": "0d42-b1ac-9590-fb8a", "hidden": false, "targetId": "bba8-3330-6b7c-e324"},
-          {
-            "name": "Leader",
-            "id": "5294-1905-3cf9-4082",
-            "hidden": false,
-            "targetId": "69a7-1a88-d493-5847",
-            "constraints": [
+              {"id": "ee55-31db-ac7d-868a-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
+              {"id": "ee55-31db-ac7d-868a-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
               {
-                "id": "d8d3-a5c8-01e0-2d4b-min",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "min",
-                "value": 1
+                "name": "Blessed Rabble",
+                "id": "e099-e091-9f6d-72c1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "1334-82b6-5bc9-8628", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Blessed Rabble",
+                    "id": "2f53-d328-12ee-ccfa",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **High Sorcerer** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Street Pulpit** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
               },
               {
-                "id": "d8d3-a5c8-01e0-2d4b-max",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "max",
-                "value": 1
+                "name": "Knights-Militant",
+                "id": "d17a-848a-33e9-b306",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "bcfb-4be9-aa96-1833", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Knights-Militant",
+                    "id": "3d24-79c1-6cb8-f816",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Knight-Abbot** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Fortified Keep** stronghold.\n- Your warband can recruit any number of Cloister Knights.",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Priesthood of Sorcerers",
+                "id": "b744-b06d-58db-fa8a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "3e76-bc90-9cfc-485d", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Priesthood of Sorcerers",
+                    "id": "f76d-b8a3-fe7e-683f",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **High Sorcerer** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Secluded Scriptorium** stronghold.\n- Your warband can recruit 0-2 Cloister Sorcerers.",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "The Anointed One",
+                "id": "ceb6-8f99-7ad1-2343",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "b8a4-d8a2-00d5-9393", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "The Anointed One",
+                    "id": "39be-84ca-ff27-56e9",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Knight-Abbot** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Unholy Altar** stronghold.\n- Your warband can recruit any number of Rot Demons.",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "name": "Champion",
-            "id": "3ca7-7e61-e065-034f",
+            "name": "Stronghold",
+            "id": "0b04-2a10-70ab-766a",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "f44d-d057-3822-ad30",
-            "constraints": [{"id": "cdd1-53b2-329f-5c09", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
-          },
-          {
-            "name": "Henchman",
-            "id": "18ff-6a2c-4bd2-c4c4",
-            "hidden": false,
-            "targetId": "2594-e088-657e-98c8",
-            "constraints": [{"id": "e319-68de-d9d9-16b4", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 5}]
-          },
-          {
-            "name": "Brute",
-            "id": "ed39-9a67-61e2-eb03",
-            "hidden": false,
-            "targetId": "eea3-65a8-e483-ad71",
-            "constraints": [{"id": "1bd4-d9a7-4cd3-4d8c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
-          },
-          {
-            "name": "Beast",
-            "id": "6aef-4ec7-d3df-1ebf",
-            "hidden": false,
-            "targetId": "054d-3052-d990-09f1",
-            "constraints": [{"id": "87c4-d2d4-d083-9bab", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
+            "sortIndex": 2,
+            "constraints": [{"id": "17ed-db6a-5451-a2b2", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "selectionEntries": [
+              {
+                "name": "Fortified Keep",
+                "id": "0e9a-8f0c-dacc-96ec",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "dc7d-60dd-5cfe-ed21", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Fortified Keep",
+                    "id": "bc05-3c7f-9e44-343e",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Martial Training**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Knight* fighters to take part in martial training. Each of those fighters earns d6 bonus experience.\n**Search the City**: In step 5 of the aftermath sequence, if you won the battle, you gain 1 additional re-roll when searching the City.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Secluded Scriptorium",
+                "id": "e16a-0fb0-6c7e-370a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "5fce-06fa-a5c3-e920", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Secluded Scriptorium",
+                    "id": "05f1-634f-2343-63f2",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Blasphemous Study**: In each Aftermath sequence, you can pick 1 of the following:\n- *Scry Ancient Scrolls*: Roll a dice for each *Wizard* in your warband. Record an ongoing tally on your Warband Roster. Each time the tally exceeds a multiple of 20, you can pick a *Wizard* in your warband to earn enough experience to receive their next advancement.\n- *Brew Concoctions*: Roll a dice for each *Wizard* in your warband. For each roll of 5+, you can add 1 Vial of Poison item to your stash.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Street Pulpit",
+                "id": "d311-8d5c-2a8d-b9e5",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "f559-60bc-d047-d0e9", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Street Pulpit",
+                    "id": "727d-e88f-cee4-9c59",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Venerate Living Saints**: Each time a Dreg Cultist in this warband earns a level of Black Rot, they earn 5 additional experience.\n**Canonise the Fallen**: Each time a fighter in this warband is killed, every Dreg Cultist in this warband earns 10 additional bonus experience in step 3 of the aftermath sequence.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Unholy Altar",
+                "id": "5901-eeaa-f156-b4cb",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "83e2-c8bf-9e15-da04", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Unholy Altar",
+                    "id": "6a8f-4bbb-f898-2f2a",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Demonic Communion**: Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3d6. If you lost, roll 2d6:\n|2d6|Effect|\n|---|:--|\n|2|**Damnation**: Your leader is killed. You can add a Demonic\nRotspawn to your warband without paying any silver. It bears the name of your former leader.|\n|3-8|**Silence**: No effect.|\n|9-12|**Minor Boon**: Your leader earns 10 bonus experience.|\n|13-15|**Demonic Ally**: You can add a Rot Demon or a Rotling to your warband without paying any silver.|\n|16+|**Major Boon**: Your leader earns 30 bonus experience.|",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
     ],
     "selectionEntries": [
       {
-        "name": "Knights-Militant",
-        "id": "d17a-848a-33e9-b306",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "bcfb-4be9-aa96-1833", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Knights-Militant",
-            "id": "3d24-79c1-6cb8-f816",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Knight-Abbot** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Fortified Keep** stronghold.\n- Your warband can recruit any number of Cloister Knights.",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Rot Demon",
         "id": "38e1-7a74-5afb-5197",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 10,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "df44-0f62-109d-9932", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
           {"name": "Cloister", "id": "a477-297e-14d9-8376", "hidden": false, "primary": false, "targetId": "1ca7-8021-cde8-7dde"},
           {"name": "Demon", "id": "d9f5-d71f-2b22-c5da", "hidden": false, "primary": false, "targetId": "e4c8-9391-97db-f80c"},
-          {"name": "Fighter", "id": "82f7-e431-3530-b9af", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "82f7-e431-3530-b9af", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 30+d6", "id": "23fd-c538-f319-7e63", "hidden": false, "primary": false, "targetId": "427e-5b43-6410-5a3c"}
         ],
         "constraints": [{"id": "e297-4af7-633b-4ef5", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 3}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 120}],
         "entryLinks": [
-          {"name": "Skills", "id": "c623-0e89-aa75-d5ae", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "c623-0e89-aa75-d5ae",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Demonic Rot Blade",
             "id": "6c82-e7de-f05f-6d57",
@@ -186,6 +335,15 @@
               {"id": "d7d7-92ca-8c3c-a63b-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 0}]
+          },
+          {
+            "name": "Experience",
+            "id": "a5a8-143a-3c04-b563",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
           }
         ],
         "infoLinks": [
@@ -212,201 +370,11 @@
         ]
       },
       {
-        "name": "The Anointed One",
-        "id": "ceb6-8f99-7ad1-2343",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "b8a4-d8a2-00d5-9393", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "The Anointed One",
-            "id": "39be-84ca-ff27-56e9",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Knight-Abbot** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Unholy Altar** stronghold.\n- Your warband can recruit any number of Rot Demons.",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Priesthood of Sorcerers",
-        "id": "b744-b06d-58db-fa8a",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "3e76-bc90-9cfc-485d", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Priesthood of Sorcerers",
-            "id": "f76d-b8a3-fe7e-683f",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **High Sorcerer** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Secluded Scriptorium** stronghold.\n- Your warband can recruit 0-2 Cloister Sorcerers.",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Blessed Rabble",
-        "id": "e099-e091-9f6d-72c1",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "1334-82b6-5bc9-8628", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Blessed Rabble",
-            "id": "2f53-d328-12ee-ccfa",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **High Sorcerer** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Street Pulpit** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Fortified Keep",
-        "id": "0e9a-8f0c-dacc-96ec",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "dc7d-60dd-5cfe-ed21", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Fortified Keep",
-            "id": "bc05-3c7f-9e44-343e",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Martial Training**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Knight* fighters to take part in martial training. Each of those fighters earns d6 bonus experience.\n**Search the City**: In step 5 of the aftermath sequence, if you won the battle, you gain 1 additional re-roll when searching the City.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Unholy Altar",
-        "id": "5901-eeaa-f156-b4cb",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "83e2-c8bf-9e15-da04", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Unholy Altar",
-            "id": "6a8f-4bbb-f898-2f2a",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Demonic Communion**: Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3d6. If you lost, roll 2d6:\n|2d6|Effect|\n|---|:--|\n|2|**Damnation**: Your leader is killed. You can add a Demonic\nRotspawn to your warband without paying any silver. It bears the name of your former leader.|\n|3-8|**Silence**: No effect.|\n|9-12|**Minor Boon**: Your leader earns 10 bonus experience.|\n|13-15|**Demonic Ally**: You can add a Rot Demon or a Rotling to your warband without paying any silver.|\n|16+|**Major Boon**: Your leader earns 30 bonus experience.|",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Secluded Scriptorium",
-        "id": "e16a-0fb0-6c7e-370a",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "5fce-06fa-a5c3-e920", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Secluded Scriptorium",
-            "id": "05f1-634f-2343-63f2",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Blasphemous Study**: In each Aftermath sequence, you can pick 1 of the following:\n- *Scry Ancient Scrolls*: Roll a dice for each *Wizard* in your warband. Record an ongoing tally on your Warband Roster. Each time the tally exceeds a multiple of 20, you can pick a *Wizard* in your warband to earn enough experience to receive their next advancement.\n- *Brew Concoctions*: Roll a dice for each *Wizard* in your warband. For each roll of 5+, you can add 1 Vial of Poison item to your stash.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Street Pulpit",
-        "id": "d311-8d5c-2a8d-b9e5",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "f559-60bc-d047-d0e9", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Street Pulpit",
-            "id": "727d-e88f-cee4-9c59",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Venerate Living Saints**: Each time a Dreg Cultist in this warband earns a level of Black Rot, they earn 5 additional experience.\n**Canonise the Fallen**: Each time a fighter in this warband is killed, every Dreg Cultist in this warband earns 10 additional bonus experience in step 3 of the aftermath sequence.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "High Sorcerer",
         "id": "c78a-6f58-a734-94f7",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 2,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "c737-fc2a-ec61-08a3", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -427,7 +395,15 @@
             "targetId": "2a0f-ea25-4514-2595",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "67aa-7051-a7e2-30f1", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "67aa-7051-a7e2-30f1",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Lore of Blessed Maggots",
             "id": "4730-4399-0178-fb3f",
@@ -435,6 +411,15 @@
             "import": true,
             "sortIndex": 2,
             "targetId": "1cf7-9f95-bb81-94c4",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "346c-c61c-212e-80ca",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
           }
         ],
@@ -470,7 +455,7 @@
         "id": "f939-ddfb-6186-b08f",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 3,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "584a-af8d-ee31-8317", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -502,7 +487,24 @@
             "targetId": "1cf7-9f95-bb81-94c4",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "50da-6777-a67e-1710", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "50da-6777-a67e-1710",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "7edf-674f-ef99-68a3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -558,7 +560,24 @@
             "targetId": "2a0f-ea25-4514-2595",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "bbab-50c3-2e04-5b6c", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "bbab-50c3-2e04-5b6c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "67d5-2663-f2e3-fa34",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -585,7 +604,7 @@
         "id": "2555-8eb5-8bea-0168",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 5,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "5588-1be3-f810-9038", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -617,7 +636,15 @@
             "targetId": "1cf7-9f95-bb81-94c4",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "720f-e957-c7db-c93e", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "720f-e957-c7db-c93e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Demonic Lore of Rot",
             "id": "c102-3484-34c3-e3df",
@@ -625,6 +652,15 @@
             "import": true,
             "sortIndex": 2,
             "targetId": "5c16-aa5f-3c41-c813",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "53c8-fa29-2325-e201",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
           }
         ],
@@ -661,7 +697,7 @@
         "id": "2f4c-7be6-3af5-e377",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 8,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "d0aa-c59c-314a-7c7f", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -682,7 +718,24 @@
             "targetId": "2a0f-ea25-4514-2595",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "dea8-e453-f194-fe71", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "dea8-e453-f194-fe71",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "03c6-4af7-8291-23b6",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -708,14 +761,15 @@
         "id": "db9e-5435-fdfc-fbf9",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 9,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "465a-7018-e0b7-1620", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
           {"name": "Cloister", "id": "22c1-87aa-4a8a-5f76", "hidden": false, "primary": false, "targetId": "1ca7-8021-cde8-7dde"},
           {"name": "Main List", "id": "b3f5-199a-308f-8da6", "hidden": false, "primary": false, "targetId": "108f-9387-e1aa-3c20"},
           {"name": "Beastman", "id": "cabb-908a-2185-0f26", "hidden": false, "primary": false, "targetId": "ca1a-9d53-17ac-c09c"},
-          {"name": "Fighter", "id": "61c5-eaa5-4714-8d8b", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "61c5-eaa5-4714-8d8b", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 20+d6", "id": "1beb-4509-cb20-bd7d", "hidden": false, "primary": false, "targetId": "15e7-bf29-b27a-403e"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 55}],
         "entryLinks": [
@@ -728,7 +782,24 @@
             "targetId": "2a0f-ea25-4514-2595",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "c3d6-07fa-1eb1-e90a", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "c3d6-07fa-1eb1-e90a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "c06b-b7ec-b078-41f0",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [
           {"name": "Ram Horns", "id": "17cf-c37c-88c1-c59e", "hidden": false, "targetId": "c672-654d-ade9-6405", "type": "profile"},
@@ -758,14 +829,16 @@
         "id": "03e4-0bb0-8085-697c",
         "hidden": false,
         "import": true,
-        "sortIndex": 6,
+        "sortIndex": 11,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "a9bd-73aa-6540-6552", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
           {"name": "Cloister", "id": "c428-e70f-feb3-1518", "hidden": false, "primary": false, "targetId": "1ca7-8021-cde8-7dde"},
           {"name": "Demon", "id": "9d05-4786-10f5-aebf", "hidden": false, "primary": false, "targetId": "e4c8-9391-97db-f80c"},
-          {"name": "Fighter", "id": "befa-b7b8-2b0e-1765", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "befa-b7b8-2b0e-1765", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 30+d6", "id": "aa16-020c-8a90-a094", "hidden": false, "primary": false, "targetId": "427e-5b43-6410-5a3c"}
         ],
+        "constraints": [{"id": "0f90-0daf-8a6c-9592", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 130}],
         "entryLinks": [
           {
@@ -781,7 +854,24 @@
               {"id": "42c2-9bc7-8e63-5977-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
           },
-          {"name": "Skills", "id": "55e2-1aff-446c-6c9d", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "55e2-1aff-446c-6c9d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "45c6-44e8-3f40-8af2",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [
           {"name": "Demonic Wards", "id": "c140-8f18-fad2-f06a", "hidden": false, "targetId": "1ace-0653-7137-27fe", "type": "rule"},
@@ -811,13 +901,14 @@
         "id": "7055-ee26-5f14-6804",
         "hidden": false,
         "import": true,
-        "sortIndex": 6,
+        "sortIndex": 12,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "f288-c6d5-61b2-28b8", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
           {"name": "Cloister", "id": "bb8a-83f5-c5e7-92d7", "hidden": false, "primary": false, "targetId": "1ca7-8021-cde8-7dde"},
           {"name": "Demon", "id": "1421-3742-5673-205b", "hidden": false, "primary": false, "targetId": "e4c8-9391-97db-f80c"},
-          {"name": "Fighter", "id": "96e5-b664-0299-2537", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "96e5-b664-0299-2537", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 30+d6", "id": "bca5-3627-8ae6-57de", "hidden": false, "primary": false, "targetId": "427e-5b43-6410-5a3c"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 200}],
         "entryLinks": [
@@ -835,7 +926,24 @@
             ],
             "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 0}]
           },
-          {"name": "Skills", "id": "d152-0633-c2d3-a558", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "d152-0633-c2d3-a558",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "463a-7b75-b108-c856",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [
           {"name": "Demonic Wards", "id": "5735-f0c9-ccdd-28ad", "hidden": false, "targetId": "1ace-0653-7137-27fe", "type": "rule"},
@@ -865,7 +973,7 @@
         "id": "8b98-80b2-0b4b-23fe",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 13,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "5d69-0416-4c4f-c6ca", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -888,7 +996,24 @@
               {"id": "8805-c26e-5eef-b28c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
           },
-          {"name": "Skills", "id": "9ed5-a580-76dd-92f1", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "9ed5-a580-76dd-92f1",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "d62b-0c03-b17c-cddc",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -914,7 +1039,7 @@
         "id": "72a9-7fd8-01c0-8652",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 14,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "c34d-7f23-b72e-ca04", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -937,7 +1062,24 @@
               {"id": "f70f-9093-12fd-99b0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
           },
-          {"name": "Skills", "id": "7d7a-627e-dad5-9fb5", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "7d7a-627e-dad5-9fb5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "0ca6-6061-3574-def7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -1688,7 +1830,24 @@
             "targetId": "2a0f-ea25-4514-2595",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "4420-888b-26d9-fbb4", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "4420-888b-26d9-fbb4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "19b8-44be-6647-dc8c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -1767,7 +1926,24 @@
             "targetId": "5c16-aa5f-3c41-c813",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "a203-ed35-d6cf-fdde", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "a203-ed35-d6cf-fdde",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "9a97-e549-ffce-acd8",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [
           {"name": "Fear", "id": "e0b0-0240-8e8d-6f09", "hidden": false, "targetId": "5e97-de88-786f-e693", "type": "rule"},
@@ -1835,7 +2011,8 @@
           {"name": "Main List", "id": "f1f2-0048-87ac-7aea", "hidden": false, "primary": false, "targetId": "108f-9387-e1aa-3c20"},
           {"name": "Human", "id": "216b-1966-6165-fdc0", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
           {"name": "Knight", "id": "8618-7978-52b1-7021", "hidden": false, "primary": false, "targetId": "6a48-320e-1d01-0a06"},
-          {"name": "Fighter", "id": "0752-b8ab-a07c-cb45", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "0752-b8ab-a07c-cb45", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 30+d6", "id": "7cef-b2d3-b492-31bf", "hidden": false, "primary": false, "targetId": "427e-5b43-6410-5a3c"}
         ],
         "constraints": [{"id": "84c3-9472-20ff-2b66", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 3}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 95}],
@@ -1849,7 +2026,24 @@
             "targetId": "2a0f-ea25-4514-2595",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "b627-d3cd-1a07-c13c", "hidden": false, "import": true, "targetId": "1aa8-790c-5ce8-bfec", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "b627-d3cd-1a07-c13c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "1aa8-790c-5ce8-bfec",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "6274-972e-b060-8037",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "selectionEntryGroups": [
           {
@@ -1880,6 +2074,7 @@
       {
         "name": "Ordained of the Cloister",
         "id": "0cff-8148-4b9f-7ad6",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {
@@ -1977,6 +2172,7 @@
       {
         "name": "Blessings of Saint Rot",
         "id": "99da-ded5-67da-176e",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {

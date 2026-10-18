@@ -81,9 +81,73 @@
         "id": "2440-29a6-376e-748a",
         "hidden": true,
         "constraints": [{"id": "f984-d5a4-eb8a-9cf9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 15}]
+      },
+      {"name": "Warband Info", "id": "f530-d041-55c2-c05b", "hidden": false},
+      {"name": "Starting Experience 20+d6", "id": "15e7-bf29-b27a-403e", "hidden": true},
+      {"name": "Starting Experience 30+d6", "id": "427e-5b43-6410-5a3c", "hidden": false}
+    ],
+    "costTypes": [
+      {"name": "Silver", "id": "3892-0a24-b2ab-55d1", "defaultCostLimit": -1},
+      {"name": "Experience", "id": "26cf-17c6-d1b5-65c7", "defaultCostLimit": -1, "hidden": false},
+      {"name": "Warband Rating", "id": "7383-0160-b523-290f", "defaultCostLimit": -1, "hidden": false}
+    ],
+    "forceEntries": [
+      {
+        "name": "Warband Roster",
+        "id": "6c09-3b06-898a-1ab4",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Warband Info",
+            "id": "a55a-6f03-e684-b4e4",
+            "hidden": false,
+            "targetId": "f530-d041-55c2-c05b",
+            "constraints": [
+              {"id": "34a0-bd9d-1c1a-4e94-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+              {"id": "34a0-bd9d-1c1a-4e94-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "083a-c63e-d5a6-9403",
+            "hidden": false,
+            "targetId": "69a7-1a88-d493-5847",
+            "constraints": [
+              {"id": "b517-1fe1-debe-a738-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+              {"id": "b517-1fe1-debe-a738-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Champion",
+            "id": "bc30-13cf-5ac9-4758",
+            "hidden": false,
+            "targetId": "f44d-d057-3822-ad30",
+            "constraints": [{"id": "91ec-a39d-8680-9574", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+          },
+          {
+            "name": "Henchman",
+            "id": "ec0b-efec-c813-9b34",
+            "hidden": false,
+            "targetId": "2594-e088-657e-98c8",
+            "constraints": [{"id": "d213-466f-5eb7-2560", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 5}]
+          },
+          {
+            "name": "Brute",
+            "id": "2944-b78b-84f2-df83",
+            "hidden": false,
+            "targetId": "eea3-65a8-e483-ad71",
+            "constraints": [{"id": "9aeb-784e-4cfa-3c32", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
+          },
+          {
+            "name": "Beast",
+            "id": "bc8f-6949-2b3b-e6a1",
+            "hidden": false,
+            "targetId": "054d-3052-d990-09f1",
+            "constraints": [{"id": "d60f-51ac-9ada-37d7", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
+          }
+        ]
       }
     ],
-    "costTypes": [{"name": "Silver", "id": "3892-0a24-b2ab-55d1", "defaultCostLimit": -1}],
     "profileTypes": [
       {
         "name": "Fighter Scroll",
@@ -576,6 +640,7 @@
       {
         "name": "Axe",
         "id": "a9e8-d8ce-5473-38bd",
+        "collective": true,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -1140,12 +1205,101 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Warband Info",
+        "id": "b736-8a1d-7bd8-8f1b",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Warband Info", "id": "f2e9-ba9b-4e85-7199", "hidden": false, "primary": true, "targetId": "f530-d041-55c2-c05b"}],
+        "modifiers": [
+          {
+            "field": "7383-0160-b523-290f",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "unit",
+                "childName": "unit",
+                "field": "26cf-17c6-d1b5-65c7",
+                "includeChildSelections": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "7383-0160-b523-290f",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "unit",
+                "childName": "unit",
+                "field": "3892-0a24-b2ab-55d1",
+                "includeChildSelections": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {"name": "Holdings", "id": "faa2-6833-87b2-8f14", "hidden": false, "sortIndex": 3},
+          {
+            "name": "Tallies",
+            "id": "d197-7901-bb97-57bb",
+            "hidden": false,
+            "sortIndex": 5,
+            "selectionEntries": [
+              {"name": "Battles Fought", "id": "42e3-d9b9-5139-fa76", "hidden": false, "import": true, "type": "upgrade"},
+              {"name": "Victories Won", "id": "c942-d82e-6f9c-613c", "hidden": false, "import": true, "type": "upgrade"},
+              {"name": "Holdings Ransacked", "id": "9cb1-65bc-2feb-1fa6", "hidden": false, "import": true, "type": "upgrade"},
+              {"name": "Fighters Lost", "id": "ae25-2a42-7c11-058d", "hidden": false, "import": true, "type": "upgrade"}
+            ]
+          },
+          {
+            "name": "Stash",
+            "id": "a95c-1038-a3bd-8178",
+            "hidden": false,
+            "sortIndex": 4,
+            "selectionEntries": [
+              {
+                "name": "Silver",
+                "id": "ff00-5784-2b4b-def1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "modifiers": [
+                  {
+                    "field": "3892-0a24-b2ab-55d1",
+                    "scope": "root-entry",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [
+                      {"childId": "ff00-5784-2b4b-def1", "childName": "Silver", "field": "selections", "repeats": 1, "roundUp": false, "scope": "parent", "shared": true, "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
       {
         "name": "Veteran Skills",
         "id": "d23f-4752-4e2a-bfc6",
+        "collapsible": true,
         "hidden": false,
         "entryLinks": [
           {"name": "Dual-weapon Wielder", "id": "e96f-dd61-8ae0-1de4", "hidden": false, "import": true, "targetId": "de3a-baf7-a056-15d8", "type": "selectionEntry"},
@@ -1156,6 +1310,96 @@
           {"name": "Tough Bastard", "id": "c5ca-df3c-dc27-c347", "hidden": false, "import": true, "targetId": "6c04-b66c-ac09-1530", "type": "selectionEntry"},
           {"name": "Fast Learner", "id": "eca7-bfe3-2ad8-5e28", "hidden": false, "import": true, "targetId": "8ab0-a591-8793-f726", "type": "selectionEntry"},
           {"name": "Unshakeable", "id": "36a1-b29d-55b0-da3b", "hidden": false, "import": true, "targetId": "57b9-80c8-0eab-7605", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Experience",
+        "id": "a125-39f1-a5b7-c2f3",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Experience",
+            "id": "af41-d90e-1d67-585a",
+            "defaultAmount": "0",
+            "hidden": false,
+            "import": true,
+            "targetId": "0bed-4f34-c3d1-d2dd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "defaultAmount",
+                "type": "set",
+                "value": "60",
+                "conditions": [{"childId": "69a7-1a88-d493-5847", "childName": "Leader", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+              },
+              {
+                "field": "defaultAmount",
+                "type": "set",
+                "value": "40",
+                "conditions": [{"childId": "f44d-d057-3822-ad30", "childName": "Champion", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}]
+              },
+              {
+                "field": "defaultAmount",
+                "type": "set",
+                "value": "20",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {"childId": "eea3-65a8-e483-ad71", "childName": "Brute", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "15e7-bf29-b27a-403e",
+                        "childName": "Starting Experience 20+d6",
+                        "field": "selections",
+                        "scope": "root-entry",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "defaultAmount",
+                "type": "set",
+                "value": "30",
+                "conditions": [
+                  {
+                    "childId": "427e-5b43-6410-5a3c",
+                    "childName": "Starting Experience 30+d6",
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "26cf-17c6-d1b5-65c7",
+            "scope": "root-entry",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "0bed-4f34-c3d1-d2dd",
+                "childName": "Experience",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "root-entry",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
         ]
       }
     ]

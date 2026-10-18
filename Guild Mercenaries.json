@@ -19,122 +19,58 @@
       {"name": "Mercenary", "id": "2f43-29de-09c4-ec4c", "hidden": false},
       {"name": "Witch Hunter", "id": "370a-c285-e09a-c5c0", "hidden": false}
     ],
-    "entryLinks": [{"name": "Noble", "id": "b8fa-4dff-f1f3-b198", "hidden": false, "import": true, "sortIndex": 3, "targetId": "880f-776b-65f5-2023", "type": "selectionEntry"}],
-    "forceEntries": [
+    "entryLinks": [
+      {"name": "Noble", "id": "b8fa-4dff-f1f3-b198", "hidden": false, "import": true, "sortIndex": 2, "targetId": "880f-776b-65f5-2023", "type": "selectionEntry"},
       {
-        "name": "Warband Roster",
-        "id": "85c9-8952-9761-40e1",
+        "name": "Warband Info",
+        "id": "0031-4a98-40da-1937",
         "hidden": false,
-        "categoryLinks": [
+        "import": true,
+        "sortIndex": 0,
+        "targetId": "b736-8a1d-7bd8-8f1b",
+        "type": "selectionEntry",
+        "selectionEntryGroups": [
           {
             "name": "Origin",
-            "id": "15f4-07f8-46cf-535e",
+            "id": "291d-e6d4-a18a-e640",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "a0ac-c18a-151b-4dfa",
+            "sortIndex": 1,
             "constraints": [
-              {"id": "8d40-10b1-8a36-0bd1-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
-              {"id": "8d40-10b1-8a36-0bd1-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+              {"id": "88ee-d667-03d6-dbf1-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
+              {"id": "88ee-d667-03d6-dbf1-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {"name": "Swords for Hire", "id": "b178-c2c4-a5ef-a2e2", "hidden": false, "import": true, "targetId": "0e76-9af5-b1aa-88bc", "type": "selectionEntry"},
+              {"name": "Disgraced Noble", "id": "23b9-69de-4bde-53b5", "hidden": false, "import": true, "targetId": "ed00-e739-69a8-9b22", "type": "selectionEntry"},
+              {"name": "Witch Hunters Guild", "id": "8bdf-68d0-a0c7-113b", "hidden": false, "import": true, "targetId": "9c14-3ded-9283-9467", "type": "selectionEntry"},
+              {"name": "Wizard's Retinue", "id": "d889-5b50-2cfc-bd45", "hidden": false, "import": true, "targetId": "0e95-042a-f5ee-3386", "type": "selectionEntry"}
             ]
           },
-          {"name": "Stronghold", "id": "3176-8a80-67b6-0a1b", "hidden": false, "targetId": "bba8-3330-6b7c-e324"},
           {
-            "name": "Leader",
-            "id": "411b-68a9-2786-4f49",
+            "name": "Stronghold",
+            "id": "6ba1-c1d1-b16a-46c9",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "69a7-1a88-d493-5847",
+            "sortIndex": 2,
             "constraints": [
               {
-                "id": "39e8-b4be-b2f1-1f8f-min",
+                "id": "5df5-23aa-cb53-cea8",
+                "childId": "",
+                "childName": "",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "39e8-b4be-b2f1-1f8f-max",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
+                "includeChildSelections": false,
+                "scope": "self",
                 "shared": true,
                 "type": "max",
                 "value": 1
               }
-            ]
-          },
-          {
-            "name": "Champion",
-            "id": "3bb2-dc84-ecd7-b927",
-            "hidden": false,
-            "targetId": "f44d-d057-3822-ad30",
-            "constraints": [
-              {
-                "id": "ce28-c5ed-2df2-66cd",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "max",
-                "value": 3
-              }
-            ]
-          },
-          {
-            "name": "Henchman",
-            "id": "cfa5-ca20-0ce0-4fb4",
-            "hidden": false,
-            "targetId": "2594-e088-657e-98c8",
-            "constraints": [
-              {
-                "id": "570e-507b-12df-a19c",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "min",
-                "value": 5
-              }
-            ]
-          },
-          {
-            "name": "Brute",
-            "id": "6ca9-79ab-f5d8-fb12",
-            "hidden": false,
-            "targetId": "eea3-65a8-e483-ad71",
-            "constraints": [
-              {
-                "id": "2abd-0812-a4db-a7c2",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "max",
-                "value": 2
-              }
-            ]
-          },
-          {
-            "name": "Beast",
-            "id": "11bd-e843-4477-281c",
-            "hidden": false,
-            "targetId": "054d-3052-d990-09f1",
-            "constraints": [
-              {
-                "id": "b717-7ece-2204-80d0",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "max",
-                "value": 3
-              }
+            ],
+            "entryLinks": [
+              {"name": "Guild Barracks", "id": "26a3-9c5b-3917-d27a", "hidden": false, "import": true, "targetId": "48f2-5b1e-0027-5cd1", "type": "selectionEntry"},
+              {"name": "Dilapidated Manor", "id": "a740-2d90-1ea9-b67e", "hidden": false, "import": true, "targetId": "9399-5618-e7f9-1c7f", "type": "selectionEntry"},
+              {"name": "Chapter House", "id": "df7b-e485-3bb4-8718", "hidden": false, "import": true, "targetId": "950d-cbb9-c4f0-6690", "type": "selectionEntry"},
+              {"name": "Hidden Library", "id": "ec51-4275-3ddd-9133", "hidden": false, "import": true, "targetId": "92b0-c746-87c8-10c1", "type": "selectionEntry"}
             ]
           }
         ]
@@ -142,248 +78,11 @@
     ],
     "selectionEntries": [
       {
-        "name": "Swords for Hire",
-        "id": "0e76-9af5-b1aa-88bc",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "e026-600a-6bd3-8a88", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Swords for Hire",
-            "id": "3e25-c8b9-7cf9-857d",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Origin",
-            "id": "c60b-f23c-5c9f-3fab",
-            "flatten": true,
-            "hidden": false,
-            "constraints": [
-              {"id": "4dec-474b-115c-e92d-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
-              {"id": "4dec-474b-115c-e92d-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
-            ],
-            "selectionEntries": [
-              {
-                "name": "Disgraced Noble",
-                "id": "d4ec-8503-22cd-7462",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "profiles": [
-                  {
-                    "name": "Disgraced Noble",
-                    "id": "4a95-5569-6684-9720",
-                    "hidden": false,
-                    "typeId": "d530-27f7-854e-3a88",
-                    "typeName": "Origin",
-                    "characteristics": [
-                      {"name": "Restrictions", "$text": "**Leader**: You must hire a Noble to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
-                      {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Swords for Hire",
-                "id": "65fe-91d8-fb39-3fde",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "profiles": [
-                  {
-                    "name": "Swords for Hire",
-                    "id": "ab5d-d38a-f4d6-b32a",
-                    "hidden": false,
-                    "typeId": "d530-27f7-854e-3a88",
-                    "typeName": "Origin",
-                    "characteristics": [
-                      {
-                        "name": "Restrictions",
-                        "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
-                        "typeId": "7d47-e888-6003-11c3"
-                      },
-                      {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Witch Hunters Guild",
-                "id": "ccd8-d240-fe8f-7c5e",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "profiles": [
-                  {
-                    "name": "Witch Hunters Guild",
-                    "id": "c55f-8ac1-68da-35cf",
-                    "hidden": false,
-                    "typeId": "d530-27f7-854e-3a88",
-                    "typeName": "Origin",
-                    "characteristics": [
-                      {
-                        "name": "Restrictions",
-                        "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
-                        "typeId": "7d47-e888-6003-11c3"
-                      },
-                      {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter house** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Wizard's Retinue",
-                "id": "5da3-3a6f-c848-7039",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "profiles": [
-                  {
-                    "name": "Wizard's Retinue",
-                    "id": "56ed-dbe5-a0b7-e1c4",
-                    "hidden": false,
-                    "typeId": "d530-27f7-854e-3a88",
-                    "typeName": "Origin",
-                    "characteristics": [
-                      {
-                        "name": "Restrictions",
-                        "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
-                        "typeId": "7d47-e888-6003-11c3"
-                      },
-                      {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Guild Barracks",
-        "id": "48f2-5b1e-0027-5cd1",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "1b8c-b1d9-d6df-d076", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Guild Barracks",
-            "id": "43c8-ba05-1178-f76c",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Combat Drills**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Henchmen* to train. Each of those fighters earns d6 bonus experience.\n**Eager to Prove**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Guild Recruit arrives at the Guild Barracks. You can recruit a Guild Recruit to your warband for 0 silver.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Dilapidated Manor",
-        "id": "9399-5618-e7f9-1c7f",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "08bb-8a2d-b629-3b65", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Dilapidated Manor",
-            "id": "1fb1-2c2c-bb79-1ef9",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Vintage Wines**: When this holding is first added to a warband roster, it has 2d6 bottles of **vintage wine**. Make a note on your warband roster.\nEach time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Chapter House",
-        "id": "950d-cbb9-c4f0-6690",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "7790-d63a-8058-1f1b", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Chapter House",
-            "id": "c80b-a586-dc94-5587",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Atonement for Sin**: If your warband lost the battle, in step 3 of the Aftermath sequence, make a Willpower test for each *Witch Hunter* and *Priest* in your warband. If they pass, they earn 5 bonus experience.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hidden Library",
-        "id": "92b0-c746-87c8-10c1",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "92db-7e99-4212-7e32", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Hidden Library",
-            "id": "b136-5a51-c9be-be5f",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Sorcerous Study**: Each battle, before you determine prepared spells, you can pick 1 friendly *Wizard* in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Guild Captain",
         "id": "2548-11b0-af86-ef28",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 1,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "a984-294b-d8cb-15c8", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -393,7 +92,11 @@
           {"name": "Human", "id": "1cfd-57c6-a756-ca55", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
           {"name": "Fighter", "id": "b1c7-30ad-8210-2a29", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140}],
+        "costs": [
+          {"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 140},
+          {"name": "Experience", "typeId": "26cf-17c6-d1b5-65c7", "value": 0},
+          {"name": "Warband Rating", "typeId": "7383-0160-b523-290f", "value": 0}
+        ],
         "entryLinks": [
           {
             "name": "Wargear",
@@ -404,7 +107,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "8bf7-a533-448e-153d", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "8bf7-a533-448e-153d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "5f2d-1841-cf48-afe9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -454,7 +174,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "e35a-a792-8e0a-5252", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "e35a-a792-8e0a-5252",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "d9c6-a1dc-cfb8-a287",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [
           {"name": "Seasoned Warrior", "id": "746a-49e5-2829-a683", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"},
@@ -484,7 +221,7 @@
         "id": "9703-956d-f328-2298",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 4,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "7cab-f108-e189-2b14", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -512,7 +249,24 @@
             "targetId": "ae08-1be4-ef78-9045",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "eb09-fd4f-e5d1-58e7", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "eb09-fd4f-e5d1-58e7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "9203-421e-bc0a-c4a5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -546,7 +300,7 @@
         "id": "aab1-d8d0-de31-8548",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 5,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "20bf-aad2-180d-ad74", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -568,7 +322,15 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "467f-eb5e-8f6b-3839", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "467f-eb5e-8f6b-3839",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Lore of Sanctioned Magic",
             "id": "cef1-4c48-7e4b-1b16",
@@ -576,6 +338,15 @@
             "import": true,
             "sortIndex": 2,
             "targetId": "ae08-1be4-ef78-9045",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "f718-0c46-7718-dba4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
           }
         ],
@@ -611,7 +382,7 @@
         "id": "3b86-9789-e442-9b5a",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 6,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "51cf-0e34-5ef0-8631", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -642,7 +413,24 @@
             "targetId": "2684-c7ea-01bc-7c40",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "0291-94b9-f2e9-16af", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "0291-94b9-f2e9-16af",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "2a1b-6977-d867-4cb3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -676,7 +464,7 @@
         "id": "5329-73b2-d267-a4c3",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 7,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "37a0-6d29-b14b-23d9", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -697,7 +485,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "07f8-6e47-2cfb-be62", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "07f8-6e47-2cfb-be62",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "333c-f4c9-0ec3-98fd",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Seasoned Warrior", "id": "6dfe-de7e-9b64-a6b4", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"}],
         "profiles": [
@@ -724,7 +529,7 @@
         "id": "883e-83fd-3761-11ff",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 8,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "6e57-c281-9073-db83", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -744,7 +549,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "8187-16d1-e4c0-289d", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "8187-16d1-e4c0-289d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "48ae-5988-e4c7-34e0",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -784,7 +606,7 @@
         "id": "9175-0cad-1d2a-29a6",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 9,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "8cc7-2493-6b4f-8f6f", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -807,7 +629,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "043d-9e11-af0a-6f45", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "043d-9e11-af0a-6f45",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "69e3-2e64-0966-d793",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Recite Holy Litanies [Action]", "id": "6523-a084-fee3-7082", "hidden": false, "targetId": "4bef-70e2-16ce-24b8", "type": "rule"}],
         "profiles": [
@@ -834,7 +673,7 @@
         "id": "ea39-f3bd-20ed-dc5b",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 10,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "232b-f954-0a0a-9ed1", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -842,7 +681,8 @@
           {"name": "Main List", "id": "7424-b4ad-68f9-da2a", "hidden": false, "primary": false, "targetId": "981a-4b36-e453-513e"},
           {"name": "Munitions List", "id": "35c6-d835-8b9c-d110", "hidden": false, "primary": false, "targetId": "8b6c-c7ac-efc0-cbca"},
           {"name": "Human", "id": "3b0d-fc98-5cfd-f20e", "hidden": false, "primary": false, "targetId": "ff34-5a7f-0dde-1f4b"},
-          {"name": "Fighter", "id": "5871-51ae-950b-e541", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "5871-51ae-950b-e541", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 20+d6", "id": "0c30-d156-dd62-1745", "hidden": false, "primary": false, "targetId": "15e7-bf29-b27a-403e"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
         "entryLinks": [
@@ -855,7 +695,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "e037-624b-5ed2-f7ba", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "e037-624b-5ed2-f7ba",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "8475-4028-7c6a-3310",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -881,7 +738,7 @@
         "id": "0ee6-bae5-cebd-fa2b",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 11,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "f345-7fdb-cec0-68f4", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -901,7 +758,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "7005-94af-6d75-2425", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "7005-94af-6d75-2425",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "0393-d8a2-0c75-368b",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -927,7 +801,7 @@
         "id": "8459-fd86-5383-18aa",
         "hidden": false,
         "import": true,
-        "sortIndex": 6,
+        "sortIndex": 12,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "0ef3-3f95-718a-09ff", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
@@ -947,7 +821,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "0ea0-3a7b-100e-c02a", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "0ea0-3a7b-100e-c02a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "af30-8e7a-e5d4-a895",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -973,7 +864,7 @@
         "id": "500a-be01-ac9e-b861",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 13,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "c6c7-d49b-f70b-8604", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -982,6 +873,17 @@
           {"name": "Fighter", "id": "f38f-afc4-f06c-9a55", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
+        "entryLinks": [
+          {
+            "name": "Experience",
+            "id": "e94e-0c9f-ce2b-d9d2",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
+        ],
         "infoLinks": [{"name": "Sniff 'em Out", "id": "9184-bfa4-3f47-f7a3", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
         "rules": [
           {
@@ -997,6 +899,7 @@
             "id": "bbd9-1048-2611-7e06",
             "hidden": false,
             "import": true,
+            "sortIndex": 1,
             "type": "upgrade",
             "constraints": [
               {"id": "8dbc-f0b4-23ed-e946-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -1018,80 +921,6 @@
                   {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
                 ]
               }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Disgraced Noble",
-        "id": "ed00-e739-69a8-9b22",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "2c69-3496-1c68-0a8c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Disgraced Noble",
-            "id": "92c4-0f0d-75b0-5c1b",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {"name": "Restrictions", "$text": "**Leader**: You must hire a **Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Witch Hunters Guild",
-        "id": "9c14-3ded-9283-9467",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "5f1b-ce37-8c34-2f06", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Witch Hunters Guild",
-            "id": "6cfb-64d9-1109-9187",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter House** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Wizard's Retinue",
-        "id": "0e95-042a-f5ee-3386",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "fc6f-17ae-f8d0-8ee3", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Wizard's Retinue",
-            "id": "389e-42ed-f16b-44a0",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
             ]
           }
         ]
@@ -1605,40 +1434,6 @@
         ]
       },
       {
-        "name": "Long Rifle",
-        "id": "9f59-cf30-9f30-5763",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [
-          {"name": "Two-handed Ranged Weapon", "id": "95e3-5977-2aef-f9f2", "hidden": false, "primary": false, "targetId": "0d9b-60d9-ad23-757a"},
-          {"name": "Two-handed", "id": "7a53-51d9-ec2b-f347", "hidden": false, "primary": false, "targetId": "2094-af30-3edb-cda3"}
-        ],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 70}],
-        "infoLinks": [
-          {"name": "Misfire", "id": "24ee-b2a1-a399-ee3c", "hidden": false, "targetId": "0718-f4db-2f9d-1afe", "type": "rule"},
-          {"name": "Two-handed", "id": "2240-46d6-12ca-10e1", "hidden": false, "targetId": "8c44-e613-612e-a3c5", "type": "rule"},
-          {"name": "Heavy", "id": "a164-a64a-8a3f-865c", "hidden": false, "targetId": "69d1-83cb-5d71-43c6", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Long Rifle",
-            "id": "2c48-541a-528a-1d73",
-            "hidden": false,
-            "typeId": "e759-d91c-e4a6-8b61",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "Range", "$text": "30", "typeId": "f227-9a6c-ccc3-cd45"},
-              {"name": "Attacks", "$text": "1", "typeId": "c6c8-c109-b266-f754"},
-              {"name": "Rend", "$text": "-2", "typeId": "bcf7-cf90-2cae-088f"},
-              {"name": "Damage", "$text": "2", "typeId": "8490-6720-799a-d1e9"},
-              {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
-              {"name": "Weapon Traits", "$text": "Heavy, Misfire, Two-handed", "typeId": "a727-f7da-c245-5268"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Bomb-bolt",
         "id": "ecd9-b841-e456-7f8d",
         "hidden": false,
@@ -1985,7 +1780,24 @@
             "targetId": "1936-bdec-2f0b-4a9a",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "06e2-4cad-3e8c-71b8", "hidden": false, "import": true, "targetId": "16f0-5346-75ed-1ef8", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "06e2-4cad-3e8c-71b8",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "16f0-5346-75ed-1ef8",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "a382-d953-cac6-500b",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -2255,6 +2067,202 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Disgraced Noble",
+        "id": "ed00-e739-69a8-9b22",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "2c69-3496-1c68-0a8c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Disgraced Noble",
+            "id": "92c4-0f0d-75b0-5c1b",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {"name": "Restrictions", "$text": "**Leader**: You must hire a **Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Swords for Hire",
+        "id": "0e76-9af5-b1aa-88bc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "e026-600a-6bd3-8a88", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Swords for Hire",
+            "id": "3e25-c8b9-7cf9-857d",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Witch Hunters Guild",
+        "id": "9c14-3ded-9283-9467",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "5f1b-ce37-8c34-2f06", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Witch Hunters Guild",
+            "id": "6cfb-64d9-1109-9187",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter House** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wizard's Retinue",
+        "id": "0e95-042a-f5ee-3386",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Origin", "id": "fc6f-17ae-f8d0-8ee3", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+        "profiles": [
+          {
+            "name": "Wizard's Retinue",
+            "id": "389e-42ed-f16b-44a0",
+            "hidden": false,
+            "typeId": "d530-27f7-854e-3a88",
+            "typeName": "Origin",
+            "characteristics": [
+              {
+                "name": "Restrictions",
+                "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
+                "typeId": "7d47-e888-6003-11c3"
+              },
+              {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter House",
+        "id": "950d-cbb9-c4f0-6690",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "7790-d63a-8058-1f1b", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Chapter House",
+            "id": "c80b-a586-dc94-5587",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Atonement for Sin**: If your warband lost the battle, in step 3 of the Aftermath sequence, make a Willpower test for each *Witch Hunter* and *Priest* in your warband. If they pass, they earn 5 bonus experience.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dilapidated Manor",
+        "id": "9399-5618-e7f9-1c7f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "08bb-8a2d-b629-3b65", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Dilapidated Manor",
+            "id": "1fb1-2c2c-bb79-1ef9",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Vintage Wines**: When this holding is first added to a warband roster, it has 2d6 bottles of **vintage wine**. Make a note on your warband roster.\nEach time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Guild Barracks",
+        "id": "48f2-5b1e-0027-5cd1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "1b8c-b1d9-d6df-d076", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Guild Barracks",
+            "id": "43c8-ba05-1178-f76c",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Combat Drills**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Henchmen* to train. Each of those fighters earns d6 bonus experience.\n**Eager to Prove**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Guild Recruit arrives at the Guild Barracks. You can recruit a Guild Recruit to your warband for 0 silver.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hidden Library",
+        "id": "92b0-c746-87c8-10c1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Stronghold", "id": "92db-7e99-4212-7e32", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+        "profiles": [
+          {
+            "name": "Hidden Library",
+            "id": "b136-5a51-c9be-be5f",
+            "hidden": false,
+            "typeId": "c917-c2c5-c1ca-25ad",
+            "typeName": "Stronghold",
+            "characteristics": [
+              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+              {
+                "name": "Ability",
+                "$text": "**Sorcerous Study**: Each battle, before you determine prepared spells, you can pick 1 friendly *Wizard* in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
+                "typeId": "d47f-1ea2-d87f-a753"
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -2390,6 +2398,7 @@
       {
         "name": "Old Dogs Skills",
         "id": "cf0e-97d0-a76f-24e7",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {
@@ -2779,7 +2788,7 @@
             "id": "8f53-b7cc-a2ec-c452",
             "hidden": true,
             "import": true,
-            "targetId": "9f59-cf30-9f30-5763",
+            "targetId": "f65b-5ab7-5cda-dc1d",
             "type": "selectionEntry",
             "categoryLinks": [{"name": "Champion List", "id": "4528-ffc4-def0-9574", "hidden": false, "primary": false, "targetId": "362d-9d5f-822e-e655"}]
           },
@@ -3026,6 +3035,7 @@
       {
         "name": "Soldier's Cunning",
         "id": "d346-3f03-f5da-62f1",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {
@@ -3196,6 +3206,7 @@
       {
         "name": "Skills",
         "id": "16f0-5346-75ed-1ef8",
+        "collapsible": true,
         "hidden": false,
         "constraints": [{"id": "1c5d-f52b-bc40-e638", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [

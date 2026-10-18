@@ -26,316 +26,269 @@
         "id": "a4c7-e572-98cc-6d1b",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 11,
         "targetId": "f651-a48e-cc18-ef06",
-        "type": "selectionEntry",
-        "entryLinks": [
-          {
-            "name": "Oversized Claw",
-            "id": "1cdb-70d3-2053-dab3",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "e560-0a42-ff27-e5a2",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "aefc-e739-9ffe-3458-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "aefc-e739-9ffe-3458-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
-          }
-        ]
+        "type": "selectionEntry"
       },
       {
         "name": "Rolling-Contraption",
         "id": "f244-f7dc-0a36-3af3",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 12,
         "targetId": "3a94-a3a5-041e-daf2",
         "type": "selectionEntry"
-      }
-    ],
-    "forceEntries": [
+      },
       {
-        "name": "Warband Roster",
-        "id": "6c09-3b06-898a-1ab4",
+        "name": "Warband Info",
+        "id": "d695-77ad-3043-707b",
         "hidden": false,
-        "categoryLinks": [
+        "import": true,
+        "sortIndex": 0,
+        "targetId": "b736-8a1d-7bd8-8f1b",
+        "type": "selectionEntry",
+        "selectionEntryGroups": [
           {
             "name": "Origin",
-            "id": "a043-14fa-c0ab-5c07",
+            "id": "9c38-f8c4-285e-4c42",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "a0ac-c18a-151b-4dfa",
+            "sortIndex": 1,
             "constraints": [
-              {"id": "a711-a8a6-c6b8-e55c-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
-              {"id": "a711-a8a6-c6b8-e55c-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+              {"id": "37b7-0097-fcdf-b17b-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
+              {"id": "37b7-0097-fcdf-b17b-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Acolytes of Plague",
+                "id": "de64-0135-39f5-00c3",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "9516-2870-594c-400c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Acolytes of Plague",
+                    "id": "bf95-e2ad-e637-bef1",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Pox Priest** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Desecrated Chapel** stronghold.\n- Your warband can include 0-2 Pox Priest Apprentices.",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Merciless Tyrant",
+                "id": "004c-3aa9-e2c5-ccb0",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "b917-2bed-4e79-6794", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Merciless Tyrant",
+                    "id": "a4bb-3645-9dae-f3d5",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit an **Ironfang Warlord** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Fortified Warren** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rooftop Runners",
+                "id": "88ae-cc70-2eac-b442",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "6c97-5b6a-3f0f-9954", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Rooftop Runners",
+                    "id": "5105-c033-4721-4888",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Nightfang Assassin** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Vantage** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Sparkseer Coven",
+                "id": "a204-87ab-f46a-382d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "36d5-1837-5b78-0482", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Sparkseer Coven",
+                    "id": "87e2-c923-813a-ea8f",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Sparkseer** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Rickety Workshop** stronghold\n- Your warband can include 0-2 Rolling\nContraptions.",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           },
-          {"name": "Stronghold", "id": "7722-917e-fbe9-ac7e", "hidden": false, "targetId": "bba8-3330-6b7c-e324"},
           {
-            "name": "Leader",
-            "id": "083a-c63e-d5a6-9403",
+            "name": "Stronghold",
+            "id": "0011-5c51-ff99-9e3c",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "69a7-1a88-d493-5847",
-            "constraints": [
-              {"id": "b517-1fe1-debe-a738-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
-              {"id": "b517-1fe1-debe-a738-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+            "sortIndex": 2,
+            "constraints": [{"id": "016d-1845-d547-3b51", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "selectionEntries": [
+              {
+                "name": "Desecrated Chapel",
+                "id": "85f5-1ab3-51a1-474a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "7233-917d-c31d-fa0e", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Desecrated Chapel",
+                    "id": "4e68-2728-e690-ec36",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Prayers of Plague**: Each battle, before you determine prepared spells, you can pick 1 friendly Priest in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Fortified Warren",
+                "id": "bf0d-5f3b-9ae9-298d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "ef28-147f-8064-4f06", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Fortified Warren",
+                    "id": "5631-7404-3529-e1b1",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Fighting Pits**: After each battle, before the aftermath sequence, you can pick 2 friendly Champion or Henchmen fighters that were not taken down during the battle to fight in the pits. Resolve the fight as follows:\nPick 1 of the fighters to command and let your opponent command the other. The 2 fighters are placed engaged in melee. Roll-off and start alternating melee attack actions starting with the winner. The fighters cannot make any other actions or moves. Alternate making melee attack actions until 1 fighter is taken down. That fighter suffers an injury as normal. The other fighter is the winner and earns 10 bonus experience.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Hidden Vantage",
+                "id": "098b-19d6-2b44-6db9",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "0271-f7a0-92dc-6490", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Hidden Vantage",
+                    "id": "0149-a3e1-0da5-4c7c",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Run the Roofs**: If the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an entry point) you can pick up to d3 of those fighters to instead be set up on the\nroofs. If you do so, these fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the battlefield, is more than 9\" from all enemy fighters, and isn’t on the battlefield floor.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rickety Workshop",
+                "id": "5899-c575-e11f-e12b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "48aa-5e11-49f6-b6ae", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Rickety Workshop",
+                    "id": "39a1-fd8c-5edf-92fd",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Mad Tinkerers**:\n- When making an injury roll for a friendly *Contraption*, you can roll twice and pick either result.\n- Before each battle begins, you can pick 1 friendly *Sparkseer*. That fighter starts the battle with 3 engineering points instead of d3.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
-          },
-          {
-            "name": "Champion",
-            "id": "bc30-13cf-5ac9-4758",
-            "hidden": false,
-            "targetId": "f44d-d057-3822-ad30",
-            "constraints": [{"id": "91ec-a39d-8680-9574", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
-          },
-          {
-            "name": "Henchman",
-            "id": "ec0b-efec-c813-9b34",
-            "hidden": false,
-            "targetId": "2594-e088-657e-98c8",
-            "constraints": [{"id": "d213-466f-5eb7-2560", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 5}]
-          },
-          {
-            "name": "Brute",
-            "id": "2944-b78b-84f2-df83",
-            "hidden": false,
-            "targetId": "eea3-65a8-e483-ad71",
-            "constraints": [{"id": "9aeb-784e-4cfa-3c32", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
-          },
-          {
-            "name": "Beast",
-            "id": "bc8f-6949-2b3b-e6a1",
-            "hidden": false,
-            "targetId": "054d-3052-d990-09f1",
-            "constraints": [{"id": "d60f-51ac-9ada-37d7", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
           }
         ]
       }
     ],
     "selectionEntries": [
       {
-        "name": "Acolytes of Plague",
-        "id": "de64-0135-39f5-00c3",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "9516-2870-594c-400c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Acolytes of Plague",
-            "id": "bf95-e2ad-e637-bef1",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Pox Priest** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Desecrated Chapel** stronghold.\n- Your warband can include 0-2 Pox Priest Apprentices.",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Sparkseer Coven",
-        "id": "a204-87ab-f46a-382d",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "36d5-1837-5b78-0482", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Sparkseer Coven",
-            "id": "87e2-c923-813a-ea8f",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Sparkseer** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Rickety Workshop** stronghold\n- Your warband can include 0-2 Rolling\nContraptions.",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rooftop Runners",
-        "id": "88ae-cc70-2eac-b442",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "6c97-5b6a-3f0f-9954", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Rooftop Runners",
-            "id": "5105-c033-4721-4888",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Nightfang Assassin** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Vantage** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Merciless Tyrant",
-        "id": "004c-3aa9-e2c5-ccb0",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "b917-2bed-4e79-6794", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Merciless Tyrant",
-            "id": "a4bb-3645-9dae-f3d5",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit an **Ironfang Warlord** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Fortified Warren** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Desecrated Chapel",
-        "id": "85f5-1ab3-51a1-474a",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "7233-917d-c31d-fa0e", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Desecrated Chapel",
-            "id": "4e68-2728-e690-ec36",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Prayers of Plague**: Each battle, before you determine prepared spells, you can pick 1 friendly Priest in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rickety Workshop",
-        "id": "5899-c575-e11f-e12b",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "48aa-5e11-49f6-b6ae", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Rickety Workshop",
-            "id": "39a1-fd8c-5edf-92fd",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Mad Tinkerers**:\n- When making an injury roll for a friendly *Contraption*, you can roll twice and pick either result.\n- Before each battle begins, you can pick 1 friendly *Sparkseer*. That fighter starts the battle with 3 engineering points instead of d3.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hidden Vantage",
-        "id": "098b-19d6-2b44-6db9",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "0271-f7a0-92dc-6490", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Hidden Vantage",
-            "id": "0149-a3e1-0da5-4c7c",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Run the Roofs**: If the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an entry point) you can pick up to d3 of those fighters to instead be set up on the\nroofs. If you do so, these fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the battlefield, is more than 9\" from all enemy fighters, and isn’t on the battlefield floor.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Fortified Warren",
-        "id": "bf0d-5f3b-9ae9-298d",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "ef28-147f-8064-4f06", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Fortified Warren",
-            "id": "5631-7404-3529-e1b1",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Fighting Pits**: After each battle, before the aftermath sequence, you can pick 2 friendly Champion or Henchmen fighters that were not taken down during the battle to fight in the pits. Resolve the fight as follows:\nPick 1 of the fighters to command and let your opponent command the other. The 2 fighters are placed engaged in melee. Roll-off and start alternating melee attack actions starting with the winner. The fighters cannot make any other actions or moves. Alternate making melee attack actions until 1 fighter is taken down. That fighter suffers an injury as normal. The other fighter is the winner and earns 10 bonus experience.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Pox Priest",
         "id": "dc6b-6c89-f14b-11bb",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 1,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "781d-5b26-6f6c-8c01", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -355,7 +308,15 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "4246-b42e-c342-8ebd", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "4246-b42e-c342-8ebd",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Lore of Poxes",
             "id": "0119-6614-a009-6eb4",
@@ -363,6 +324,15 @@
             "import": true,
             "sortIndex": 2,
             "targetId": "389a-204a-3041-15df",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "a7c0-e0ed-3c2c-92a4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
           }
         ],
@@ -398,7 +368,7 @@
         "id": "3237-c470-586d-5cb2",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 2,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "28ad-cd52-f21a-b23c", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -419,7 +389,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "d084-23b6-039e-824d", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "d084-23b6-039e-824d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "4f9d-2af4-88a0-7a8c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "One-cut, One-kill", "id": "0d61-f2e7-e682-a5b8", "hidden": false, "targetId": "63b0-a860-3540-41b5", "type": "rule"}],
         "profiles": [
@@ -467,7 +454,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "0b22-1f62-ba7b-2310", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "0b22-1f62-ba7b-2310",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "5bce-3d85-fcb2-cb77",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -494,7 +498,7 @@
         "id": "316a-2af7-6677-7e6c",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 4,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "0a5d-291c-93e7-6d01", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -515,7 +519,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "14df-a304-54f4-cc60", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "14df-a304-54f4-cc60",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "9d1c-7aa9-6f03-6230",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Mad Engineering", "id": "1695-bb62-092e-e771", "hidden": false, "targetId": "95e0-3235-2269-96e0", "type": "rule"}],
         "profiles": [
@@ -543,7 +564,7 @@
         "id": "06dc-0b5c-ae29-0f98",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 5,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "d8c3-885a-798f-6d1f", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -573,7 +594,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "47c8-1e71-71ff-6e45", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "47c8-1e71-71ff-6e45",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "a799-f691-e8d0-9124",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -607,7 +645,7 @@
         "id": "f160-1da2-1a00-43ed",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 6,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "584d-9b36-026c-c75c", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -628,7 +666,15 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "f119-87dd-4db3-ee1a", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "f119-87dd-4db3-ee1a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Lore of Poxes",
             "id": "274d-dc82-a228-812d",
@@ -636,6 +682,15 @@
             "import": true,
             "sortIndex": 2,
             "targetId": "389a-204a-3041-15df",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "65fe-c37b-f290-ba5e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
           }
         ],
@@ -690,7 +745,7 @@
         "id": "9459-9c53-ec64-d51c",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 7,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "30b0-debb-4a9d-3d9a", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -711,7 +766,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "bc33-c255-f0f4-277b", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "bc33-c255-f0f4-277b",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "b8db-2c8d-5a1d-9ec9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "One-cut, One-kill", "id": "c34b-1a8f-df34-4485", "hidden": false, "targetId": "63b0-a860-3540-41b5", "type": "rule"}],
         "profiles": [
@@ -738,7 +810,7 @@
         "id": "70b0-2134-60b7-425c",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 8,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "03d0-8578-b152-f02d", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -758,7 +830,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "b0e2-1651-bb1c-2871", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "b0e2-1651-bb1c-2871",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "154f-05fe-7f34-daee",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Seasoned Warrior", "id": "d939-155f-7922-071b", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"}],
         "profiles": [
@@ -785,7 +874,7 @@
         "id": "423d-7383-9ee3-a8af",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 9,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "eb31-a003-2720-f491", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -807,7 +896,24 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "301b-7b47-0867-104f", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "301b-7b47-0867-104f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "51c2-78d9-07dc-dbec",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Mad Engineering", "id": "8ae2-7069-d507-193d", "hidden": false, "targetId": "95e0-3235-2269-96e0", "type": "rule"}],
         "profiles": [
@@ -834,7 +940,7 @@
         "id": "6f0c-9ec8-b44f-ef32",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 10,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "ae13-711a-a303-64f8", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -844,7 +950,15 @@
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
         "entryLinks": [
-          {"name": "Skills", "id": "85f8-e388-38cf-559f", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "85f8-e388-38cf-559f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Wargear",
             "id": "b604-8043-07f6-1086",
@@ -852,6 +966,15 @@
             "import": true,
             "sortIndex": 1,
             "targetId": "23f9-f995-e9dc-3ee2",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "5e30-64ee-6263-7199",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
           }
         ],
@@ -879,7 +1002,7 @@
         "id": "9930-1b2b-3292-04c1",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 13,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "8fe9-6580-179b-37a1", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -902,7 +1025,24 @@
               {"id": "571e-8e2e-e991-7513-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
           },
-          {"name": "Skills", "id": "3130-6dcf-8d44-6858", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "3130-6dcf-8d44-6858",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "013a-a82b-68bc-2075",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -2118,7 +2258,37 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "92aa-7c12-e399-cbd4", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "92aa-7c12-e399-cbd4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "db9b-3be0-475d-7623",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Oversized Claw",
+            "id": "1cdb-70d3-2053-dab3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "e560-0a42-ff27-e5a2",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "aefc-e739-9ffe-3458-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "aefc-e739-9ffe-3458-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
         ],
         "profiles": [
           {
@@ -2163,7 +2333,15 @@
             "targetId": "23f9-f995-e9dc-3ee2",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "3438-9373-7b44-7e1f", "hidden": false, "import": true, "targetId": "bf15-1df7-b5a8-0fd9", "type": "selectionEntryGroup"},
+          {
+            "name": "Skills",
+            "id": "3438-9373-7b44-7e1f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "bf15-1df7-b5a8-0fd9",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Crushing Bulk",
             "id": "ec48-a877-d3fe-e8b6",
@@ -2176,6 +2354,15 @@
               {"id": "15ca-d28a-84f9-1ec4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "15ca-d28a-84f9-1ec4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
+          },
+          {
+            "name": "Experience",
+            "id": "7e30-d4cf-d4de-ec2d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
           }
         ],
         "profiles": [
@@ -2276,6 +2463,7 @@
       {
         "name": "Masterful Schemes",
         "id": "287e-c813-e817-665c",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {
@@ -2373,6 +2561,7 @@
       {
         "name": "Tunnel Runners",
         "id": "f201-5374-a2db-bd0f",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {

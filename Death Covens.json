@@ -23,81 +23,242 @@
       {"name": "Gargoyle", "id": "aea2-4319-bbba-ff40", "hidden": false},
       {"name": "Bat", "id": "4ac4-0b30-ee22-b7bb", "hidden": false}
     ],
-    "forceEntries": [
+    "entryLinks": [
       {
-        "name": "Warband Roster",
-        "id": "97f5-0b3a-ae0c-ac4d",
+        "name": "Warband Info",
+        "id": "d19a-fd75-7428-8750",
         "hidden": false,
-        "categoryLinks": [
+        "import": true,
+        "sortIndex": 0,
+        "targetId": "b736-8a1d-7bd8-8f1b",
+        "type": "selectionEntry",
+        "selectionEntryGroups": [
           {
             "name": "Origin",
-            "id": "29e2-4f7a-6b30-974c",
+            "id": "6a7c-de1b-b125-17b5",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "targetId": "a0ac-c18a-151b-4dfa",
+            "sortIndex": 1,
             "constraints": [
-              {"id": "4cc6-6642-f3d2-bf86-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
-              {"id": "4cc6-6642-f3d2-bf86-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
-            ]
-          },
-          {"name": "Stronghold", "id": "55f5-0f0b-664a-d511", "hidden": false, "targetId": "bba8-3330-6b7c-e324"},
-          {
-            "name": "Leader",
-            "id": "1791-806f-d7db-f58f",
-            "hidden": false,
-            "targetId": "69a7-1a88-d493-5847",
-            "constraints": [
-              {"id": "e460-6211-288b-dcd7-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
-              {"id": "e460-6211-288b-dcd7-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
-            ]
-          },
-          {
-            "name": "Champion",
-            "id": "75ea-9d4b-491b-1902",
-            "hidden": false,
-            "targetId": "f44d-d057-3822-ad30",
-            "constraints": [{"id": "617e-7a19-698e-c8dc", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
-          },
-          {
-            "name": "Henchman",
-            "id": "912d-5aa0-6ed4-2f3c",
-            "hidden": false,
-            "targetId": "2594-e088-657e-98c8",
-            "constraints": [{"id": "0c4d-f58e-e144-0af2", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 5}]
-          },
-          {
-            "name": "Brute",
-            "id": "fb43-5fae-9660-48f7",
-            "hidden": false,
-            "targetId": "eea3-65a8-e483-ad71",
-            "constraints": [{"id": "db58-deee-ae69-1cda", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
-          },
-          {
-            "name": "Beast",
-            "id": "f5eb-cdcc-fb42-2a41",
-            "hidden": false,
-            "targetId": "054d-3052-d990-09f1",
-            "constraints": [{"id": "8a43-77c2-f45c-9667", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
-          },
-          {
-            "name": "Beast (Unlimited)",
-            "id": "57f2-dfed-0165-beed",
-            "hidden": true,
-            "targetId": "6f2c-d90b-1c22-099f",
-            "modifiers": [
+              {"id": "45b0-39f5-01b9-2e8b-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
+              {"id": "45b0-39f5-01b9-2e8b-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
               {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
+                "name": "Aristocrats of Blood",
+                "id": "3d8b-d427-6861-aab2",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "8887-9ed9-5952-443e", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
                   {
-                    "childId": "85b9-430c-75c9-ef8a",
-                    "childName": "The Hunt Descends",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
+                    "name": "Aristocrats of Blood",
+                    "id": "aa51-df16-f307-5b0d",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Bloodcursed Noble** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Opulent Manor** stronghold.\n- Your warband can include 0-3 Bloodcursed Knights.",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Awakened Lord",
+                "id": "ee62-6b34-d2d1-9965",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "69b0-9687-ad93-da02", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Awakened Lord",
+                    "id": "7210-c090-d7f0-51ea",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Barrow Lord** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Ancient Barrows** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rogue Necromancer",
+                "id": "bc0b-37cf-ca36-9a38",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "80bd-5d17-3e4d-e4bd", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "Rogue Necromancer",
+                    "id": "1850-1ac0-1a42-8100",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Necromancer** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Embalmer's Hall** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "The Hunt Descends",
+                "id": "85b9-430c-75c9-ef8a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Origin", "id": "fdfb-b8ba-30c4-dbad", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
+                "profiles": [
+                  {
+                    "name": "The Hunt Descends",
+                    "id": "bc46-7842-ee84-ffcc",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must recruit a **Lycanfell Noble** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "$text": "- You begin the campaign with the **Grand Pavilion** stronghold.\n- Your warband can include any number of Dire Wolves (they do not count towards your Beasts limit)",
+                        "typeId": "c519-23f5-a727-b90e"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Stronghold",
+            "id": "f871-c0a2-6529-1128",
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "sortIndex": 2,
+            "constraints": [{"id": "f18d-39ad-8a20-ed63", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "selectionEntries": [
+              {
+                "name": "Ancient Barrows",
+                "id": "b89a-7aff-9881-7ea1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "ce06-55a4-6350-98ac", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Ancient Barrows",
+                    "id": "e397-f444-d572-3e6c",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Barrow Offering**: In step 5 of the Aftermath\nsequence, roll a dice. On a 6, mortals from the City\nhave left an offering. Roll once on the treasure\ntable.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Embalmer's Hall",
+                "id": "df1f-85e3-b11c-f70b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "dc75-f770-9d84-eb09", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Embalmer's Hall",
+                    "id": "ed1a-6b00-e80b-98bd",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Necromantic Study**: In each Aftermath sequence, pick 1 of the following:\n- *Read Forbidden Scrolls*: In step 3, your Leader gains 5 bonus experience.\n- *Create a Zombie*: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one of the hall’s corpses. You can recruit a Zombie to your warband for 0 silver.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Grand Pavilion",
+                "id": "5e72-f0b9-0d40-89b8",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "fc94-a040-8c9d-e59f", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Grand Pavilion",
+                    "id": "3c8b-096b-38c7-58e6",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Bestial Trophies**: Each time a *Beast* that was taken down by your Leader is killed, your Leader earns 10 bonus experience.\n**A Howl in the Night**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from of the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Opulent Manor",
+                "id": "b9c7-4bb2-6a8e-0d5f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Stronghold", "id": "0a46-4ed0-cddd-ad47", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
+                "profiles": [
+                  {
+                    "name": "Opulent Manor",
+                    "id": "445b-024d-6349-e953",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Banquet of Blood**: In step 3 of the Aftermath sequence pick up to 3 friendly *Vampyre* fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
                   }
                 ]
               }
@@ -108,227 +269,11 @@
     ],
     "selectionEntries": [
       {
-        "name": "Aristocrats of Blood",
-        "id": "3d8b-d427-6861-aab2",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "8887-9ed9-5952-443e", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Aristocrats of Blood",
-            "id": "aa51-df16-f307-5b0d",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Bloodcursed Noble** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Opulent Manor** stronghold.\n- Your warband can include 0-3 Bloodcursed Knights.",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "The Hunt Descends",
-        "id": "85b9-430c-75c9-ef8a",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "fdfb-b8ba-30c4-dbad", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "The Hunt Descends",
-            "id": "bc46-7842-ee84-ffcc",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Lycanfell Noble** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {
-                "name": "Special Rules",
-                "$text": "- You begin the campaign with the **Grand Pavilion** stronghold.\n- Your warband can include any number of Dire Wolves (they do not count towards your Beasts limit)",
-                "typeId": "c519-23f5-a727-b90e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rogue Necromancer",
-        "id": "bc0b-37cf-ca36-9a38",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "80bd-5d17-3e4d-e4bd", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Rogue Necromancer",
-            "id": "1850-1ac0-1a42-8100",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Necromancer** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Embalmer's Hall** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Awakened Lord",
-        "id": "ee62-6b34-d2d1-9965",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "69b0-9687-ad93-da02", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Awakened Lord",
-            "id": "7210-c090-d7f0-51ea",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must recruit a **Barrow Lord** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Ancient Barrows** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Opulent Manor",
-        "id": "b9c7-4bb2-6a8e-0d5f",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "0a46-4ed0-cddd-ad47", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Opulent Manor",
-            "id": "445b-024d-6349-e953",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Banquet of Blood**: In step 3 of the Aftermath sequence pick up to 3 friendly *Vampyre* fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Grand Pavilion",
-        "id": "5e72-f0b9-0d40-89b8",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "fc94-a040-8c9d-e59f", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Grand Pavilion",
-            "id": "3c8b-096b-38c7-58e6",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Bestial Trophies**: Each time a *Beast* that was taken down by your Leader is killed, your Leader earns 10 bonus experience.\n**A Howl in the Night**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from of the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Embalmer's Hall",
-        "id": "df1f-85e3-b11c-f70b",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "dc75-f770-9d84-eb09", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Embalmer's Hall",
-            "id": "ed1a-6b00-e80b-98bd",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Necromantic Study**: In each Aftermath sequence, pick 1 of the following:\n- *Read Forbidden Scrolls*: In step 3, your Leader gains 5 bonus experience.\n- *Create a Zombie*: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one of the hall’s corpses. You can recruit a Zombie to your warband for 0 silver.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Ancient Barrows",
-        "id": "b89a-7aff-9881-7ea1",
-        "hidden": false,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "ce06-55a4-6350-98ac", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Ancient Barrows",
-            "id": "e397-f444-d572-3e6c",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Barrow Offering**: In step 5 of the Aftermath\nsequence, roll a dice. On a 6, mortals from the City\nhave left an offering. Roll once on the treasure\ntable.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Bloodcursed Noble",
         "id": "2031-82ad-e224-ab8d",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 1,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "4c81-82e6-6b21-61a8", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -360,7 +305,24 @@
             "targetId": "f97c-4e5c-40f6-9a78",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "70e1-20d2-3f5f-4942", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "70e1-20d2-3f5f-4942",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "ad5e-2f13-5f21-0f8a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Noble Blood", "id": "6c67-8063-c33d-95e8", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
         "profiles": [
@@ -395,7 +357,7 @@
         "id": "c140-91e3-ff4d-ad48",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 2,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "efe4-5e58-496f-c260", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -424,7 +386,24 @@
             "targetId": "40b0-45f3-5797-d09c",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "2827-ae1a-ea91-cf2c", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "2827-ae1a-ea91-cf2c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "4a12-e89d-eea7-83d6",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -485,7 +464,7 @@
             "id": "7816-5eff-26b6-1d94",
             "hidden": false,
             "import": true,
-            "sortIndex": 2,
+            "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
@@ -501,6 +480,15 @@
               {"id": "de87-2ae2-5972-9b9c-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}
             ],
             "modifiers": [{"field": "name", "join": " ", "type": "append", "value": "Reference"}]
+          },
+          {
+            "name": "Experience",
+            "id": "35c6-8cdf-2b93-3a9a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
           }
         ],
         "infoLinks": [{"name": "Noble Blood", "id": "7a9f-a9e1-afec-914e", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
@@ -536,7 +524,7 @@
         "id": "f365-6cab-defc-57b1",
         "hidden": false,
         "import": true,
-        "sortIndex": 3,
+        "sortIndex": 4,
         "type": "unit",
         "categoryLinks": [
           {"name": "Leader", "id": "ffb9-2f73-cc6e-8dec", "hidden": false, "primary": true, "targetId": "69a7-1a88-d493-5847"},
@@ -557,7 +545,24 @@
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "2b9c-6aee-a55b-a67b", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "2b9c-6aee-a55b-a67b",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "fed3-439c-1b05-c9ac",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "dccb-41c9-3fbc-7e86", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -585,7 +590,7 @@
         "id": "8e18-ae95-e253-f8c6",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 5,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "d570-a59a-5437-9d66", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -617,7 +622,24 @@
             "targetId": "f97c-4e5c-40f6-9a78",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "e829-b2c2-eba9-a1b5", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "e829-b2c2-eba9-a1b5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "0e5c-d1ff-644d-ee17",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -651,7 +673,7 @@
         "id": "18ac-38d4-4534-1145",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 6,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "bf5c-11c0-9ef8-1b0a", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -674,7 +696,24 @@
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "4773-ea4e-584e-1a7e", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "4773-ea4e-584e-1a7e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "008d-ff75-b3e2-0b5f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "modifiers": [
           {
@@ -720,7 +759,7 @@
         "id": "6e80-cf37-8115-44ca",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 7,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "79f4-bd87-423c-2543", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -728,7 +767,8 @@
           {"name": "Champion List", "id": "d851-b434-d5b9-6370", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
           {"name": "Undead", "id": "48e0-a0a1-5f73-b811", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Vampyre", "id": "474e-b0a9-35af-1178", "hidden": false, "primary": false, "targetId": "cde1-d8dc-ad42-6cdc"},
-          {"name": "Fighter", "id": "87ae-4088-59de-036c", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "87ae-4088-59de-036c", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Starting Experience 30+d6", "id": "7b85-e44f-fead-a14d", "hidden": false, "primary": false, "targetId": "427e-5b43-6410-5a3c"}
         ],
         "constraints": [{"id": "5593-2a62-84fa-45e9", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 65}],
@@ -742,7 +782,24 @@
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "f72a-5217-1e5c-172a", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "f72a-5217-1e5c-172a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "ce15-6741-3e3d-4f83",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -814,7 +871,7 @@
         "id": "9441-5aaa-0bfa-4ae1",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 8,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "4dd6-98bb-3ed1-6d1d", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -844,7 +901,24 @@
             "targetId": "40b0-45f3-5797-d09c",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "991a-5250-ccac-d6c4", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Skills",
+            "id": "991a-5250-ccac-d6c4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "e665-e0e9-ff31-91f5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
         ],
         "profiles": [
           {
@@ -878,7 +952,7 @@
         "id": "e1ae-2265-d897-41ab",
         "hidden": false,
         "import": true,
-        "sortIndex": 4,
+        "sortIndex": 9,
         "type": "unit",
         "categoryLinks": [
           {"name": "Champion", "id": "fd35-68d4-df8a-992a", "hidden": false, "primary": true, "targetId": "f44d-d057-3822-ad30"},
@@ -899,7 +973,24 @@
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
           },
-          {"name": "Skills", "id": "68c6-7caa-150f-7eb7", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          {
+            "name": "Experience",
+            "id": "1b92-4ec7-b08f-d73d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Skills",
+            "id": "c9d7-0cb4-2f6a-a734",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          }
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "7ede-685c-18d5-3ea2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -927,7 +1018,7 @@
         "id": "0af9-f266-2271-876b",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 10,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "0413-3c63-974e-25ad", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -947,8 +1038,7 @@
             "sortIndex": 1,
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
-          },
-          {"name": "Skills", "id": "83a0-2595-4a6d-b764", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          }
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "1dd8-3573-07d0-5fe2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -975,7 +1065,7 @@
         "id": "ec3b-81c8-b3ee-69a0",
         "hidden": false,
         "import": true,
-        "sortIndex": 5,
+        "sortIndex": 11,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "34e7-5eb0-2282-ddfa", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -985,7 +1075,6 @@
           {"name": "Fighter", "id": "99c0-8179-0968-0b0a", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
-        "entryLinks": [{"name": "Skills", "id": "8a38-ec59-8eb6-4572", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
         "infoLinks": [{"name": "Unshakeable", "id": "da75-cf95-a3f0-f074", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "selectionEntries": [
           {
@@ -1028,7 +1117,7 @@
         "id": "0eb9-6e4f-141b-3b50",
         "hidden": false,
         "import": true,
-        "sortIndex": 6,
+        "sortIndex": 12,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "d0df-b7b1-bf77-5e49", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
@@ -1048,8 +1137,7 @@
             "sortIndex": 1,
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
-          },
-          {"name": "Skills", "id": "a3c9-afa9-884c-2871", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}
+          }
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "ec54-2b37-836e-6bad", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1076,7 +1164,7 @@
         "id": "63e7-899b-4f57-1a20",
         "hidden": false,
         "import": true,
-        "sortIndex": 6,
+        "sortIndex": 13,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "a4fb-0288-2403-8e7b", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
@@ -1087,7 +1175,6 @@
           {"name": "Fighter", "id": "8085-124b-07c7-8b94", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
-        "entryLinks": [{"name": "Skills", "id": "02b1-e526-82c5-1a0f", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
         "infoLinks": [{"name": "Unshakeable", "id": "d828-17d4-52f5-0219", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
           {
@@ -1148,7 +1235,7 @@
         "id": "3cd6-99cd-0b40-0815",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 15,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "fe46-a933-1fa8-e2dc", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -1158,7 +1245,26 @@
           {"name": "Fighter", "id": "d21a-d843-3104-6909", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 60}],
-        "entryLinks": [{"name": "Skills", "id": "d185-86ab-7a7c-842e", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
+        "entryLinks": [
+          {
+            "name": "Skills",
+            "id": "d185-86ab-7a7c-842e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "2ea1-8b47-45ed-2d4d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
+        ],
         "profiles": [
           {
             "name": "Dire Bat",
@@ -1223,7 +1329,7 @@
         "id": "97ce-11c7-22a3-5b7b",
         "hidden": false,
         "import": true,
-        "sortIndex": 7,
+        "sortIndex": 14,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "5c89-a0a4-a236-ea6f", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -1232,7 +1338,26 @@
           {"name": "Fighter", "id": "3ce0-24c4-73ab-3741", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
-        "entryLinks": [{"name": "Skills", "id": "e3fd-eec1-efee-dc6d", "hidden": false, "import": true, "targetId": "d24e-b6fe-9b74-971c", "type": "selectionEntryGroup"}],
+        "entryLinks": [
+          {
+            "name": "Skills",
+            "id": "e3fd-eec1-efee-dc6d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Experience",
+            "id": "d76d-affa-a64d-1cf7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "a125-39f1-a5b7-c2f3",
+            "type": "selectionEntryGroup"
+          }
+        ],
         "infoLinks": [{"name": "Sniff 'em Out", "id": "4fde-d231-040e-828c", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
         "modifierGroups": [
           {
@@ -2404,6 +2529,7 @@
       {
         "name": "Dark Aristocracy",
         "id": "b3d9-9dc2-8b8c-7c20",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {
@@ -2505,6 +2631,7 @@
       {
         "name": "Undying Lords",
         "id": "f55c-1d6a-2866-4fbd",
+        "collapsible": true,
         "hidden": false,
         "selectionEntries": [
           {
