@@ -122,7 +122,7 @@
             "id": "bc30-13cf-5ac9-4758",
             "hidden": false,
             "targetId": "f44d-d057-3822-ad30",
-            "constraints": [{"id": "91ec-a39d-8680-9574", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+            "constraints": [{"id": "91ec-a39d-8680-9574", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}]
           },
           {
             "name": "Henchman",
