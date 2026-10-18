@@ -84,7 +84,7 @@
       },
       {"name": "Warband Info", "id": "f530-d041-55c2-c05b", "hidden": false},
       {"name": "Starting Experience 20+d6", "id": "15e7-bf29-b27a-403e", "hidden": true},
-      {"name": "Starting Experience 30+d6", "id": "427e-5b43-6410-5a3c", "hidden": false}
+      {"name": "Starting Experience 30+d6", "id": "427e-5b43-6410-5a3c", "hidden": true}
     ],
     "costTypes": [
       {"name": "Silver", "id": "3892-0a24-b2ab-55d1", "defaultCostLimit": -1},
@@ -1239,13 +1239,33 @@
             "value": 1,
             "repeats": [
               {
-                "childId": "unit",
-                "childName": "unit",
+                "childId": "",
+                "childName": "",
                 "field": "3892-0a24-b2ab-55d1",
-                "includeChildSelections": false,
+                "includeChildForces": false,
+                "includeChildSelections": true,
                 "repeats": 1,
                 "roundUp": false,
                 "scope": "force",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "7383-0160-b523-290f",
+            "type": "decrement",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "ff00-5784-2b4b-def1",
+                "childName": "Silver",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "self",
                 "shared": true,
                 "value": 1
               }
