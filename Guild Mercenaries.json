@@ -24,6 +24,7 @@
       {
         "name": "Warband Info",
         "id": "0031-4a98-40da-1937",
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "sortIndex": 0,
@@ -40,11 +41,99 @@
               {"id": "88ee-d667-03d6-dbf1-min", "field": "selections", "scope": "self", "shared": true, "type": "min", "value": 1},
               {"id": "88ee-d667-03d6-dbf1-max", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}
             ],
-            "entryLinks": [
-              {"name": "Swords for Hire", "id": "b178-c2c4-a5ef-a2e2", "hidden": false, "import": true, "targetId": "0e76-9af5-b1aa-88bc", "type": "selectionEntry"},
-              {"name": "Disgraced Noble", "id": "23b9-69de-4bde-53b5", "hidden": false, "import": true, "targetId": "ed00-e739-69a8-9b22", "type": "selectionEntry"},
-              {"name": "Witch Hunters Guild", "id": "8bdf-68d0-a0c7-113b", "hidden": false, "import": true, "targetId": "9c14-3ded-9283-9467", "type": "selectionEntry"},
-              {"name": "Wizard's Retinue", "id": "d889-5b50-2cfc-bd45", "hidden": false, "import": true, "targetId": "0e95-042a-f5ee-3386", "type": "selectionEntry"}
+            "selectionEntries": [
+              {
+                "name": "Disgraced Noble",
+                "id": "ed00-e739-69a8-9b22",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Disgraced Noble",
+                    "id": "92c4-0f0d-75b0-5c1b",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {"name": "Restrictions", "$text": "**Leader**: You must hire a **Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Witch Hunters Guild",
+                "id": "9c14-3ded-9283-9467",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Witch Hunters Guild",
+                    "id": "6cfb-64d9-1109-9187",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter House** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Wizard's Retinue",
+                "id": "0e95-042a-f5ee-3386",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Wizard's Retinue",
+                    "id": "389e-42ed-f16b-44a0",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Swords for Hire",
+                "id": "0e76-9af5-b1aa-88bc",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Swords for Hire",
+                    "id": "3e25-c8b9-7cf9-857d",
+                    "hidden": false,
+                    "typeId": "d530-27f7-854e-3a88",
+                    "typeName": "Origin",
+                    "characteristics": [
+                      {
+                        "name": "Restrictions",
+                        "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
+                        "typeId": "7d47-e888-6003-11c3"
+                      },
+                      {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                    ]
+                  }
+                ]
+              }
             ]
           },
           {
@@ -66,11 +155,103 @@
                 "value": 1
               }
             ],
-            "entryLinks": [
-              {"name": "Guild Barracks", "id": "26a3-9c5b-3917-d27a", "hidden": false, "import": true, "targetId": "48f2-5b1e-0027-5cd1", "type": "selectionEntry"},
-              {"name": "Dilapidated Manor", "id": "a740-2d90-1ea9-b67e", "hidden": false, "import": true, "targetId": "9399-5618-e7f9-1c7f", "type": "selectionEntry"},
-              {"name": "Chapter House", "id": "df7b-e485-3bb4-8718", "hidden": false, "import": true, "targetId": "950d-cbb9-c4f0-6690", "type": "selectionEntry"},
-              {"name": "Hidden Library", "id": "ec51-4275-3ddd-9133", "hidden": false, "import": true, "targetId": "92b0-c746-87c8-10c1", "type": "selectionEntry"}
+            "selectionEntries": [
+              {
+                "name": "Chapter House",
+                "id": "950d-cbb9-c4f0-6690",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Chapter House",
+                    "id": "c80b-a586-dc94-5587",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Atonement for Sin**: If your warband lost the battle, in step 3 of the Aftermath sequence, make a Willpower test for each *Witch Hunter* and *Priest* in your warband. If they pass, they earn 5 bonus experience.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Dilapidated Manor",
+                "id": "9399-5618-e7f9-1c7f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Dilapidated Manor",
+                    "id": "1fb1-2c2c-bb79-1ef9",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Vintage Wines**: When this holding is first added to a warband roster, it has 2d6 bottles of **vintage wine**. Make a note on your warband roster.\nEach time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Guild Barracks",
+                "id": "48f2-5b1e-0027-5cd1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Guild Barracks",
+                    "id": "43c8-ba05-1178-f76c",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Combat Drills**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Henchmen* to train. Each of those fighters earns d6 bonus experience.\n**Eager to Prove**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Guild Recruit arrives at the Guild Barracks. You can recruit a Guild Recruit to your warband for 0 silver.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Hidden Library",
+                "id": "92b0-c746-87c8-10c1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Hidden Library",
+                    "id": "b136-5a51-c9be-be5f",
+                    "hidden": false,
+                    "typeId": "c917-c2c5-c1ca-25ad",
+                    "typeName": "Stronghold",
+                    "characteristics": [
+                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                      {
+                        "name": "Ability",
+                        "$text": "**Sorcerous Study**: Each battle, before you determine prepared spells, you can pick 1 friendly *Wizard* in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
+                        "typeId": "d47f-1ea2-d87f-a753"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -124,7 +305,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "f5e6-f16c-ff06-50a7", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -191,7 +373,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "454e-f13a-15e1-9e70", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [
           {"name": "Seasoned Warrior", "id": "746a-49e5-2829-a683", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"},
@@ -266,7 +449,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "fd19-1330-296c-2769", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -348,7 +532,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "23e1-d50c-f1a8-c95b", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -430,7 +615,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "8fa2-563e-ba98-0663", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -452,7 +638,7 @@
         ],
         "rules": [
           {
-            "name": "Hole Magic",
+            "name": "Holy Magic",
             "id": "472f-a925-2267-821f",
             "description": "This fighter knows the **Lore of the Saints**. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
             "hidden": false
@@ -502,7 +688,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "c268-180a-8bbb-bb5b", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Seasoned Warrior", "id": "6dfe-de7e-9b64-a6b4", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"}],
         "profiles": [
@@ -566,7 +753,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "2f20-89ad-b765-e8e8", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -646,7 +834,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "db8d-1609-32da-5e29", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Recite Holy Litanies [Action]", "id": "6523-a084-fee3-7082", "hidden": false, "targetId": "4bef-70e2-16ce-24b8", "type": "rule"}],
         "profiles": [
@@ -712,7 +901,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "a15b-353c-deea-b39b", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -775,7 +965,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "cfa0-34af-2b2e-c14b", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -838,7 +1029,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "3b0e-a14b-593e-cb2b", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -882,7 +1074,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "a130-4913-76d9-6c65", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Sniff 'em Out", "id": "9184-bfa4-3f47-f7a3", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
         "rules": [
@@ -1797,7 +1990,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "29ab-3894-439b-26a2", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -2064,202 +2258,6 @@
               {"name": "Damage", "$text": "3", "typeId": "8490-6720-799a-d1e9"},
               {"name": "Critical Damage", "$text": "d6+2", "typeId": "1cab-b575-f89b-7741"},
               {"name": "Weapon Traits", "$text": "Rare 0-1, Reload, Two-handed", "typeId": "a727-f7da-c245-5268"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Disgraced Noble",
-        "id": "ed00-e739-69a8-9b22",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "2c69-3496-1c68-0a8c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Disgraced Noble",
-            "id": "92c4-0f0d-75b0-5c1b",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {"name": "Restrictions", "$text": "**Leader**: You must hire a **Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Dilapidated Manor** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Swords for Hire",
-        "id": "0e76-9af5-b1aa-88bc",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "e026-600a-6bd3-8a88", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Swords for Hire",
-            "id": "3e25-c8b9-7cf9-857d",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must hire a **Guild Captain** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Guild Barracks** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Witch Hunters Guild",
-        "id": "9c14-3ded-9283-9467",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "5f1b-ce37-8c34-2f06", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Witch Hunters Guild",
-            "id": "6cfb-64d9-1109-9187",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must hire a **Witch Hunter** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Chapter House** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Wizard's Retinue",
-        "id": "0e95-042a-f5ee-3386",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Origin", "id": "fc6f-17ae-f8d0-8ee3", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
-        "profiles": [
-          {
-            "name": "Wizard's Retinue",
-            "id": "389e-42ed-f16b-44a0",
-            "hidden": false,
-            "typeId": "d530-27f7-854e-3a88",
-            "typeName": "Origin",
-            "characteristics": [
-              {
-                "name": "Restrictions",
-                "$text": "**Leader**: You must hire an **High Wizard of the Guild** to lead your warband at the start of the campaign.",
-                "typeId": "7d47-e888-6003-11c3"
-              },
-              {"name": "Special Rules", "$text": "You begin the campaign with the **Hidden Library** stronghold.", "typeId": "c519-23f5-a727-b90e"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Chapter House",
-        "id": "950d-cbb9-c4f0-6690",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "7790-d63a-8058-1f1b", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Chapter House",
-            "id": "c80b-a586-dc94-5587",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Atonement for Sin**: If your warband lost the battle, in step 3 of the Aftermath sequence, make a Willpower test for each *Witch Hunter* and *Priest* in your warband. If they pass, they earn 5 bonus experience.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Dilapidated Manor",
-        "id": "9399-5618-e7f9-1c7f",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "08bb-8a2d-b629-3b65", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Dilapidated Manor",
-            "id": "1fb1-2c2c-bb79-1ef9",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Vintage Wines**: When this holding is first added to a warband roster, it has 2d6 bottles of **vintage wine**. Make a note on your warband roster.\nEach time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Guild Barracks",
-        "id": "48f2-5b1e-0027-5cd1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "1b8c-b1d9-d6df-d076", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Guild Barracks",
-            "id": "43c8-ba05-1178-f76c",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Combat Drills**: In step 3 of the Aftermath sequence you can pick up to 3 friendly *Henchmen* to train. Each of those fighters earns d6 bonus experience.\n**Eager to Prove**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Guild Recruit arrives at the Guild Barracks. You can recruit a Guild Recruit to your warband for 0 silver.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hidden Library",
-        "id": "92b0-c746-87c8-10c1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Stronghold", "id": "92db-7e99-4212-7e32", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
-        "profiles": [
-          {
-            "name": "Hidden Library",
-            "id": "b136-5a51-c9be-be5f",
-            "hidden": false,
-            "typeId": "c917-c2c5-c1ca-25ad",
-            "typeName": "Stronghold",
-            "characteristics": [
-              {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-              {
-                "name": "Ability",
-                "$text": "**Sorcerous Study**: Each battle, before you determine prepared spells, you can pick 1 friendly *Wizard* in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
-                "typeId": "d47f-1ea2-d87f-a753"
-              }
             ]
           }
         ]

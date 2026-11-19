@@ -6,8 +6,6 @@
     "revision": 1,
     "type": "gameSystem",
     "categoryEntries": [
-      {"name": "Origin", "id": "a0ac-c18a-151b-4dfa", "hidden": false},
-      {"name": "Stronghold", "id": "bba8-3330-6b7c-e324", "hidden": false},
       {"name": "Leader", "id": "69a7-1a88-d493-5847", "hidden": false},
       {"name": "Champion", "id": "f44d-d057-3822-ad30", "hidden": false},
       {"name": "Henchman", "id": "2594-e088-657e-98c8", "hidden": false},
@@ -88,8 +86,8 @@
     ],
     "costTypes": [
       {"name": "Silver", "id": "3892-0a24-b2ab-55d1", "defaultCostLimit": -1},
-      {"name": "Experience", "id": "26cf-17c6-d1b5-65c7", "defaultCostLimit": -1, "hidden": false},
-      {"name": "Warband Rating", "id": "7383-0160-b523-290f", "defaultCostLimit": -1, "hidden": false}
+      {"name": "XP", "id": "26cf-17c6-d1b5-65c7", "defaultCostLimit": -1, "hidden": false},
+      {"name": "Rating", "id": "7383-0160-b523-290f", "defaultCostLimit": -1, "hidden": false}
     ],
     "forceEntries": [
       {

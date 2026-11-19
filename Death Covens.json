@@ -50,7 +50,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "8887-9ed9-5952-443e", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Aristocrats of Blood",
@@ -79,7 +78,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "69b0-9687-ad93-da02", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Awakened Lord",
@@ -104,7 +102,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "80bd-5d17-3e4d-e4bd", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Rogue Necromancer",
@@ -129,7 +126,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "fdfb-b8ba-30c4-dbad", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "The Hunt Descends",
@@ -168,7 +164,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "ce06-55a4-6350-98ac", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Ancient Barrows",
@@ -180,7 +175,7 @@
                       {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
                       {
                         "name": "Ability",
-                        "$text": "**Barrow Offering**: In step 5 of the Aftermath\nsequence, roll a dice. On a 6, mortals from the City\nhave left an offering. Roll once on the treasure\ntable.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
+                        "$text": "**Barrow Offering**: In step 5 of the Aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll once on the treasure table.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
                         "typeId": "d47f-1ea2-d87f-a753"
                       }
                     ]
@@ -193,7 +188,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "dc75-f770-9d84-eb09", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Embalmer's Hall",
@@ -218,7 +212,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "fc94-a040-8c9d-e59f", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Grand Pavilion",
@@ -243,7 +236,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "0a46-4ed0-cddd-ad47", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Opulent Manor",
@@ -322,7 +314,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "5128-8dd9-db5e-6173", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Noble Blood", "id": "6c67-8063-c33d-95e8", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
         "profiles": [
@@ -403,7 +396,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "3054-6b12-368e-6413", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -489,7 +483,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "c6cb-479d-16e5-be12", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Noble Blood", "id": "7a9f-a9e1-afec-914e", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
         "profiles": [
@@ -562,7 +557,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "321d-e23d-c7e4-8f54", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "dccb-41c9-3fbc-7e86", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -639,7 +635,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "95d3-f1a9-c43f-ed07", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -713,7 +710,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "c23b-e3ed-c108-b348", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "modifiers": [
           {
@@ -799,7 +797,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "a465-3e0a-7262-18bd", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -918,7 +917,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "2364-6338-d827-e0ca", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -990,7 +990,8 @@
             "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "9b4b-4cc0-dfbd-8ebe", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "7ede-685c-18d5-3ea2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1038,7 +1039,8 @@
             "sortIndex": 1,
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "4f3f-41fe-f0ff-62ad", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "1dd8-3573-07d0-5fe2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1075,6 +1077,9 @@
           {"name": "Fighter", "id": "99c0-8179-0968-0b0a", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
+        "entryLinks": [
+          {"name": "Black Rot", "id": "8985-ca6c-4d7b-8b6a", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+        ],
         "infoLinks": [{"name": "Unshakeable", "id": "da75-cf95-a3f0-f074", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "selectionEntries": [
           {
@@ -1137,7 +1142,8 @@
             "sortIndex": 1,
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "2f47-d3f5-3244-1237", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "ec54-2b37-836e-6bad", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1175,6 +1181,9 @@
           {"name": "Fighter", "id": "8085-124b-07c7-8b94", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
+        "entryLinks": [
+          {"name": "Black Rot", "id": "49e4-b8d1-ab36-4b79", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+        ],
         "infoLinks": [{"name": "Unshakeable", "id": "d828-17d4-52f5-0219", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
           {
@@ -1263,7 +1272,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "7c55-e768-9832-bfea", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -1356,7 +1366,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "630d-34de-ab46-f8e7", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Sniff 'em Out", "id": "4fde-d231-040e-828c", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
         "modifierGroups": [

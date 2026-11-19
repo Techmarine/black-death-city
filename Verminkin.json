@@ -65,7 +65,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "9516-2870-594c-400c", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Acolytes of Plague",
@@ -94,7 +93,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "b917-2bed-4e79-6794", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Merciless Tyrant",
@@ -119,7 +117,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "6c97-5b6a-3f0f-9954", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Rooftop Runners",
@@ -144,7 +141,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Origin", "id": "36d5-1837-5b78-0482", "hidden": false, "primary": true, "targetId": "a0ac-c18a-151b-4dfa"}],
                 "profiles": [
                   {
                     "name": "Sparkseer Coven",
@@ -183,7 +179,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "7233-917d-c31d-fa0e", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Desecrated Chapel",
@@ -208,7 +203,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "ef28-147f-8064-4f06", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Fortified Warren",
@@ -233,7 +227,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "0271-f7a0-92dc-6490", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Hidden Vantage",
@@ -258,7 +251,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Stronghold", "id": "48aa-5e11-49f6-b6ae", "hidden": false, "primary": true, "targetId": "bba8-3330-6b7c-e324"}],
                 "profiles": [
                   {
                     "name": "Rickety Workshop",
@@ -334,7 +326,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "b996-0a2f-56f5-c71d", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -406,7 +399,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "24a8-6b4e-4e6b-720d", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "One-cut, One-kill", "id": "0d61-f2e7-e682-a5b8", "hidden": false, "targetId": "63b0-a860-3540-41b5", "type": "rule"}],
         "profiles": [
@@ -471,7 +465,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "9f23-4175-3148-3b9b", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -536,7 +531,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "1667-9e38-7d72-1cd0", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Mad Engineering", "id": "1695-bb62-092e-e771", "hidden": false, "targetId": "95e0-3235-2269-96e0", "type": "rule"}],
         "profiles": [
@@ -611,7 +607,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "1662-95fd-669e-1e1d", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -692,7 +689,8 @@
             "sortIndex": 3,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "b868-1972-b4b1-b424", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "modifiers": [
           {
@@ -783,7 +781,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "a34c-51f6-49e0-c286", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "One-cut, One-kill", "id": "c34b-1a8f-df34-4485", "hidden": false, "targetId": "63b0-a860-3540-41b5", "type": "rule"}],
         "profiles": [
@@ -847,7 +846,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "b7bb-7264-0714-172f", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Seasoned Warrior", "id": "d939-155f-7922-071b", "hidden": false, "targetId": "ec34-bd52-e574-4bcd", "type": "rule"}],
         "profiles": [
@@ -913,7 +913,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "82f5-d8ac-9092-b187", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Mad Engineering", "id": "8ae2-7069-d507-193d", "hidden": false, "targetId": "95e0-3235-2269-96e0", "type": "rule"}],
         "profiles": [
@@ -976,7 +977,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "ff97-56c5-8440-7c9d", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -1042,7 +1044,8 @@
             "sortIndex": 2,
             "targetId": "a125-39f1-a5b7-c2f3",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Black Rot", "id": "74e3-6cdb-df9e-7bb3", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -2288,7 +2291,8 @@
               {"id": "aefc-e739-9ffe-3458-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "aefc-e739-9ffe-3458-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
-          }
+          },
+          {"name": "Black Rot", "id": "8ae7-25a9-f541-0fe1", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
         ],
         "profiles": [
           {
