@@ -14,14 +14,13 @@
       {"name": "Champion List", "id": "e733-1dfc-cfd7-5da9", "hidden": true},
       {"name": "Zombie Ogre List", "id": "e6dd-9d37-d85a-1e82", "hidden": true},
       {"name": "Practitioner List", "id": "e85c-79be-6c14-d7c1", "hidden": true},
-      {"name": "Undead", "id": "0d93-3e97-1ca0-2472", "hidden": false},
       {"name": "Vampyre", "id": "cde1-d8dc-ad42-6cdc", "hidden": false},
-      {"name": "Skeleton", "id": "3dcb-85f4-011d-ea82", "hidden": false},
       {"name": "Werwulf", "id": "77bc-dafb-f489-71cb", "hidden": false},
-      {"name": "Thrall", "id": "5a65-7525-a4cd-d632", "hidden": false},
       {"name": "Zombie", "id": "3f5a-29ec-db98-416e", "hidden": false},
       {"name": "Gargoyle", "id": "aea2-4319-bbba-ff40", "hidden": false},
-      {"name": "Bat", "id": "4ac4-0b30-ee22-b7bb", "hidden": false}
+      {"name": "Bat", "id": "4ac4-0b30-ee22-b7bb", "hidden": false},
+      {"name": "Skeleton Warrior List", "id": "1bae-a88b-c2e3-0428", "hidden": false},
+      {"name": "Demi-human", "id": "215c-2a09-6ed7-c3d7", "hidden": false}
     ],
     "entryLinks": [
       {
@@ -32,9 +31,15 @@
         "sortIndex": 0,
         "targetId": "b736-8a1d-7bd8-8f1b",
         "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Main List", "id": "bc99-d38f-68bb-344a", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Champion List", "id": "891e-a92a-5789-51aa", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+          {"name": "Zombie Ogre List", "id": "4c7d-85d5-0bd5-cb00", "hidden": false, "primary": false, "targetId": "e6dd-9d37-d85a-1e82"},
+          {"name": "Practitioner List", "id": "db48-2969-eb5a-a8a7", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+        ],
         "selectionEntryGroups": [
           {
-            "name": "Origin",
+            "name": "Origin and Stronghold",
             "id": "6a7c-de1b-b125-17b5",
             "defaultSelectionEntryId": "none",
             "hidden": false,
@@ -58,15 +63,39 @@
                     "typeId": "d530-27f7-854e-3a88",
                     "typeName": "Origin",
                     "characteristics": [
+                      {"name": "Leader", "$text": "You must recruit a **Bloodcursed Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+                      {"name": "Stronghold", "$text": "You begin the campaign with the **Opulent Manor** stronghold.\n", "typeId": "c519-23f5-a727-b90e"},
+                      {"name": "Special Rules", "$text": "Your warband can include 0-3 Bloodcursed Knights.", "typeId": "d243-483c-36ae-4248"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Opulent Manor",
+                    "id": "b9c7-4bb2-6a8e-0d5f",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "df6c-f2e8-42a4-cc45-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "df6c-f2e8-42a4-cc45-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
                       {
-                        "name": "Restrictions",
-                        "$text": "**Leader**: You must recruit a **Bloodcursed Noble** to lead your warband at the start of the campaign.",
-                        "typeId": "7d47-e888-6003-11c3"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "$text": "- You begin the campaign with the **Opulent Manor** stronghold.\n- Your warband can include 0-3 Bloodcursed Knights.",
-                        "typeId": "c519-23f5-a727-b90e"
+                        "name": "Opulent Manor",
+                        "id": "445b-024d-6349-e953",
+                        "hidden": false,
+                        "typeId": "c917-c2c5-c1ca-25ad",
+                        "typeName": "Stronghold",
+                        "characteristics": [
+                          {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                          {
+                            "name": "Ability",
+                            "$text": "**Banquet of Blood**: In step 3 of the aftermath sequence pick up to 3 friendly *Vampyre* fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
+                            "typeId": "d47f-1ea2-d87f-a753"
+                          },
+                          {"name": "Level", "$text": "1", "typeId": "02c7-ec87-4a97-e948"}
+                        ]
                       }
                     ]
                   }
@@ -87,11 +116,43 @@
                     "typeName": "Origin",
                     "characteristics": [
                       {
-                        "name": "Restrictions",
+                        "name": "Leader",
                         "$text": "**Leader**: You must recruit a **Barrow Lord** to lead your warband at the start of the campaign.",
                         "typeId": "7d47-e888-6003-11c3"
                       },
-                      {"name": "Special Rules", "$text": "You begin the campaign with the **Ancient Barrows** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                      {"name": "Stronghold", "$text": "You begin the campaign with the **Ancient Barrows** stronghold.", "typeId": "c519-23f5-a727-b90e"},
+                      {"name": "Special Rules", "$text": "", "typeId": "d243-483c-36ae-4248"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Ancient Barrows",
+                    "id": "b89a-7aff-9881-7ea1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "1161-b144-bbfa-a433-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "1161-b144-bbfa-a433-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Ancient Barrows",
+                        "id": "e397-f444-d572-3e6c",
+                        "hidden": false,
+                        "typeId": "c917-c2c5-c1ca-25ad",
+                        "typeName": "Stronghold",
+                        "characteristics": [
+                          {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                          {
+                            "name": "Ability",
+                            "$text": "**Barrow Offering**: In step 5 of the Aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll once on the **Curiosities table**.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
+                            "typeId": "d47f-1ea2-d87f-a753"
+                          },
+                          {"name": "Level", "$text": "1", "typeId": "02c7-ec87-4a97-e948"}
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -110,12 +171,40 @@
                     "typeId": "d530-27f7-854e-3a88",
                     "typeName": "Origin",
                     "characteristics": [
+                      {"name": "Leader", "$text": "You must recruit a **Necromancer** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+                      {"name": "Stronghold", "$text": "You begin the campaign with the **Embalmer's Hall** stronghold.", "typeId": "c519-23f5-a727-b90e"},
+                      {"name": "Special Rules", "$text": "", "typeId": "d243-483c-36ae-4248"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Embalmer's Hall",
+                    "id": "df1f-85e3-b11c-f70b",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "6d01-bddf-2d9a-08a3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "6d01-bddf-2d9a-08a3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
                       {
-                        "name": "Restrictions",
-                        "$text": "**Leader**: You must recruit a **Necromancer** to lead your warband at the start of the campaign.",
-                        "typeId": "7d47-e888-6003-11c3"
-                      },
-                      {"name": "Special Rules", "$text": "You begin the campaign with the **Embalmer's Hall** stronghold.", "typeId": "c519-23f5-a727-b90e"}
+                        "name": "Embalmer's Hall",
+                        "id": "ed1a-6b00-e80b-98bd",
+                        "hidden": false,
+                        "typeId": "c917-c2c5-c1ca-25ad",
+                        "typeName": "Stronghold",
+                        "characteristics": [
+                          {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                          {
+                            "name": "Ability",
+                            "$text": "**Necromantic Study**: In each Aftermath sequence, pick 1 of the following:\n- *Read Forbidden Scrolls*: In step 3, your Leader gains 5 bonus experience.\n- *Create a Zombie*: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one of the hall’s corpses. You can recruit a Zombie to your warband for 0 silver.",
+                            "typeId": "d47f-1ea2-d87f-a753"
+                          },
+                          {"name": "Level", "$text": "1", "typeId": "02c7-ec87-4a97-e948"}
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -134,15 +223,43 @@
                     "typeId": "d530-27f7-854e-3a88",
                     "typeName": "Origin",
                     "characteristics": [
-                      {
-                        "name": "Restrictions",
-                        "$text": "**Leader**: You must recruit a **Lycanfell Noble** to lead your warband at the start of the campaign.",
-                        "typeId": "7d47-e888-6003-11c3"
-                      },
+                      {"name": "Leader", "$text": "You must recruit a **Lycanfell Noble** to lead your warband at the start of the campaign.", "typeId": "7d47-e888-6003-11c3"},
+                      {"name": "Stronghold", "$text": "You begin the campaign with the **Woodland Estate** stronghold.\n", "typeId": "c519-23f5-a727-b90e"},
                       {
                         "name": "Special Rules",
-                        "$text": "- You begin the campaign with the **Grand Pavilion** stronghold.\n- Your warband can include any number of Dire Wolves (they do not count towards your Beasts limit)",
-                        "typeId": "c519-23f5-a727-b90e"
+                        "$text": "Your warband can include any number of Dire Wolves (they do not count towards your Beasts limit)",
+                        "typeId": "d243-483c-36ae-4248"
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Woodland Estate",
+                    "id": "5e72-f0b9-0d40-89b8",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "6701-33ee-9961-cd16-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "6701-33ee-9961-cd16-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Woodland Estate",
+                        "id": "3c8b-096b-38c7-58e6",
+                        "hidden": false,
+                        "typeId": "c917-c2c5-c1ca-25ad",
+                        "typeName": "Stronghold",
+                        "characteristics": [
+                          {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
+                          {
+                            "name": "Ability",
+                            "$text": "**Trophy Room**: Each time a *Beast* or *Brute* that was taken down by your Leader is killed, your Leader earns 10 bonus experience.\n**A Howl in the Night**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from of the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
+                            "typeId": "d47f-1ea2-d87f-a753"
+                          },
+                          {"name": "Level", "$text": "1", "typeId": "02c7-ec87-4a97-e948"}
+                        ]
                       }
                     ]
                   }
@@ -151,106 +268,115 @@
             ]
           },
           {
-            "name": "Stronghold",
+            "name": "Stronghold Upgrades",
             "id": "f871-c0a2-6529-1128",
             "defaultSelectionEntryId": "none",
             "hidden": false,
             "sortIndex": 2,
-            "constraints": [{"id": "f18d-39ad-8a20-ed63", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "1dbf-0991-7e59-8f42", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
+            "modifiers": [
+              {
+                "field": "1dbf-0991-7e59-8f42",
+                "type": "increment",
+                "value": 1,
+                "conditions": [{"childId": "42e3-d9b9-5139-fa76", "childName": "Battles Fought", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 3}]
+              },
+              {
+                "field": "1dbf-0991-7e59-8f42",
+                "type": "increment",
+                "value": 1,
+                "conditions": [{"childId": "42e3-d9b9-5139-fa76", "childName": "Battles Fought", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 8}]
+              }
+            ],
             "selectionEntries": [
               {
-                "name": "Ancient Barrows",
-                "id": "b89a-7aff-9881-7ea1",
+                "name": "Blackrose Orchard",
+                "id": "4582-5de4-c341-4714",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "profiles": [
+                "constraints": [{"id": "a129-4eac-a2ee-06a9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
                   {
-                    "name": "Ancient Barrows",
-                    "id": "e397-f444-d572-3e6c",
-                    "hidden": false,
-                    "typeId": "c917-c2c5-c1ca-25ad",
-                    "typeName": "Stronghold",
-                    "characteristics": [
-                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-                      {
-                        "name": "Ability",
-                        "$text": "**Barrow Offering**: In step 5 of the Aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll once on the treasure table.\n**Immortal Slumber**: If your Leader is 'Laid to Rest' (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your\nwarband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
-                        "typeId": "d47f-1ea2-d87f-a753"
-                      }
-                    ]
+                    "name": "Dark Harvest",
+                    "id": "079c-9420-2216-edf2",
+                    "description": "In step six of the aftermath sequence, roll a dice. On a 5+, you receive 1 Blackrose Balm.",
+                    "hidden": false
                   }
                 ]
               },
               {
-                "name": "Embalmer's Hall",
-                "id": "df1f-85e3-b11c-f70b",
+                "name": "Exhumed Crypt",
+                "id": "83b9-b73c-e2b7-331b",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "profiles": [
+                "constraints": [{"id": "eb3f-d6fa-008f-01d4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
                   {
-                    "name": "Embalmer's Hall",
-                    "id": "ed1a-6b00-e80b-98bd",
-                    "hidden": false,
-                    "typeId": "c917-c2c5-c1ca-25ad",
-                    "typeName": "Stronghold",
-                    "characteristics": [
-                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-                      {
-                        "name": "Ability",
-                        "$text": "**Necromantic Study**: In each Aftermath sequence, pick 1 of the following:\n- *Read Forbidden Scrolls*: In step 3, your Leader gains 5 bonus experience.\n- *Create a Zombie*: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one of the hall’s corpses. You can recruit a Zombie to your warband for 0 silver.",
-                        "typeId": "d47f-1ea2-d87f-a753"
-                      }
-                    ]
+                    "name": "Treasure of the Crypt",
+                    "id": "9023-9b97-b255-9e8c",
+                    "description": "When this upgrade is picked, you can roll once on the Relics table",
+                    "hidden": false
                   }
                 ]
               },
               {
-                "name": "Grand Pavilion",
-                "id": "5e72-f0b9-0d40-89b8",
+                "name": "Gargoyle's Tower",
+                "id": "d1a8-9fc2-7f0e-f93d",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "profiles": [
+                "constraints": [{"id": "3529-e1f4-a5d6-1f95", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
                   {
-                    "name": "Grand Pavilion",
-                    "id": "3c8b-096b-38c7-58e6",
-                    "hidden": false,
-                    "typeId": "c917-c2c5-c1ca-25ad",
-                    "typeName": "Stronghold",
-                    "characteristics": [
-                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-                      {
-                        "name": "Ability",
-                        "$text": "**Bestial Trophies**: Each time a *Beast* that was taken down by your Leader is killed, your Leader earns 10 bonus experience.\n**A Howl in the Night**: In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from of the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
-                        "typeId": "d47f-1ea2-d87f-a753"
-                      }
-                    ]
+                    "name": "Circle the Skies Above",
+                    "id": "548a-1fc5-bda1-e309",
+                    "description": "If a friendly Gargoyle starts the battle in reserve, instead of making a reinforcement roll for them, you can say they are circling the skies above. If you do so, they arrive in the Start of Round step of the next round, before any reinforcement rolls are made. They can be set up anywhere on the battlefield more than 9\" away from all enemy fighters.",
+                    "hidden": false
                   }
                 ]
               },
               {
-                "name": "Opulent Manor",
-                "id": "b9c7-4bb2-6a8e-0d5f",
+                "name": "Ossuary",
+                "id": "39aa-4531-0bce-ab9f",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "profiles": [
+                "constraints": [{"id": "2d0c-6caa-7f67-2ba7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
                   {
-                    "name": "Opulent Manor",
-                    "id": "445b-024d-6349-e953",
-                    "hidden": false,
-                    "typeId": "c917-c2c5-c1ca-25ad",
-                    "typeName": "Stronghold",
-                    "characteristics": [
-                      {"name": "Income", "$text": "3d6x5", "typeId": "9131-8ccf-beb4-cf89"},
-                      {
-                        "name": "Ability",
-                        "$text": "**Banquet of Blood**: In step 3 of the Aftermath sequence pick up to 3 friendly *Vampyre* fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
-                        "typeId": "d47f-1ea2-d87f-a753"
-                      }
-                    ]
+                    "name": "Ossified Remains",
+                    "id": "ec5f-6c07-94ed-d313",
+                    "description": "Reduce the cost of recruiting *Skeleton* fighters to your warband by 10 silver.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Household Poisoner",
+                "id": "13ae-9a81-e684-dafd",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "fee4-4e6a-afa1-bd6c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
+                  {"name": "A Night's Work", "id": "19e1-5f16-2b2e-b2db", "description": "In step six of the aftermath sequence, you receive 1 Vial of Poison.", "hidden": false}
+                ]
+              },
+              {
+                "name": "Necromancer's Mausoleum",
+                "id": "e3c8-add3-e4f3-7157",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "eb0f-b287-ef4c-3915", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
+                  {
+                    "name": "Nexus of Dark Magic",
+                    "id": "961a-a323-2a51-36cc",
+                    "description": "Each battle, you can ignore the first miscast by a friendly *Wizard*.",
+                    "hidden": false
                   }
                 ]
               }
@@ -302,20 +428,11 @@
             "id": "70e1-20d2-3f5f-4942",
             "hidden": false,
             "import": true,
-            "sortIndex": 4,
+            "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "ad5e-2f13-5f21-0f8a",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "5128-8dd9-db5e-6173", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "cb84-1e30-b4f8-fda9", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [{"name": "Noble Blood", "id": "6c67-8063-c33d-95e8", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
         "profiles": [
@@ -384,20 +501,11 @@
             "id": "2827-ae1a-ea91-cf2c",
             "hidden": false,
             "import": true,
-            "sortIndex": 4,
+            "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "4a12-e89d-eea7-83d6",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "3054-6b12-368e-6413", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "586c-3a7c-5118-2a8f", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "profiles": [
           {
@@ -458,7 +566,7 @@
             "id": "7816-5eff-26b6-1d94",
             "hidden": false,
             "import": true,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
@@ -475,16 +583,7 @@
             ],
             "modifiers": [{"field": "name", "join": " ", "type": "append", "value": "Reference"}]
           },
-          {
-            "name": "Experience",
-            "id": "35c6-8cdf-2b93-3a9a",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "c6cb-479d-16e5-be12", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "5fd1-21b9-6ffc-d10e", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [{"name": "Noble Blood", "id": "7a9f-a9e1-afec-914e", "hidden": false, "targetId": "e278-fca3-588e-8538", "type": "rule"}],
         "profiles": [
@@ -545,20 +644,11 @@
             "id": "2b9c-6aee-a55b-a67b",
             "hidden": false,
             "import": true,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "fed3-439c-1b05-c9ac",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "321d-e23d-c7e4-8f54", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "b32a-8f26-6e6b-8b8a", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "dccb-41c9-3fbc-7e86", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -623,20 +713,12 @@
             "id": "e829-b2c2-eba9-a1b5",
             "hidden": false,
             "import": true,
-            "sortIndex": 4,
+            "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "0e5c-d1ff-644d-ee17",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "95d3-f1a9-c43f-ed07", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "3e5d-a2ad-ccb0-334a", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"},
+          {"name": "Assume Command", "id": "5b6c-ef5b-196b-0eea", "hidden": false, "import": true, "targetId": "57b1-ad92-c674-efc9", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -698,20 +780,12 @@
             "id": "4773-ea4e-584e-1a7e",
             "hidden": false,
             "import": true,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "008d-ff75-b3e2-0b5f",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "c23b-e3ed-c108-b348", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "fc20-0933-d58e-3267", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"},
+          {"name": "Assume Command", "id": "51ca-4679-c707-1473", "hidden": false, "import": true, "targetId": "57b1-ad92-c674-efc9", "type": "selectionEntry"}
         ],
         "modifiers": [
           {
@@ -785,20 +859,12 @@
             "id": "f72a-5217-1e5c-172a",
             "hidden": false,
             "import": true,
-            "sortIndex": 4,
+            "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "ce15-6741-3e3d-4f83",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "a465-3e0a-7262-18bd", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "deb3-dbda-5890-99f1", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"},
+          {"name": "Assume Command", "id": "1ed6-2ed0-1548-7aaa", "hidden": false, "import": true, "targetId": "57b1-ad92-c674-efc9", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -841,7 +907,8 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 15}],
-                "modifiers": [{"field": "category", "scope": "root-entry", "type": "add", "value": "4d87-219d-0f14-9182"}]
+                "modifiers": [{"field": "category", "scope": "root-entry", "type": "add", "value": "4d87-219d-0f14-9182"}],
+                "rules": [{"name": "Bat Wings", "id": "ea97-cb13-bbba-a998", "description": "This fighter has the *Fly* keyword.", "hidden": false}]
               },
               {
                 "name": "Wulfen Legs",
@@ -850,7 +917,8 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 10}],
-                "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "62c9-14c7-812c-5e90", "scope": "root-entry", "type": "set", "value": "7"}]
+                "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "62c9-14c7-812c-5e90", "scope": "root-entry", "type": "set", "value": "7"}],
+                "rules": [{"name": "Wulfen Legs", "id": "d382-2244-24f5-69d9", "description": "This fighter's Move value is 7\".", "hidden": false}]
               },
               {
                 "name": "Hulking Form",
@@ -859,7 +927,8 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
-                "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "c149-c58e-1146-bf30", "scope": "root-entry", "type": "set", "value": "8"}]
+                "modifiers": [{"affects": "profiles.Fighter Scroll", "field": "c149-c58e-1146-bf30", "scope": "root-entry", "type": "set", "value": "8"}],
+                "rules": [{"name": "Hulking Form", "id": "ff79-34b5-00ca-5538", "description": "This fighter's Life value is 8.", "hidden": false}]
               }
             ]
           }
@@ -905,20 +974,12 @@
             "id": "991a-5250-ccac-d6c4",
             "hidden": false,
             "import": true,
-            "sortIndex": 4,
+            "sortIndex": 3,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {
-            "name": "Experience",
-            "id": "e665-e0e9-ff31-91f5",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "2364-6338-d827-e0ca", "hidden": false, "import": true, "sortIndex": 5, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "813d-bc75-3f89-fb22", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"},
+          {"name": "Assume Command", "id": "079a-63f7-3035-f50a", "hidden": false, "import": true, "targetId": "57b1-ad92-c674-efc9", "type": "selectionEntry"}
         ],
         "profiles": [
           {
@@ -974,24 +1035,16 @@
             "type": "selectionEntryGroup"
           },
           {
-            "name": "Experience",
-            "id": "1b92-4ec7-b08f-d73d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {
             "name": "Skills",
             "id": "c9d7-0cb4-2f6a-a734",
             "hidden": false,
             "import": true,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "targetId": "d24e-b6fe-9b74-971c",
             "type": "selectionEntryGroup"
           },
-          {"name": "Black Rot", "id": "9b4b-4cc0-dfbd-8ebe", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "16e0-c736-02c6-97d9", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"},
+          {"name": "Assume Command", "id": "3e4d-7516-ab89-447d", "hidden": false, "import": true, "targetId": "57b1-ad92-c674-efc9", "type": "selectionEntry"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "7ede-685c-18d5-3ea2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1019,7 +1072,7 @@
         "id": "0af9-f266-2271-876b",
         "hidden": false,
         "import": true,
-        "sortIndex": 10,
+        "sortIndex": 11,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "0413-3c63-974e-25ad", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -1027,7 +1080,9 @@
           {"name": "Undead", "id": "1a7e-f534-e00c-942b", "hidden": false, "primary": false, "targetId": "0d93-3e97-1ca0-2472"},
           {"name": "Skeleton", "id": "c7a4-23a7-2e4f-cef6", "hidden": false, "primary": false, "targetId": "3dcb-85f4-011d-ea82"},
           {"name": "Thrall", "id": "3db1-f207-3bf1-2e4d", "hidden": false, "primary": false, "targetId": "5a65-7525-a4cd-d632"},
-          {"name": "Fighter", "id": "e116-7fdc-efd6-09a2", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
+          {"name": "Fighter", "id": "e116-7fdc-efd6-09a2", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"},
+          {"name": "Skeleton Warrior List", "id": "c6d6-2a58-7041-fc76", "hidden": false, "primary": false, "targetId": "1bae-a88b-c2e3-0428"},
+          {"name": "Can be equipped with a Ranged Weapon", "id": "fc1d-89d9-cdfd-e910", "hidden": false, "primary": false, "targetId": "a4f5-f5ff-d1ed-06bb"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
         "entryLinks": [
@@ -1040,7 +1095,7 @@
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
           },
-          {"name": "Black Rot", "id": "4f3f-41fe-f0ff-62ad", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "ff2f-77d7-1135-ffa0", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "1dd8-3573-07d0-5fe2", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1067,7 +1122,7 @@
         "id": "ec3b-81c8-b3ee-69a0",
         "hidden": false,
         "import": true,
-        "sortIndex": 11,
+        "sortIndex": 12,
         "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "34e7-5eb0-2282-ddfa", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
@@ -1077,9 +1132,7 @@
           {"name": "Fighter", "id": "99c0-8179-0968-0b0a", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 35}],
-        "entryLinks": [
-          {"name": "Black Rot", "id": "8985-ca6c-4d7b-8b6a", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Campaign Entries", "id": "a9f5-5dbc-ccf6-5fa8", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}],
         "infoLinks": [{"name": "Unshakeable", "id": "da75-cf95-a3f0-f074", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "selectionEntries": [
           {
@@ -1122,7 +1175,7 @@
         "id": "0eb9-6e4f-141b-3b50",
         "hidden": false,
         "import": true,
-        "sortIndex": 12,
+        "sortIndex": 13,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "d0df-b7b1-bf77-5e49", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
@@ -1143,7 +1196,7 @@
             "targetId": "69fa-7737-0f73-5f04",
             "type": "selectionEntryGroup"
           },
-          {"name": "Black Rot", "id": "2f47-d3f5-3244-1237", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
+          {"name": "Campaign Entries", "id": "c3d9-7b6f-5547-ced1", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [{"name": "Unshakeable", "id": "ec54-2b37-836e-6bad", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
@@ -1170,7 +1223,7 @@
         "id": "63e7-899b-4f57-1a20",
         "hidden": false,
         "import": true,
-        "sortIndex": 13,
+        "sortIndex": 14,
         "type": "unit",
         "categoryLinks": [
           {"name": "Brute", "id": "a4fb-0288-2403-8e7b", "hidden": false, "primary": true, "targetId": "eea3-65a8-e483-ad71"},
@@ -1181,9 +1234,7 @@
           {"name": "Fighter", "id": "8085-124b-07c7-8b94", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 150}],
-        "entryLinks": [
-          {"name": "Black Rot", "id": "49e4-b8d1-ab36-4b79", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Campaign Entries", "id": "a270-b5e3-3575-7395", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}],
         "infoLinks": [{"name": "Unshakeable", "id": "d828-17d4-52f5-0219", "hidden": false, "targetId": "117b-d26b-f4c1-6522", "type": "rule"}],
         "profiles": [
           {
@@ -1244,7 +1295,7 @@
         "id": "3cd6-99cd-0b40-0815",
         "hidden": false,
         "import": true,
-        "sortIndex": 15,
+        "sortIndex": 16,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "fe46-a933-1fa8-e2dc", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -1254,27 +1305,7 @@
           {"name": "Fighter", "id": "d21a-d843-3104-6909", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 60}],
-        "entryLinks": [
-          {
-            "name": "Skills",
-            "id": "d185-86ab-7a7c-842e",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "d24e-b6fe-9b74-971c",
-            "type": "selectionEntryGroup"
-          },
-          {
-            "name": "Experience",
-            "id": "2ea1-8b47-45ed-2d4d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "7c55-e768-9832-bfea", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Campaign Entries", "id": "9cd5-50e2-63b0-faf7", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}],
         "profiles": [
           {
             "name": "Dire Bat",
@@ -1339,7 +1370,7 @@
         "id": "97ce-11c7-22a3-5b7b",
         "hidden": false,
         "import": true,
-        "sortIndex": 14,
+        "sortIndex": 15,
         "type": "unit",
         "categoryLinks": [
           {"name": "Beast", "id": "5c89-a0a4-a236-ea6f", "hidden": false, "primary": true, "targetId": "054d-3052-d990-09f1"},
@@ -1348,27 +1379,7 @@
           {"name": "Fighter", "id": "3ce0-24c4-73ab-3741", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 50}],
-        "entryLinks": [
-          {
-            "name": "Skills",
-            "id": "e3fd-eec1-efee-dc6d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "d24e-b6fe-9b74-971c",
-            "type": "selectionEntryGroup"
-          },
-          {
-            "name": "Experience",
-            "id": "d76d-affa-a64d-1cf7",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "a125-39f1-a5b7-c2f3",
-            "type": "selectionEntryGroup"
-          },
-          {"name": "Black Rot", "id": "630d-34de-ab46-f8e7", "hidden": false, "import": true, "sortIndex": 4, "targetId": "0b65-0acc-56dd-c52a", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Campaign Entries", "id": "fa37-5caf-d7ed-c315", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}],
         "infoLinks": [{"name": "Sniff 'em Out", "id": "4fde-d231-040e-828c", "hidden": false, "targetId": "e3a1-32d0-7696-22f5", "type": "rule"}],
         "modifierGroups": [
           {
@@ -1415,7 +1426,7 @@
           {
             "name": "Trackers",
             "id": "9853-7797-d868-1c50",
-            "description": "Each aftermath sequence, when you search the city. If your search party includes any Dire Wolves, you can re-roll the exploration roll.",
+            "description": "When exploring the city, if your scouting party includes a Dire Wolf, you gain 1 **exploration re-roll** (units dice only).",
             "hidden": false
           }
         ],
@@ -1451,502 +1462,69 @@
             ]
           }
         ]
-      }
-    ],
-    "sharedRules": [
-      {"name": "Noble Blood", "id": "e278-fca3-588e-8538", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false},
-      {
-        "name": "Unshakeable",
-        "id": "117b-d26b-f4c1-6522",
-        "description": "This fighter ignores the *Fear* special rule and all rules that would make them scatter (eg. the *Scare* weapon trait).",
-        "hidden": false
-      }
-    ],
-    "sharedSelectionEntries": [
-      {
-        "name": "Cursed Blade",
-        "id": "2f1e-775b-b7e4-8148",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Melee Weapon/Held Item", "id": "bf3c-2627-025f-7d35", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 40}],
-        "infoLinks": [
-          {"name": "Arcane", "id": "fbeb-6a17-7e69-c860", "hidden": false, "targetId": "65d2-1de6-0139-3659", "type": "rule"},
-          {"name": "Guard", "id": "5501-b174-0777-f153", "hidden": false, "targetId": "2bf7-a7b4-4024-0c96", "type": "rule"},
-          {"name": "Off-hand", "id": "4573-4425-27d9-9347", "hidden": false, "targetId": "86e9-90ef-bfd2-d3b2", "type": "rule"},
-          {"name": "Poison", "id": "4f81-a05b-8694-cab0", "hidden": false, "targetId": "a705-5389-de52-9d30", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Cursed Blade",
-            "id": "3bf4-2ff4-736c-c599",
-            "hidden": false,
-            "typeId": "f98d-f3e1-8544-adfc",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "Attacks", "$text": "3", "typeId": "5b07-00a6-1754-048e"},
-              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
-              {"name": "Damage", "$text": "1", "typeId": "f457-d95e-2518-ddad"},
-              {"name": "Critical Damage", "$text": "d3", "typeId": "0b2a-1a62-9dad-e51f"},
-              {"name": "Weapon Traits", "$text": "Arcane, Guard, Off-hand, Poison", "typeId": "2397-722e-6b58-da62"}
-            ]
-          }
-        ]
       },
       {
-        "name": "Ancient Banner",
-        "id": "4d62-5b6d-0b43-15b8",
+        "name": "Manservant",
+        "id": "d973-8eb8-778e-9631",
         "hidden": false,
         "import": true,
+        "sortIndex": 10,
         "type": "upgrade",
         "categoryLinks": [
-          {"name": "Held Item", "id": "58e5-b3d0-74dc-21db", "hidden": false, "primary": false, "targetId": "08f8-e0cc-9de3-6c2e"},
-          {"name": "Melee Weapon/Held Item", "id": "8331-c99b-4d23-6a96", "hidden": false, "primary": false, "targetId": "6747-f5ba-107f-75f6"}
+          {"name": "Henchman", "id": "1c9d-0a55-f9a2-2595", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
+          {"name": "Main List", "id": "8b91-ddc5-e6d6-b8f8", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
+          {"name": "Starting Experience 20+d6", "id": "8ec0-d5d7-b0fc-4a11", "hidden": false, "primary": false, "targetId": "15e7-bf29-b27a-403e"},
+          {"name": "Demi-human", "id": "4ee6-0c50-e326-6a3b", "hidden": false, "primary": false, "targetId": "215c-2a09-6ed7-c3d7"}
         ],
-        "constraints": [{"id": "bd79-026c-5518-a7a6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 25}],
-        "infoLinks": [
-          {
-            "name": "Rare (0-[x])",
-            "id": "3271-212f-b7fb-d42c",
-            "hidden": false,
-            "targetId": "ba2d-a850-6dde-772e",
-            "type": "rule",
-            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
-          }
+        "constraints": [{"id": "5e34-8c1b-4bb3-a5fd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "costs": [
+          {"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 45},
+          {"name": "XP", "typeId": "26cf-17c6-d1b5-65c7", "value": 0},
+          {"name": "Rating", "typeId": "7383-0160-b523-290f", "value": 0}
         ],
-        "rules": [
+        "entryLinks": [
           {
-            "name": "Ancient Banner",
-            "id": "4073-daae-5538-497f",
-            "description": "While this fighter is on the battlefield, you can re-roll flee tests.\nYou can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Bestial Companion",
-        "id": "b02c-3570-e8b8-8623",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "8ff3-74a4-7f46-961b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 30}],
-        "infoLinks": [
-          {
-            "name": "Rare (0-[x])",
-            "id": "bda0-8b8f-2939-8210",
+            "name": "Wargear",
+            "id": "634e-0edc-d2d5-6a5b",
             "hidden": false,
-            "targetId": "ba2d-a850-6dde-772e",
-            "type": "rule",
-            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "69fa-7737-0f73-5f04",
+            "type": "selectionEntryGroup"
           },
-          {"name": "Natural Weapon", "id": "abc7-2f69-312a-68f6", "hidden": false, "targetId": "ef32-930b-5649-ea01", "type": "rule"}
+          {
+            "name": "Skills",
+            "id": "4d60-2ba8-5bbc-fc7a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "d24e-b6fe-9b74-971c",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Campaign Entries", "id": "2ee4-bcfa-65b3-8187", "hidden": false, "import": true, "targetId": "cf00-8410-fa92-bc1e", "type": "selectionEntryGroup"}
         ],
         "profiles": [
           {
-            "name": "Bestial Companion",
-            "id": "5dd6-21e2-6f6e-e5cb",
+            "name": "Manservant",
+            "id": "343f-7da0-21eb-1578",
             "hidden": false,
-            "typeId": "f98d-f3e1-8544-adfc",
-            "typeName": "Melee Weapon",
+            "typeId": "b012-448f-6072-da0c",
+            "typeName": "Fighter Scroll",
             "characteristics": [
-              {"name": "Attacks", "$text": "1", "typeId": "5b07-00a6-1754-048e"},
-              {"name": "Rend", "$text": "-1", "typeId": "f48c-351f-2957-da29"},
-              {"name": "Damage", "$text": "2", "typeId": "f457-d95e-2518-ddad"},
-              {"name": "Critical Damage", "$text": "d3+1", "typeId": "0b2a-1a62-9dad-e51f"},
-              {"name": "Weapon Traits", "$text": "Natural Weapon", "typeId": "2397-722e-6b58-da62"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Bestial Companion",
-            "id": "a922-05f9-90eb-84d9",
-            "description": "Each time this fighter makes a melee attack, they can make 1 additional attack with the following weapon:\n|Rend|Damage|Critical Damage|Weapon Traits|\n|---|---|---|:--|\n|-1|2|d3+1|Natural Weapon|",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Spirit Guardian",
-        "id": "8aff-1269-f4d4-aab7",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "dba9-1110-4d01-0b4e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 45}],
-        "infoLinks": [
-          {
-            "name": "Rare (0-[x])",
-            "id": "58b2-c1c1-0d61-ca7f",
-            "hidden": false,
-            "targetId": "ba2d-a850-6dde-772e",
-            "type": "rule",
-            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Spirit Guardian",
-            "id": "59b0-9191-4ad9-dfdc",
-            "description": "Once per battle this fighter can use the following bonus action:\n**Invoke Ethereal Protection [Bonus Action]**: Until the end of the round, this fighter ignores Rend for attacks that target them. In addition, each time they make a successful armour roll against a melee attack, the attacking fighters suffers 1 damage.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Winged Familiar",
-        "id": "44c9-5f0b-4575-4435",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "b321-c218-855e-2eb6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "Silver", "typeId": "3892-0a24-b2ab-55d1", "value": 12}],
-        "infoLinks": [
-          {
-            "name": "Rare (0-[x])",
-            "id": "cd0d-b135-0152-3de9",
-            "hidden": false,
-            "targetId": "ba2d-a850-6dde-772e",
-            "type": "rule",
-            "modifiers": [{"arg": "[x]", "field": "name", "type": "replace", "value": "1"}]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Winged Familiar",
-            "id": "1ac7-7457-e7e3-32ad",
-            "description": "Once per battle fighter can use the following bonus action:\n**Harry [Bonus Action]**: Pick a visible enemy fighter within 24\". Until the end of the round, that enemy fighter is *harried*. While a fighter is *harried*, each time they make a Move or Action they must pass a Willpower test, else they lose that Move or Action.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Witchfire",
-        "id": "9c6f-94cd-af39-1917",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Attack Spell", "id": "a12a-d5e6-03de-1756", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
-        "profiles": [
-          {
-            "name": "Witchfire",
-            "id": "e8b5-688a-e991-2ae2",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Place d3 witchfire tokens by the caster, to a maximum of 3. Once per activation, the caster can spend a witchfire token to make the following bonus action:\n**Witchfire Attack [Bonus Action]**: The closest visible enemy fighter within 12\" is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-|d3|",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "Place 3 witchfire token by the caster (to a maximum of 3) instead of d3.", "typeId": "7fba-d9e0-5873-b1bc"}
+              {"name": "Move", "$text": "5", "typeId": "62c9-14c7-812c-5e90"},
+              {"name": "Blade", "$text": "4", "typeId": "f3fe-a222-9449-4019"},
+              {"name": "Bow", "$text": "6", "typeId": "d889-9da5-1795-03a3"},
+              {"name": "Armour", "$text": "6", "typeId": "f4c3-01af-1566-67e5"},
+              {"name": "Initiative", "$text": "3", "typeId": "b562-c0a5-7d5d-39eb"},
+              {"name": "Willpower", "$text": "3", "typeId": "6512-20c9-bd6f-ace9"},
+              {"name": "Life", "$text": "4", "typeId": "c149-c58e-1146-bf30"}
             ]
           }
         ]
-      },
-      {
-        "name": "Ethereal Armour",
-        "id": "96e7-5c0f-c1ec-a48a",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Enchant Spell", "id": "9983-a8f6-077b-6b04", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
-        "profiles": [
-          {
-            "name": "Ethereal Armour",
-            "id": "d098-7320-2c8c-fd84",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Pick a visible friendly fighter within 6\" of the caster to be the target, that fighter becomes *ethereal* until the end of the round. While a fighter is *ethereal*, Improve its Armour value by 1 (to a maximum of 2+).",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "Increase the range of the spell from 6\" to 12\".", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Raise Zombie",
-        "id": "3a5b-29a3-a9ac-30c7",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Summon Spell", "id": "768a-4f06-6bde-7f7f", "hidden": false, "primary": false, "targetId": "200f-0093-e878-2e53"}],
-        "profiles": [
-          {
-            "name": "Raise Zombie",
-            "id": "ca82-2294-2d44-83ac",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "A *summoned* **Zombie** fighter, is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nA warband cannot have more than 3 *summoned* fighters at any time. If the caster's warband already has 3 *summoned* fighters, they cannot cast this spell.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "The fighter can be set up within 9\" of the caster and not engaged in melee.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Twilight Translocation",
-        "id": "f11d-2add-5c75-cd74",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Cantrip Spell", "id": "1431-4130-989b-cf71", "hidden": false, "primary": false, "targetId": "dc87-ec46-e9ec-57d9"}],
-        "profiles": [
-          {
-            "name": "Twilight Translocation",
-            "id": "c255-177d-ce29-97b8",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Pick another visible friendly fighter within 6\" of the caster to be the target, remove them from the battlefield and set them up again, anywhere on the battlefield within 15\" of the caster and not engaged in melee.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "When setting up the fighter, increase the range to 18\".", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Death Blast",
-        "id": "f7e0-1575-6157-5b9c",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Attack Spell", "id": "404e-0c40-117a-b89f", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
-        "profiles": [
-          {
-            "name": "Death Blast",
-            "id": "d1e9-da4c-91cb-f037",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "12", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-1|d3+1|",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "It does not scatter.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Balefire",
-        "id": "1849-9797-a74f-928a",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Attack Spell", "id": "53b0-836c-c230-3da9", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
-        "profiles": [
-          {
-            "name": "Balefire",
-            "id": "122a-36cf-fb4d-86fd",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "9", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "13", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Place the flame template from the caster. Each fighter in the template is targeted and hit with the following attack:\n|Rend|Damage|\n|---|---|\n|-2|d3|",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "Add 1 to the Damage value.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Draw Blood",
-        "id": "bfbf-08a4-b0c4-8cf4",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Attack Spell", "id": "d149-6828-ba47-c4b1", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
-        "profiles": [
-          {
-            "name": "Draw Blood",
-            "id": "f759-af49-a488-0f66",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Pick the closest visible enemy fighter within 9\" of the casting fighter to be the target. That fighter suffers 1 damage and the caster heals 1 point of life.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "The target suffers 2 damage and the caster heals 2 points of life instead.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Cursed Blades",
-        "id": "08fe-e7ba-cfda-0372",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Enchant Spell", "id": "e4a4-0682-ac1f-3846", "hidden": false, "primary": false, "targetId": "85b8-21da-3137-c295"}],
-        "profiles": [
-          {
-            "name": "Cursed Blades",
-            "id": "d617-d9d2-0344-de20",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Pick a friendly fighter within 6\" of the caster to be the target, then pick 1 of the target’s melee weapons to be *cursed* until the end of the round. While a weapon is *cursed* it gains the *Arcane* and *Poison* weapon traits.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": " Increase the range of the spell from 6\" to 12\".", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Raise Skeleton",
-        "id": "e589-207b-9cf6-4a65",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Summon Spell", "id": "e2e3-f68f-c79c-bd3a", "hidden": false, "primary": false, "targetId": "200f-0093-e878-2e53"}],
-        "profiles": [
-          {
-            "name": "Raise Skeleton",
-            "id": "8f3b-d82d-b86d-4084",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "10", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "14", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "A *summoned* **Skeleton** fighter, is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nThe Skeleton is equipped with a Cuirass and a Shield as well as 1 of the following melee weapons; Club, Spear or Sword.\nA warband cannot have more than 3 *summoned* fighters at any time. If the castor's warband already has 3 *summoned* fighters, they cannot cast this spell.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "The fighter can be set up within 9\" of the caster and not engaged in melee.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Recall",
-        "id": "41a1-90bc-7b82-cb65",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Cantrip Spell", "id": "a5a2-de19-8f90-d0af", "hidden": false, "primary": false, "targetId": "dc87-ec46-e9ec-57d9"}],
-        "profiles": [
-          {
-            "name": "Recall",
-            "id": "ef49-7069-17bb-ab29",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "7", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Pick a friendly *Thrall* on the battlefield to be the target. Remove them from the battlefield and set them up again within 3\" of the caster and not engaged in melee.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "You can pick up to 2 friendly *Thralls* instead of 1", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Bat Scream",
-        "id": "6d03-beb1-3236-3c0c",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Hex Spell", "id": "4c88-d07b-d2fd-35ee", "hidden": false, "primary": false, "targetId": "c357-e647-ba26-1723"}],
-        "profiles": [
-          {
-            "name": "Bat Scream",
-            "id": "e2e6-c4f2-ca4a-242a",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "8", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "10", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Place the flame template from the caster. Each fighter in its area is targeted. Each targeted fighter suffers 1 damage. In addition they must pass a Willpower test else they become *disorientated* until the end of the round. While a fighter is *disorientated* , subtract 1 from their Attack and Parry rolls.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": "Subtract 1 from the Willpower tests targeted fighters make.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Sanguine Spear",
-        "id": "81d4-5173-9807-faec",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Attack Spell", "id": "1fce-897a-1362-70c9", "hidden": false, "primary": false, "targetId": "2c8a-6af4-b3f9-2c4f"}],
-        "profiles": [
-          {
-            "name": "Sanguine Spear",
-            "id": "7c8a-3a45-c2be-1079",
-            "hidden": false,
-            "typeId": "6e24-2b14-5ff8-de41",
-            "typeName": "Spell",
-            "characteristics": [
-              {"name": "Casting Value", "$text": "10", "typeId": "1538-b905-e373-4307"},
-              {"name": "Critical Cast", "$text": "14", "typeId": "dd5b-a428-2ecb-8342"},
-              {
-                "name": "Normal Effect",
-                "$text": "Draw a line from the caster, 12\" long and 1\" wide. Each visible enemy fighter the line passes through is hit by the following attack:\n|Rend|Damage|\n|---|---|\n|-2|d3|\n\n\nFor each point of damage a target suffers, heal the caster 1 life point.",
-                "typeId": "365b-5938-66e2-d41d"
-              },
-              {"name": "Critical Effect", "$text": " Increase the range to 15”.", "typeId": "7fba-d9e0-5873-b1bc"}
-            ]
-          }
-        ]
-      },
+      }
+    ],
+    "sharedRules": [{"name": "Noble Blood", "id": "e278-fca3-588e-8538", "description": "When this fighter is recruited, pick 1 skill for them.", "hidden": false}],
+    "sharedSelectionEntries": [
       {
         "name": "Lycanfell Beast",
         "id": "1aa5-57e8-747f-2b42",
@@ -2116,6 +1694,24 @@
             "conditions": [
               {"childId": "e733-1dfc-cfd7-5da9", "childName": "Champion List", "field": "selections", "scope": "root-entry", "shared": true, "type": "instanceOf", "value": 1}
             ]
+          },
+          {
+            "affects": "entries.1bae-a88b-c2e3-0428",
+            "field": "hidden",
+            "scope": "parent",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "1bae-a88b-c2e3-0428",
+                "childName": "Skeleton Warrior List",
+                "field": "selections",
+                "scope": "root-entry",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -2131,7 +1727,10 @@
             "import": true,
             "targetId": "9b52-9a77-ac04-3645",
             "type": "selectionEntry",
-            "categoryLinks": [{"name": "Practitioner List", "id": "9f5f-75bb-bb65-8ecb", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}]
+            "categoryLinks": [{"name": "Practitioner List", "id": "9f5f-75bb-bb65-8ecb", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}],
+            "constraints": [
+              {"id": "6da5-37cf-27f1-ce37", "field": "selections", "includeChildSelections": true, "scope": "6c09-3b06-898a-1ab4", "shared": true, "type": "max", "value": 1}
+            ]
           },
           {"name": "Filters", "id": "c4e1-5ea4-990f-dc2e", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"},
           {
@@ -2144,6 +1743,9 @@
             "categoryLinks": [
               {"name": "Champion List", "id": "858c-2bdf-85a8-271e", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
               {"name": "Practitioner List", "id": "2b22-af61-2a03-abdb", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ],
+            "constraints": [
+              {"id": "2746-6655-28bc-a686", "field": "selections", "includeChildSelections": true, "scope": "6c09-3b06-898a-1ab4", "shared": true, "type": "max", "value": 1}
             ]
           },
           {
@@ -2156,6 +1758,9 @@
             "categoryLinks": [
               {"name": "Champion List", "id": "8835-57e7-08eb-5f0f", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
               {"name": "Practitioner List", "id": "c63a-8af0-5f70-a370", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ],
+            "constraints": [
+              {"id": "7cc2-31de-7801-3592", "field": "selections", "includeChildSelections": true, "scope": "6c09-3b06-898a-1ab4", "shared": true, "type": "max", "value": 1}
             ]
           },
           {
@@ -2168,7 +1773,19 @@
             "categoryLinks": [
               {"name": "Champion List", "id": "581f-ea6f-2f0b-f087", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
               {"name": "Practitioner List", "id": "4e40-3c95-a97d-638e", "hidden": false, "primary": false, "targetId": "e85c-79be-6c14-d7c1"}
+            ],
+            "constraints": [
+              {"id": "032b-359e-6899-f877", "field": "selections", "includeChildSelections": true, "scope": "6c09-3b06-898a-1ab4", "shared": true, "type": "max", "value": 1}
             ]
+          },
+          {"name": "Relic Non-held Items", "id": "4cc4-45b2-dc3e-ebcb", "hidden": false, "import": true, "targetId": "a2ba-f7ca-1cb2-162e", "type": "selectionEntryGroup"},
+          {
+            "name": "Curiosities (Consumable and Non-held Items)",
+            "id": "7d73-86cd-ebfd-a338",
+            "hidden": false,
+            "import": true,
+            "targetId": "657d-8d96-befa-6486",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -2293,7 +1910,32 @@
             "import": true,
             "targetId": "4d62-5b6d-0b43-15b8",
             "type": "selectionEntry",
-            "categoryLinks": [{"name": "Champion List", "id": "026c-6c4f-461b-019e", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"}]
+            "categoryLinks": [
+              {"name": "Champion List", "id": "026c-6c4f-461b-019e", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"},
+              {"name": "Skeleton Warrior List", "id": "df2d-5e72-697a-956f", "hidden": false, "primary": false, "targetId": "1bae-a88b-c2e3-0428"}
+            ],
+            "constraints": [
+              {
+                "id": "bd79-026c-5518-a7a6",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "negative": false,
+                "scope": "6c09-3b06-898a-1ab4",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Relic One-handed Melee Weapons and Held Items",
+            "id": "4019-627c-e6fa-1bc2",
+            "hidden": false,
+            "import": true,
+            "targetId": "6c26-ab9d-ecd3-b052",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -2449,7 +2091,24 @@
             "type": "selectionEntry",
             "categoryLinks": [{"name": "Main List", "id": "df83-f08c-8b90-2e2b", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"}]
           },
-          {"name": "Filters", "id": "d1d3-fd12-106d-8d4f", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"}
+          {"name": "Filters", "id": "d1d3-fd12-106d-8d4f", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"},
+          {
+            "name": "Relic Two-handed Melee Weapons",
+            "id": "0a0b-6de1-cc45-a215",
+            "hidden": false,
+            "import": true,
+            "targetId": "e786-2ecc-b278-e346",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Great Mace",
+            "id": "1310-115a-67f5-d7c6",
+            "hidden": false,
+            "import": true,
+            "targetId": "bb1e-5781-c695-f204",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Champion List", "id": "a0f7-9928-18e1-b5ef", "hidden": false, "primary": false, "targetId": "e733-1dfc-cfd7-5da9"}]
+          }
         ]
       },
       {
@@ -2463,7 +2122,7 @@
             "id": "6664-2ac9-842a-d5de",
             "hidden": false,
             "import": true,
-            "sortIndex": 3,
+            "sortIndex": 4,
             "targetId": "597b-de67-7bea-0283",
             "type": "selectionEntryGroup",
             "constraints": [{"id": "1c0d-8746-02e7-f2fe", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}]
@@ -2473,13 +2132,20 @@
             "id": "4983-a2ab-3108-a6c5",
             "hidden": false,
             "import": true,
-            "sortIndex": 4,
+            "sortIndex": 5,
             "targetId": "64b0-a48c-2e42-308c",
             "type": "selectionEntryGroup",
-            "constraints": [
-              {"id": "48c2-32a4-2a89-0c5e", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 2},
-              {"id": "ca04-c00b-1f60-f8df", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}
-            ]
+            "constraints": [{"id": "48c2-32a4-2a89-0c5e", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 2}]
+          },
+          {
+            "name": "Ranged Weapon",
+            "id": "a5d6-31c3-7ffd-64e4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "7b6a-b58f-55e9-3b14",
+            "type": "selectionEntryGroup",
+            "constraints": [{"id": "4043-eaf4-cff2-91b7", "field": "selections", "scope": "self", "shared": true, "type": "max", "value": 1}]
           }
         ],
         "selectionEntryGroups": [
@@ -2602,7 +2268,7 @@
               {
                 "name": "Supernatural Healing",
                 "id": "2a58-b4da-7c9b-a4eb",
-                "description": "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary. In addition, if this fighter is killed. You can immediately make a Willpower test for them. If passed, they are not killed but must miss the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the *Leader* keyword and loses the *Champion* keyword until the Leader returns.",
+                "description": "This fighter cannot suffer permanent injuries. If they suffer an injury it is always temporary.\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but miss the next d3 battles as they slumber. If they are your Leader, pick a Champion in your warband to *assume command* in their absence.",
                 "hidden": false
               }
             ]
@@ -2740,102 +2406,49 @@
         ]
       },
       {
-        "name": "Lore of Necromancy",
-        "id": "40b0-45f3-5797-d09c",
+        "name": "Ranged Weapon",
+        "id": "7b6a-b58f-55e9-3b14",
         "hidden": false,
-        "constraints": [{"id": "cc57-a86b-fd08-1901", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
-        "entryLinks": [
-          {"name": "Witchfire", "id": "d273-eb76-8270-4c08", "hidden": false, "import": true, "sortIndex": 1, "targetId": "9c6f-94cd-af39-1917", "type": "selectionEntry"},
-          {
-            "name": "Ethereal Armour",
-            "id": "59b8-92dd-ba68-6512",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "96e7-5c0f-c1ec-a48a",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Twilight Translocation",
-            "id": "0a95-4632-3561-779f",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 4,
-            "targetId": "f11d-2add-5c75-cd74",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Raise Zombie",
-            "id": "e6a5-96ea-7945-a489",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "3a5b-29a3-a9ac-30c7",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Death Blast",
-            "id": "5cc2-3d94-0c0f-8bea",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 5,
-            "targetId": "f7e0-1575-6157-5b9c",
-            "type": "selectionEntry"
-          },
-          {"name": "Balefire", "id": "052f-7963-084b-508c", "hidden": false, "import": true, "sortIndex": 6, "targetId": "1849-9797-a74f-928a", "type": "selectionEntry"}
-        ]
-      },
-      {
-        "name": "Lore of Blood",
-        "id": "f97c-4e5c-40f6-9a78",
-        "hidden": false,
-        "constraints": [{"id": "42da-276d-a861-1f50", "field": "selections", "includeChildSelections": true, "scope": "upgrade", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
           {
-            "name": "Draw Blood",
-            "id": "35f8-9bcd-c1d1-0b4f",
-            "hidden": false,
+            "name": "Longbow",
+            "id": "d30a-51be-fb0c-04db",
+            "hidden": true,
             "import": true,
-            "sortIndex": 1,
-            "targetId": "bfbf-08a4-b0c4-8cf4",
-            "type": "selectionEntry"
+            "targetId": "f2d3-3e2a-73b4-5fa4",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Skeleton Warrior List", "id": "c198-5d07-64af-b80b", "hidden": false, "primary": false, "targetId": "1bae-a88b-c2e3-0428"}]
           },
           {
-            "name": "Cursed Blades",
-            "id": "4f70-169a-ceb5-c126",
-            "hidden": false,
+            "name": "Shortbow",
+            "id": "17b9-45fb-2fb8-8db8",
+            "hidden": true,
             "import": true,
-            "sortIndex": 2,
-            "targetId": "08fe-e7ba-cfda-0372",
-            "type": "selectionEntry"
+            "targetId": "debe-0d29-1cc7-e463",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Skeleton Warrior List", "id": "91bb-ec9b-c4a8-e342", "hidden": false, "primary": false, "targetId": "1bae-a88b-c2e3-0428"}]
           },
+          {"name": "Relic Ranged Weapons", "id": "cf8e-46d2-5cac-3eeb", "hidden": false, "import": true, "targetId": "41af-0e9e-7efa-be27", "type": "selectionEntryGroup"},
+          {"name": "Filters", "id": "c3fb-45af-571b-4f02", "hidden": false, "import": true, "targetId": "0eb6-a495-e1a2-31a8", "type": "selectionEntryGroup"}
+        ],
+        "modifiers": [
           {
-            "name": "Raise Skeleton",
-            "id": "2d20-1f37-9c64-e241",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "e589-207b-9cf6-4a65",
-            "type": "selectionEntry"
-          },
-          {"name": "Recall", "id": "8147-f100-4ca0-f7df", "hidden": false, "import": true, "sortIndex": 4, "targetId": "41a1-90bc-7b82-cb65", "type": "selectionEntry"},
-          {
-            "name": "Bat Scream",
-            "id": "8e46-2c7b-13a2-3a27",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 5,
-            "targetId": "6d03-beb1-3236-3c0c",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Sanguine Spear",
-            "id": "fccd-eb9b-c795-0807",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 6,
-            "targetId": "81d4-5173-9807-faec",
-            "type": "selectionEntry"
+            "affects": "self.entries.0d9b-60d9-ad23-757a",
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "08f8-e0cc-9de3-6c2e",
+                "childName": "Held Item",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "root-entry",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       }
