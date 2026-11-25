@@ -1469,12 +1469,13 @@
         "hidden": false,
         "import": true,
         "sortIndex": 10,
-        "type": "upgrade",
+        "type": "unit",
         "categoryLinks": [
           {"name": "Henchman", "id": "1c9d-0a55-f9a2-2595", "hidden": false, "primary": true, "targetId": "2594-e088-657e-98c8"},
           {"name": "Main List", "id": "8b91-ddc5-e6d6-b8f8", "hidden": false, "primary": false, "targetId": "315a-7be5-5bae-cdd3"},
           {"name": "Starting Experience 20+d6", "id": "8ec0-d5d7-b0fc-4a11", "hidden": false, "primary": false, "targetId": "15e7-bf29-b27a-403e"},
-          {"name": "Demi-human", "id": "4ee6-0c50-e326-6a3b", "hidden": false, "primary": false, "targetId": "215c-2a09-6ed7-c3d7"}
+          {"name": "Demi-human", "id": "4ee6-0c50-e326-6a3b", "hidden": false, "primary": false, "targetId": "215c-2a09-6ed7-c3d7"},
+          {"name": "Fighter", "id": "ab14-51b7-27ba-3f1c", "hidden": false, "primary": false, "targetId": "2440-29a6-376e-748a"}
         ],
         "constraints": [{"id": "5e34-8c1b-4bb3-a5fd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
         "costs": [
